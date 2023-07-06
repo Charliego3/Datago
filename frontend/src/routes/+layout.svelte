@@ -1,10 +1,5 @@
 <script lang="ts">
     import "../app.css";
-	import { tick } from 'svelte'
-	import { gsap } from 'gsap/dist/gsap'
-	import { Flip } from 'gsap/dist/Flip'
-
-    gsap.registerPlugin(Flip);
 
     type SidebarState = 'opened' | 'closed'
 
@@ -13,29 +8,11 @@
     let sidebarState: SidebarState = 'opened';
 
     async function toggleSidebar() {
-        sidebarState === 'opened' ? (sidebarState = 'closed') : (sidebarState = 'opened')
-        const state = Flip.getState('#rightContainer', { props: 'width' });
-        await tick();
-        const duration: number = 0.2;
-        const tl = Flip.from(state, {
-            duration: duration,
-            absolute: false,
-			scale: true,
-			// stagger: 0.1,
-			ease: 'sine',
-            onStart: () => {
-                gsap.to('#rightContainer', {
-                    marginLeft: '0',
-                    duration: duration,
-                })
-            }
+        console.log({
+            splitterDragging,
+            currentSidebarWidth,
+            sidebarState,
         });
-
-        const toMarginLeft = sidebarState === 'closed' ? -currentSidebarWidth + 'px' : '0';
-        tl.to('#rightContainer', {
-            marginLeft: toMarginLeft,
-            duration: duration,
-        })
     }
 </script>
 

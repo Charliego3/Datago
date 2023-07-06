@@ -1,32 +1,32 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Wails: Production datago",
-      "type": "go",
-      "request": "launch",
-      "mode": "exec",
-      "program": "${workspaceFolder}/build/bin/datago",
-      "preLaunchTask": "build",
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "name": "Wails: Debug datago",
-      "type": "go",
-      "request": "launch",
-      "mode": "exec",
-      "program": "${workspaceFolder}/build/bin/datago",
-      "preLaunchTask": "build debug",
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "name": "Wails: Dev datago",
-      "type": "go",
-      "request": "launch",
-      "mode": "exec",
-      "program": "${workspaceFolder}/build/bin/datago",
-      "preLaunchTask": "build dev",
-      "cwd": "${workspaceFolder}"
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Wails: Production datago",
+            "type": "go",
+            "request": "launch",
+            "mode": "exec",
+            "program": "${workspaceFolder}/build/bin/datago",
+            "preLaunchTask": "build",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Wails: Debug datago",
+            "type": "go",
+            "request": "launch",
+            "mode": "exec",
+            "program": "${workspaceFolder}/build/bin/datago",
+            "preLaunchTask": "build debug",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Wails: Dev datago",
+            "type": "go",
+            "request": "launch",
+            "mode": "exec",
+            "program": "${workspaceFolder}/build/bin/datago",
+            "preLaunchTask": "build dev",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
 }

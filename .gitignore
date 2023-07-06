@@ -1,12 +1,11 @@
-build/bin
+build/
 node_modules
 frontend/dist
 
 .DS_Store
-
 */.DS_Store
 */node_modules/
-/build
+*/build
 */.svelte-kit
 */package
 */.env
