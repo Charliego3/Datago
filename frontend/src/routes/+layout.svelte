@@ -4,9 +4,9 @@
     let sidebarWidth = 300;
     let sidebarOpened = true;
     let sidebarMoving = false;
-    let toolbarWidth;
-    let contentWidth;
-    let contentTag;
+    let toolbarWidth: number;
+    let contentWidth: number;
+    let contentTag: HTMLElement;
 
     function toggleSidebar() {
         sidebarOpened = !sidebarOpened;
@@ -45,15 +45,15 @@
             <div class="w-10 h-10 bg-blue-200"></div>
         </div>
     </div>
-    <div id="content" bind:this={contentTag} class="z-50 mt-[-100vh] float-right right-0 bg-green-200 h-full flex flex-col"
+    <div id="content" bind:this={contentTag} class="absolute z-40 mt-[-100vh] float-right right-0 bg-white h-full flex flex-col"
          class:expanded={!sidebarOpened}
-         class:shadow-2xl={sidebarMoving}
          class:transition={sidebarMoving}
          on:transitionend={onAnimationEnd}
          style="width: calc(100vw - {contentWidth}px);">
         <div class="h-[38px] flex-none"></div>
         {sidebarMoving}
         <slot/>
+        <button class="border" on:click={toggleSidebar}>T</button>
     </div>
 </main>
 
@@ -64,6 +64,7 @@
 
     #content.transition {
         transition: width 400ms ease-in-out;
+        box-shadow: 2px 0 50px rgba(0, 0, 0, 0.25);
     }
 
     #toolbar.closing {

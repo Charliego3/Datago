@@ -2,6 +2,8 @@ build/
 node_modules
 frontend/dist
 
+.idea/
+
 .DS_Store
 */.DS_Store
 */node_modules/
