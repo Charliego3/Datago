@@ -1,51 +1,76 @@
 <script lang="ts">
     import "../app.css";
 
-    type SidebarState = 'opened' | 'closed'
+    let sidebarWidth = 300;
+    let sidebarOpened = true;
+    let sidebarMoving = false;
+    let toolbarWidth;
+    let contentWidth;
+    let contentTag;
 
-    let splitterDragging: boolean = false;
-    let currentSidebarWidth: number = 400;
-    let sidebarState: SidebarState = 'opened';
+    function toggleSidebar() {
+        sidebarOpened = !sidebarOpened;
+        sidebarMoving = true;
+    }
 
-    async function toggleSidebar() {
-        console.log({
-            splitterDragging,
-            currentSidebarWidth,
-            sidebarState,
-        });
+    $: if (!sidebarOpened) {
+        toolbarWidth = 100;
+        contentWidth = 0;
+    } else {
+        toolbarWidth = sidebarWidth;
+        contentWidth = sidebarWidth;
+    }
+
+    function onAnimationEnd() {
+        contentTag.classList.remove('transition');
+        sidebarMoving = false;
     }
 </script>
 
-<div class="flex w-screen h-screen overflow-hidden font-robot divide-x divide-gray/35">
-    <div class="relative w-[400px] h-full flex-none flex flex-col divide-y divide-gray/35">
-        <div class="flex-none h-[38px] flex items-center text-xl">
-            <div class="w-[77px] h-full pl-[13px] pr-[11px] flex items-center justify-between">
-                <div class="bg-[#FF5F57] w-[12px] h-[12px] rounded-full"/>
-                <div class="bg-[#FEBC2E] w-[12px] h-[12px] rounded-full"/>
-                <div class="bg-[#27C840] w-[12px] h-[12px] rounded-full"/>
-            </div>
-            <button class="ml-[80px] fixed z-[999] cursor-default px-[7px] py-[1px] rounded flex hover:bg-slate/15" on:click={toggleSidebar}>
-                <span class="i-icons-sidebar-leading opacity-60 cursor-default"/>
-                toggle
-            </button>
+<main class="h-screen w-screen relative">
+    <div class="fixed h-[38px] w-screen z-50 flex items-center bg-transparent" style="--wails-draggable:drag">
+        <div id="toolbar" class:closing={sidebarMoving && !sidebarOpened} class:oping={sidebarMoving && sidebarOpened} class="pl-[77px] flex-none" style="width: {toolbarWidth}px;">
+            <button on:click={toggleSidebar}>T</button>
         </div>
-        <div class="flex-auto px-[3px]"/>
-        <div class="flex-none w-[5px] absolute mt-[-1px] right-[-3px] h-full cursor-col-resize bg-[indigo]/0"></div>
-    </div>
-    <div id="rightContainer" data-sidebarState={sidebarState} class="h-full flex flex-col divide-y divide-gray/35 z-[9]">
-        <div class="flex-none h-[38px] bg-[#FAF9F9] dark:bg-[#373736]" />
-        <div class="flex-auto px-[3px] bg-white dark:bg-[#2e2e2d]">
-            <slot />
+        <div class="flex justify-between w-full">
+            <div>prefix</div>
+            <div>suffix</div>
         </div>
     </div>
-</div>
+    <div class="h-full flex flex-col z-0" style="width: {sidebarWidth}px;">
+        <div class="h-[38px] flex-none"></div>
+        <div class="h-full flex justify-between items-center">
+            <p>Sidebar Left</p>
+            <span>Sidebar Right</span>
+            <div class="w-10 h-10 bg-blue-200"></div>
+        </div>
+    </div>
+    <div id="content" bind:this={contentTag} class="z-50 mt-[-100vh] float-right right-0 bg-green-200 h-full flex flex-col"
+         class:expanded={!sidebarOpened}
+         class:shadow-2xl={sidebarMoving}
+         class:transition={sidebarMoving}
+         on:transitionend={onAnimationEnd}
+         style="width: calc(100vw - {contentWidth}px);">
+        <div class="h-[38px] flex-none"></div>
+        {sidebarMoving}
+        <slot/>
+    </div>
+</main>
 
-<style>
-    [data-sidebarState='opened'] {
-        width: 100%;
+<style lang="postcss">
+    #content.expanded {
+        width: 100vw;
     }
 
-    [data-sidebarState='closed'] {
-        width: 100vw;
+    #content.transition {
+        transition: width 400ms ease-in-out;
+    }
+
+    #toolbar.closing {
+        transition: width 350ms ease-in-out;
+    }
+
+    #toolbar.oping {
+        transition: width 400ms ease-in-out;
     }
 </style>
