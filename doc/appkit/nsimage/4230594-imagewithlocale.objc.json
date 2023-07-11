@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nsimage/4230594-imagewithlocale?language=objc",
+  "Title": "imageWithLocale:",
+  "Type": "Instance Method",
+  "Description": "",
+  "Declaration": "- (NSImage *)imageWithLocale:(NSLocale *)locale;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 14.0+",
+    "Beta"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:00:15.150204+08:00",
+  "LastVersion": 2
+}

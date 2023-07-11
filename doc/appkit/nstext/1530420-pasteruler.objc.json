@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1530420-pasteruler?language=objc",
+  "Title": "pasteRuler:",
+  "Type": "Instance Method",
+  "Description": "This action method pastes paragraph style information from the ruler pasteboard onto the selected paragraphs of a rich text object.",
+  "Declaration": "- (void)pasteRuler:(id)sender;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:55.253729+08:00",
+  "LastVersion": 2
+}

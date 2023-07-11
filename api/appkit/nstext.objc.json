@@ -3,6 +3,10 @@
     "Name": "NSText",
     "Description": "The most general programmatic interface for objects that manage text.",
     "Declaration": "@interface NSText : NSView",
+    "Platforms": [
+      "macOS 10.0+"
+    ],
+    "TopicURL": "https://developer.apple.com/documentation/appkit/nstext?language=objc",
     "InstanceMethods": [
       {
         "Name": "initWithCoder:",
@@ -840,16 +844,10 @@
         },
         "TopicURL": "https://developer.apple.com/documentation/appkit/nstext/1529480-delegate?language=objc"
       }
-    ],
-    "Frameworks": [
-      "AppKit"
-    ],
-    "Platforms": [
-      "macOS 10.0+"
-    ],
-    "TopicURL": "https://developer.apple.com/documentation/appkit/nstext?language=objc"
+    ]
   },
+  "APICollection": null,
   "Kind": "class",
-  "PullDate": "2021-08-29T18:51:24.964454-07:00",
+  "PullDate": "2023-07-11T14:27:21.241316+08:00",
   "Version": 2
 }

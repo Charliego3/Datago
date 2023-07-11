@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1520012-capinsets?language=objc",
+  "Title": "capInsets",
+  "Type": "Instance Property",
+  "Description": "The cap insets for the image.",
+  "Declaration": "@property NSEdgeInsets capInsets;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.10+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:59:41.617598+08:00",
+  "LastVersion": 2
+}

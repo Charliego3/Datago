@@ -1,0 +1,108 @@
+{
+  "Enum": {
+    "Name": "NSSegmentStyle",
+    "Description": "The following constants specify the visual style used to display the segmented control. They are used by segmentStyle.",
+    "Declaration": "typedef enum NSSegmentStyle : NSInteger {\n    ...\n} NSSegmentStyle;",
+    "Platforms": [
+      "macOS 10.5+"
+    ],
+    "TopicURL": "https://developer.apple.com/documentation/appkit/nssegmentstyle?language=objc",
+    "Type": {
+      "Name": "NSInteger"
+    },
+    "Cases": [
+      {
+        "Name": "NSSegmentStyleAutomatic",
+        "Description": "The appearance of the segmented control is automatically determined based on the type of window in which the control is displayed and the position within the window.",
+        "Declaration": "NSSegmentStyleAutomatic = 0",
+        "Platforms": [
+          "macOS 10.5+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssegmentstyle/nssegmentstyleautomatic?language=objc",
+        "Type": {},
+        "Value": "0"
+      },
+      {
+        "Name": "NSSegmentStyleRounded",
+        "Description": "The control is displayed using the rounded style.",
+        "Declaration": "NSSegmentStyleRounded = 1",
+        "Platforms": [
+          "macOS 10.5+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssegmentstyle/nssegmentstylerounded?language=objc",
+        "Type": {},
+        "Value": "1"
+      },
+      {
+        "Name": "NSSegmentStyleTexturedRounded",
+        "Description": "The control is displayed using the textured rounded style. In macOS 10.7 and later, this style uses the artwork defined for NSSegmentStyleTexturedSquare, so you should specify NSSegmentStyleTexturedSquare instead.",
+        "Declaration": "NSSegmentStyleTexturedRounded = 2",
+        "Platforms": [
+          "macOS 10.5+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssegmentstyle/nssegmentstyletexturedrounded?language=objc",
+        "Type": {},
+        "Value": "2"
+      },
+      {
+        "Name": "NSSegmentStyleRoundRect",
+        "Description": "The control is displayed using the round rect style.",
+        "Declaration": "NSSegmentStyleRoundRect = 3",
+        "Platforms": [
+          "macOS 10.5+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssegmentstyle/nssegmentstyleroundrect?language=objc",
+        "Type": {},
+        "Value": "3"
+      },
+      {
+        "Name": "NSSegmentStyleTexturedSquare",
+        "Description": "The control is displayed using the textured square style.",
+        "Declaration": "NSSegmentStyleTexturedSquare = 4",
+        "Platforms": [
+          "macOS 10.5+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssegmentstyle/nssegmentstyletexturedsquare?language=objc",
+        "Type": {},
+        "Value": "4"
+      },
+      {
+        "Name": "NSSegmentStyleCapsule",
+        "Description": "The control is displayed using the capsule style. In macOS 10.7 and later, this style uses the artwork defined for NSSegmentStyleTexturedSquare, so you should specify NSSegmentStyleTexturedSquare instead.",
+        "Declaration": "NSSegmentStyleCapsule = 5",
+        "Platforms": [
+          "macOS 10.5+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssegmentstyle/nssegmentstylecapsule?language=objc",
+        "Type": {},
+        "Value": "5"
+      },
+      {
+        "Name": "NSSegmentStyleSmallSquare",
+        "Description": "The control is displayed using the small square style.",
+        "Declaration": "NSSegmentStyleSmallSquare = 6",
+        "Platforms": [
+          "macOS 10.5+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssegmentstyle/nssegmentstylesmallsquare?language=objc",
+        "Type": {},
+        "Value": "6"
+      },
+      {
+        "Name": "NSSegmentStyleSeparated",
+        "Description": "The segments in the control are displayed very close to each other but not touching. For example, Safari in macOS 10.10 and later uses this style for the previous and next page segmented control.",
+        "Declaration": "NSSegmentStyleSeparated = 8",
+        "Platforms": [
+          "macOS 10.10+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssegmentstyle/nssegmentstyleseparated?language=objc",
+        "Type": {},
+        "Value": "8"
+      }
+    ]
+  },
+  "APICollection": null,
+  "Kind": "enum",
+  "PullDate": "2023-07-11T11:27:24.340527+08:00",
+  "Version": 2
+}

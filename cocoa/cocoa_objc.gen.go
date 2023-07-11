@@ -265,9 +265,9 @@ void* NSImage_type_Alloc() {
 	return [NSImage
 		alloc];
 }
-void* NSImage_type_ImageWithSystemSymbolNameAccessibilityDescription(void* symbolName, void* description) {
+void* NSImage_type_ImageWithSystemSymbolNameAccessibilityDescription(void* name, void* description) {
 	return [NSImage
-		imageWithSystemSymbolName: symbolName
+		imageWithSystemSymbolName: name
 		accessibilityDescription: description];
 }
 BOOL NSImage_type_CanInitWithPasteboard(void* pasteboard) {
@@ -419,6 +419,10 @@ void* NSText_type_Alloc() {
 	return [NSText
 		alloc];
 }
+void* NSTextContainer_type_Alloc() {
+	return [NSTextContainer
+		alloc];
+}
 void* NSTextField_type_Alloc() {
 	return [NSTextField
 		alloc];
@@ -438,10 +442,6 @@ void* NSTextField_type_TextFieldWithString(void* stringValue) {
 void* NSTextField_type_WrappingLabelWithString(void* stringValue) {
 	return [NSTextField
 		wrappingLabelWithString: stringValue];
-}
-void* NSTextContainer_type_Alloc() {
-	return [NSTextContainer
-		alloc];
 }
 void* NSViewController_type_Alloc() {
 	return [NSViewController
@@ -1923,11 +1923,6 @@ void NSImage_inst_AddRepresentations(void *id, void* imageReps) {
 		addRepresentations: imageReps];
 }
 
-void NSImage_inst_CancelIncrementalLoad(void *id) {
-	[(NSImage*)id
-		cancelIncrementalLoad];
-}
-
 void NSImage_inst_DrawInRect(void *id, NSRect rect) {
 	[(NSImage*)id
 		drawInRect: rect];
@@ -1983,16 +1978,6 @@ void* NSImage_inst_LayerContentsForContentsScale(void *id, double layerContentsS
 		layerContentsForContentsScale: layerContentsScale];
 }
 
-void NSImage_inst_LockFocus(void *id) {
-	[(NSImage*)id
-		lockFocus];
-}
-
-void NSImage_inst_LockFocusFlipped(void *id, BOOL flipped) {
-	[(NSImage*)id
-		lockFocusFlipped: flipped];
-}
-
 void NSImage_inst_Recache(void *id) {
 	[(NSImage*)id
 		recache];
@@ -2001,11 +1986,6 @@ void NSImage_inst_Recache(void *id) {
 double NSImage_inst_RecommendedLayerContentsScale(void *id, double preferredContentsScale) {
 	return [(NSImage*)id
 		recommendedLayerContentsScale: preferredContentsScale];
-}
-
-void NSImage_inst_UnlockFocus(void *id) {
-	[(NSImage*)id
-		unlockFocus];
 }
 
 void* NSImage_inst_Init(void *id) {
@@ -3618,6 +3598,106 @@ void NSText_inst_SetDelegate(void *id, void* value) {
 		setDelegate: value];
 }
 
+void* NSTextContainer_inst_InitWithSize(void *id, NSSize size) {
+	return [(NSTextContainer*)id
+		initWithSize: size];
+}
+
+void NSTextContainer_inst_ReplaceLayoutManager(void *id, void* newLayoutManager) {
+	[(NSTextContainer*)id
+		replaceLayoutManager: newLayoutManager];
+}
+
+void* NSTextContainer_inst_Init(void *id) {
+	return [(NSTextContainer*)id
+		init];
+}
+
+void* NSTextContainer_inst_LayoutManager(void *id) {
+	return [(NSTextContainer*)id
+		layoutManager];
+}
+
+void NSTextContainer_inst_SetLayoutManager(void *id, void* value) {
+	[(NSTextContainer*)id
+		setLayoutManager: value];
+}
+
+void* NSTextContainer_inst_TextView(void *id) {
+	return [(NSTextContainer*)id
+		textView];
+}
+
+void NSTextContainer_inst_SetTextView(void *id, void* value) {
+	[(NSTextContainer*)id
+		setTextView: value];
+}
+
+NSSize NSTextContainer_inst_Size(void *id) {
+	return [(NSTextContainer*)id
+		size];
+}
+
+void NSTextContainer_inst_SetSize(void *id, NSSize value) {
+	[(NSTextContainer*)id
+		setSize: value];
+}
+
+void* NSTextContainer_inst_ExclusionPaths(void *id) {
+	return [(NSTextContainer*)id
+		exclusionPaths];
+}
+
+void NSTextContainer_inst_SetExclusionPaths(void *id, void* value) {
+	[(NSTextContainer*)id
+		setExclusionPaths: value];
+}
+
+BOOL NSTextContainer_inst_WidthTracksTextView(void *id) {
+	return [(NSTextContainer*)id
+		widthTracksTextView];
+}
+
+void NSTextContainer_inst_SetWidthTracksTextView(void *id, BOOL value) {
+	[(NSTextContainer*)id
+		setWidthTracksTextView: value];
+}
+
+BOOL NSTextContainer_inst_HeightTracksTextView(void *id) {
+	return [(NSTextContainer*)id
+		heightTracksTextView];
+}
+
+void NSTextContainer_inst_SetHeightTracksTextView(void *id, BOOL value) {
+	[(NSTextContainer*)id
+		setHeightTracksTextView: value];
+}
+
+unsigned long NSTextContainer_inst_MaximumNumberOfLines(void *id) {
+	return [(NSTextContainer*)id
+		maximumNumberOfLines];
+}
+
+void NSTextContainer_inst_SetMaximumNumberOfLines(void *id, unsigned long value) {
+	[(NSTextContainer*)id
+		setMaximumNumberOfLines: value];
+}
+
+double NSTextContainer_inst_LineFragmentPadding(void *id) {
+	return [(NSTextContainer*)id
+		lineFragmentPadding];
+}
+
+void NSTextContainer_inst_SetLineFragmentPadding(void *id, double value) {
+	[(NSTextContainer*)id
+		setLineFragmentPadding: value];
+}
+
+BOOL NSTextContainer_inst_IsSimpleRectangularTextContainer(void *id) {
+	return [(NSTextContainer*)id
+		isSimpleRectangularTextContainer];
+}
+
 void NSTextField_inst_SelectText(void *id, void* sender) {
 	[(NSTextField*)id
 		selectText: sender];
@@ -3811,106 +3891,6 @@ void* NSTextField_inst_Delegate(void *id) {
 void NSTextField_inst_SetDelegate(void *id, void* value) {
 	[(NSTextField*)id
 		setDelegate: value];
-}
-
-void* NSTextContainer_inst_InitWithSize(void *id, NSSize size) {
-	return [(NSTextContainer*)id
-		initWithSize: size];
-}
-
-void NSTextContainer_inst_ReplaceLayoutManager(void *id, void* newLayoutManager) {
-	[(NSTextContainer*)id
-		replaceLayoutManager: newLayoutManager];
-}
-
-void* NSTextContainer_inst_Init(void *id) {
-	return [(NSTextContainer*)id
-		init];
-}
-
-void* NSTextContainer_inst_LayoutManager(void *id) {
-	return [(NSTextContainer*)id
-		layoutManager];
-}
-
-void NSTextContainer_inst_SetLayoutManager(void *id, void* value) {
-	[(NSTextContainer*)id
-		setLayoutManager: value];
-}
-
-void* NSTextContainer_inst_TextView(void *id) {
-	return [(NSTextContainer*)id
-		textView];
-}
-
-void NSTextContainer_inst_SetTextView(void *id, void* value) {
-	[(NSTextContainer*)id
-		setTextView: value];
-}
-
-NSSize NSTextContainer_inst_Size(void *id) {
-	return [(NSTextContainer*)id
-		size];
-}
-
-void NSTextContainer_inst_SetSize(void *id, NSSize value) {
-	[(NSTextContainer*)id
-		setSize: value];
-}
-
-void* NSTextContainer_inst_ExclusionPaths(void *id) {
-	return [(NSTextContainer*)id
-		exclusionPaths];
-}
-
-void NSTextContainer_inst_SetExclusionPaths(void *id, void* value) {
-	[(NSTextContainer*)id
-		setExclusionPaths: value];
-}
-
-BOOL NSTextContainer_inst_WidthTracksTextView(void *id) {
-	return [(NSTextContainer*)id
-		widthTracksTextView];
-}
-
-void NSTextContainer_inst_SetWidthTracksTextView(void *id, BOOL value) {
-	[(NSTextContainer*)id
-		setWidthTracksTextView: value];
-}
-
-BOOL NSTextContainer_inst_HeightTracksTextView(void *id) {
-	return [(NSTextContainer*)id
-		heightTracksTextView];
-}
-
-void NSTextContainer_inst_SetHeightTracksTextView(void *id, BOOL value) {
-	[(NSTextContainer*)id
-		setHeightTracksTextView: value];
-}
-
-unsigned long NSTextContainer_inst_MaximumNumberOfLines(void *id) {
-	return [(NSTextContainer*)id
-		maximumNumberOfLines];
-}
-
-void NSTextContainer_inst_SetMaximumNumberOfLines(void *id, unsigned long value) {
-	[(NSTextContainer*)id
-		setMaximumNumberOfLines: value];
-}
-
-double NSTextContainer_inst_LineFragmentPadding(void *id) {
-	return [(NSTextContainer*)id
-		lineFragmentPadding];
-}
-
-void NSTextContainer_inst_SetLineFragmentPadding(void *id, double value) {
-	[(NSTextContainer*)id
-		setLineFragmentPadding: value];
-}
-
-BOOL NSTextContainer_inst_IsSimpleRectangularTextContainer(void *id) {
-	return [(NSTextContainer*)id
-		isSimpleRectangularTextContainer];
 }
 
 void NSViewController_inst_AddChildViewController(void *id, void* childViewController) {
@@ -8956,12 +8936,12 @@ func NSImage_Alloc() NSImage {
 	return NSImage_FromPointer(ret)
 }
 
-// NSImage_ImageWithSystemSymbolNameAccessibilityDescription creates a symbol image with the system symbol name and accessibility description that you specify.
+// NSImage_ImageWithSystemSymbolNameAccessibilityDescription creates a symbol image with the system symbol name and accessibility description you specify.
 //
 // See https://developer.apple.com/documentation/appkit/nsimage/3622472-imagewithsystemsymbolname?language=objc for details.
-func NSImage_ImageWithSystemSymbolNameAccessibilityDescription(symbolName core.NSStringRef, description core.NSStringRef) NSImage {
+func NSImage_ImageWithSystemSymbolNameAccessibilityDescription(name core.NSStringRef, description core.NSStringRef) NSImage {
 	ret := C.NSImage_type_ImageWithSystemSymbolNameAccessibilityDescription(
-		objc.RefPointer(symbolName),
+		objc.RefPointer(name),
 		objc.RefPointer(description),
 	)
 
@@ -9289,6 +9269,13 @@ func NSText_Alloc() NSText {
 	return NSText_FromPointer(ret)
 }
 
+// NSTextContainer_Alloc is undocumented.
+func NSTextContainer_Alloc() NSTextContainer {
+	ret := C.NSTextContainer_type_Alloc()
+
+	return NSTextContainer_FromPointer(ret)
+}
+
 // NSTextField_Alloc is undocumented.
 func NSTextField_Alloc() NSTextField {
 	ret := C.NSTextField_type_Alloc()
@@ -9338,13 +9325,6 @@ func NSTextField_WrappingLabelWithString(stringValue core.NSStringRef) NSTextFie
 	)
 
 	return NSTextField_FromPointer(ret)
-}
-
-// NSTextContainer_Alloc is undocumented.
-func NSTextContainer_Alloc() NSTextContainer {
-	ret := C.NSTextContainer_type_Alloc()
-
-	return NSTextContainer_FromPointer(ret)
 }
 
 // NSViewController_Alloc is undocumented.
@@ -13106,17 +13086,6 @@ func (x gen_NSImage) AddRepresentations(
 	return
 }
 
-// CancelIncrementalLoad cancels the current download operation, if any, for an incrementally loaded image.
-//
-// See https://developer.apple.com/documentation/appkit/nsimage/1520041-cancelincrementalload?language=objc for details.
-func (x gen_NSImage) CancelIncrementalLoad() {
-	C.NSImage_inst_CancelIncrementalLoad(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return
-}
-
 // DrawInRect draws the image in the specified rectangle.
 //
 // See https://developer.apple.com/documentation/appkit/nsimage/1519863-drawinrect?language=objc for details.
@@ -13268,31 +13237,6 @@ func (x gen_NSImage) LayerContentsForContentsScale(
 	return objc.Object_FromPointer(ret)
 }
 
-// LockFocus prepares the image to receive drawing commands.
-//
-// See https://developer.apple.com/documentation/appkit/nsimage/1519891-lockfocus?language=objc for details.
-func (x gen_NSImage) LockFocus() {
-	C.NSImage_inst_LockFocus(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return
-}
-
-// LockFocusFlipped prepares the image to receive drawing commands using the specified flipped state.
-//
-// See https://developer.apple.com/documentation/appkit/nsimage/1519914-lockfocusflipped?language=objc for details.
-func (x gen_NSImage) LockFocusFlipped(
-	flipped bool,
-) {
-	C.NSImage_inst_LockFocusFlipped(
-		unsafe.Pointer(x.Pointer()),
-		convertToObjCBool(flipped),
-	)
-
-	return
-}
-
 // Recache invalidates and frees offscreen caches of all image representations.
 //
 // See https://developer.apple.com/documentation/appkit/nsimage/1519890-recache?language=objc for details.
@@ -13316,17 +13260,6 @@ func (x gen_NSImage) RecommendedLayerContentsScale(
 	)
 
 	return core.CGFloat(ret)
-}
-
-// UnlockFocus removes the focus from the image.
-//
-// See https://developer.apple.com/documentation/appkit/nsimage/1519853-unlockfocus?language=objc for details.
-func (x gen_NSImage) UnlockFocus() {
-	C.NSImage_inst_UnlockFocus(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return
 }
 
 // Init initializes a new instance of the NSImage class.
@@ -17696,6 +17629,282 @@ func (x gen_NSText) SetDelegate(
 	return
 }
 
+type NSTextContainerRef interface {
+	Pointer() uintptr
+	Init_AsNSTextContainer() NSTextContainer
+}
+
+type gen_NSTextContainer struct {
+	objc.Object
+}
+
+func NSTextContainer_FromPointer(ptr unsafe.Pointer) NSTextContainer {
+	return NSTextContainer{gen_NSTextContainer{
+		objc.Object_FromPointer(ptr),
+	}}
+}
+
+func NSTextContainer_FromRef(ref objc.Ref) NSTextContainer {
+	return NSTextContainer_FromPointer(unsafe.Pointer(ref.Pointer()))
+}
+
+// InitWithSize initializes a text container with a specified bounding rectangle.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444529-initwithsize?language=objc for details.
+func (x gen_NSTextContainer) InitWithSize(
+	size core.NSSize,
+) NSTextContainer {
+	ret := C.NSTextContainer_inst_InitWithSize(
+		unsafe.Pointer(x.Pointer()),
+		*(*C.NSSize)(unsafe.Pointer(&size)),
+	)
+
+	return NSTextContainer_FromPointer(ret)
+}
+
+// ReplaceLayoutManager replaces the layout manager for the group of text system objects that contains the text container.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444545-replacelayoutmanager?language=objc for details.
+func (x gen_NSTextContainer) ReplaceLayoutManager(
+	newLayoutManager NSLayoutManagerRef,
+) {
+	C.NSTextContainer_inst_ReplaceLayoutManager(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(newLayoutManager),
+	)
+
+	return
+}
+
+// Init initializes a new instance of the NSTextContainer class.
+func (x gen_NSTextContainer) Init() NSTextContainer {
+	ret := C.NSTextContainer_inst_Init(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return NSTextContainer_FromPointer(ret)
+}
+
+// Init_AsNSTextContainer is a typed version of Init.
+func (x gen_NSTextContainer) Init_AsNSTextContainer() NSTextContainer {
+	ret := C.NSTextContainer_inst_Init(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return NSTextContainer_FromPointer(ret)
+}
+
+// LayoutManager returns the text container’s layout manager.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444517-layoutmanager?language=objc for details.
+func (x gen_NSTextContainer) LayoutManager() NSLayoutManager {
+	ret := C.NSTextContainer_inst_LayoutManager(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return NSLayoutManager_FromPointer(ret)
+}
+
+// SetLayoutManager returns the text container’s layout manager.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444517-layoutmanager?language=objc for details.
+func (x gen_NSTextContainer) SetLayoutManager(
+	value NSLayoutManagerRef,
+) {
+	C.NSTextContainer_inst_SetLayoutManager(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(value),
+	)
+
+	return
+}
+
+// TextView returns the text container’s text view.
+//
+// See https://developer.apple.com/documentation/appkit/nstextcontainer/1444537-textview?language=objc for details.
+func (x gen_NSTextContainer) TextView() NSTextView {
+	ret := C.NSTextContainer_inst_TextView(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return NSTextView_FromPointer(ret)
+}
+
+// SetTextView returns the text container’s text view.
+//
+// See https://developer.apple.com/documentation/appkit/nstextcontainer/1444537-textview?language=objc for details.
+func (x gen_NSTextContainer) SetTextView(
+	value NSTextViewRef,
+) {
+	C.NSTextContainer_inst_SetTextView(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(value),
+	)
+
+	return
+}
+
+// Size returns the size of the text container’s bounding rectangle.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444553-size?language=objc for details.
+func (x gen_NSTextContainer) Size() core.NSSize {
+	ret := C.NSTextContainer_inst_Size(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return *(*core.NSSize)(unsafe.Pointer(&ret))
+}
+
+// SetSize returns the size of the text container’s bounding rectangle.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444553-size?language=objc for details.
+func (x gen_NSTextContainer) SetSize(
+	value core.NSSize,
+) {
+	C.NSTextContainer_inst_SetSize(
+		unsafe.Pointer(x.Pointer()),
+		*(*C.NSSize)(unsafe.Pointer(&value)),
+	)
+
+	return
+}
+
+// ExclusionPaths an array of path objects that represents the regions where text doesn’t display in the text container.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444569-exclusionpaths?language=objc for details.
+func (x gen_NSTextContainer) ExclusionPaths() core.NSArray {
+	ret := C.NSTextContainer_inst_ExclusionPaths(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return core.NSArray_FromPointer(ret)
+}
+
+// SetExclusionPaths an array of path objects that represents the regions where text doesn’t display in the text container.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444569-exclusionpaths?language=objc for details.
+func (x gen_NSTextContainer) SetExclusionPaths(
+	value core.NSArrayRef,
+) {
+	C.NSTextContainer_inst_SetExclusionPaths(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(value),
+	)
+
+	return
+}
+
+// WidthTracksTextView returns a Boolean that controls whether the text container adjusts the width of its bounding rectangle when its text view resizes.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444563-widthtrackstextview?language=objc for details.
+func (x gen_NSTextContainer) WidthTracksTextView() bool {
+	ret := C.NSTextContainer_inst_WidthTracksTextView(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return convertObjCBoolToGo(ret)
+}
+
+// SetWidthTracksTextView returns a Boolean that controls whether the text container adjusts the width of its bounding rectangle when its text view resizes.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444563-widthtrackstextview?language=objc for details.
+func (x gen_NSTextContainer) SetWidthTracksTextView(
+	value bool,
+) {
+	C.NSTextContainer_inst_SetWidthTracksTextView(
+		unsafe.Pointer(x.Pointer()),
+		convertToObjCBool(value),
+	)
+
+	return
+}
+
+// HeightTracksTextView returns a Boolean that controls whether the text container adjusts the height of its bounding rectangle when its text view resizes.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444559-heighttrackstextview?language=objc for details.
+func (x gen_NSTextContainer) HeightTracksTextView() bool {
+	ret := C.NSTextContainer_inst_HeightTracksTextView(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return convertObjCBoolToGo(ret)
+}
+
+// SetHeightTracksTextView returns a Boolean that controls whether the text container adjusts the height of its bounding rectangle when its text view resizes.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444559-heighttrackstextview?language=objc for details.
+func (x gen_NSTextContainer) SetHeightTracksTextView(
+	value bool,
+) {
+	C.NSTextContainer_inst_SetHeightTracksTextView(
+		unsafe.Pointer(x.Pointer()),
+		convertToObjCBool(value),
+	)
+
+	return
+}
+
+// MaximumNumberOfLines returns the maximum number of lines that the text container can store.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444531-maximumnumberoflines?language=objc for details.
+func (x gen_NSTextContainer) MaximumNumberOfLines() core.NSUInteger {
+	ret := C.NSTextContainer_inst_MaximumNumberOfLines(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return core.NSUInteger(ret)
+}
+
+// SetMaximumNumberOfLines returns the maximum number of lines that the text container can store.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444531-maximumnumberoflines?language=objc for details.
+func (x gen_NSTextContainer) SetMaximumNumberOfLines(
+	value core.NSUInteger,
+) {
+	C.NSTextContainer_inst_SetMaximumNumberOfLines(
+		unsafe.Pointer(x.Pointer()),
+		C.ulong(value),
+	)
+
+	return
+}
+
+// LineFragmentPadding returns the value for the text inset within line fragment rectangles.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444527-linefragmentpadding?language=objc for details.
+func (x gen_NSTextContainer) LineFragmentPadding() core.CGFloat {
+	ret := C.NSTextContainer_inst_LineFragmentPadding(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return core.CGFloat(ret)
+}
+
+// SetLineFragmentPadding returns the value for the text inset within line fragment rectangles.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444527-linefragmentpadding?language=objc for details.
+func (x gen_NSTextContainer) SetLineFragmentPadding(
+	value core.CGFloat,
+) {
+	C.NSTextContainer_inst_SetLineFragmentPadding(
+		unsafe.Pointer(x.Pointer()),
+		C.double(value),
+	)
+
+	return
+}
+
+// IsSimpleRectangularTextContainer returns a Boolean that indicates whether the text container’s region is a rectangle with no holes or gaps, and whose edges are parallel to the text view's coordinate system axes.
+//
+// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444525-simplerectangulartextcontainer?language=objc for details.
+func (x gen_NSTextContainer) IsSimpleRectangularTextContainer() bool {
+	ret := C.NSTextContainer_inst_IsSimpleRectangularTextContainer(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return convertObjCBoolToGo(ret)
+}
+
 type NSTextFieldRef interface {
 	Pointer() uintptr
 	Init_AsNSTextField() NSTextField
@@ -18209,282 +18418,6 @@ func (x gen_NSTextField) SetDelegate(
 	)
 
 	return
-}
-
-type NSTextContainerRef interface {
-	Pointer() uintptr
-	Init_AsNSTextContainer() NSTextContainer
-}
-
-type gen_NSTextContainer struct {
-	objc.Object
-}
-
-func NSTextContainer_FromPointer(ptr unsafe.Pointer) NSTextContainer {
-	return NSTextContainer{gen_NSTextContainer{
-		objc.Object_FromPointer(ptr),
-	}}
-}
-
-func NSTextContainer_FromRef(ref objc.Ref) NSTextContainer {
-	return NSTextContainer_FromPointer(unsafe.Pointer(ref.Pointer()))
-}
-
-// InitWithSize initializes a text container with a specified bounding rectangle.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444529-initwithsize?language=objc for details.
-func (x gen_NSTextContainer) InitWithSize(
-	size core.NSSize,
-) NSTextContainer {
-	ret := C.NSTextContainer_inst_InitWithSize(
-		unsafe.Pointer(x.Pointer()),
-		*(*C.NSSize)(unsafe.Pointer(&size)),
-	)
-
-	return NSTextContainer_FromPointer(ret)
-}
-
-// ReplaceLayoutManager replaces the layout manager for the group of text system objects that contains the text container.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444545-replacelayoutmanager?language=objc for details.
-func (x gen_NSTextContainer) ReplaceLayoutManager(
-	newLayoutManager NSLayoutManagerRef,
-) {
-	C.NSTextContainer_inst_ReplaceLayoutManager(
-		unsafe.Pointer(x.Pointer()),
-		objc.RefPointer(newLayoutManager),
-	)
-
-	return
-}
-
-// Init initializes a new instance of the NSTextContainer class.
-func (x gen_NSTextContainer) Init() NSTextContainer {
-	ret := C.NSTextContainer_inst_Init(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return NSTextContainer_FromPointer(ret)
-}
-
-// Init_AsNSTextContainer is a typed version of Init.
-func (x gen_NSTextContainer) Init_AsNSTextContainer() NSTextContainer {
-	ret := C.NSTextContainer_inst_Init(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return NSTextContainer_FromPointer(ret)
-}
-
-// LayoutManager returns the text container’s layout manager.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444517-layoutmanager?language=objc for details.
-func (x gen_NSTextContainer) LayoutManager() NSLayoutManager {
-	ret := C.NSTextContainer_inst_LayoutManager(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return NSLayoutManager_FromPointer(ret)
-}
-
-// SetLayoutManager returns the text container’s layout manager.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444517-layoutmanager?language=objc for details.
-func (x gen_NSTextContainer) SetLayoutManager(
-	value NSLayoutManagerRef,
-) {
-	C.NSTextContainer_inst_SetLayoutManager(
-		unsafe.Pointer(x.Pointer()),
-		objc.RefPointer(value),
-	)
-
-	return
-}
-
-// TextView returns the text container’s text view.
-//
-// See https://developer.apple.com/documentation/appkit/nstextcontainer/1444537-textview?language=objc for details.
-func (x gen_NSTextContainer) TextView() NSTextView {
-	ret := C.NSTextContainer_inst_TextView(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return NSTextView_FromPointer(ret)
-}
-
-// SetTextView returns the text container’s text view.
-//
-// See https://developer.apple.com/documentation/appkit/nstextcontainer/1444537-textview?language=objc for details.
-func (x gen_NSTextContainer) SetTextView(
-	value NSTextViewRef,
-) {
-	C.NSTextContainer_inst_SetTextView(
-		unsafe.Pointer(x.Pointer()),
-		objc.RefPointer(value),
-	)
-
-	return
-}
-
-// Size returns the size of the text container’s bounding rectangle.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444553-size?language=objc for details.
-func (x gen_NSTextContainer) Size() core.NSSize {
-	ret := C.NSTextContainer_inst_Size(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return *(*core.NSSize)(unsafe.Pointer(&ret))
-}
-
-// SetSize returns the size of the text container’s bounding rectangle.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444553-size?language=objc for details.
-func (x gen_NSTextContainer) SetSize(
-	value core.NSSize,
-) {
-	C.NSTextContainer_inst_SetSize(
-		unsafe.Pointer(x.Pointer()),
-		*(*C.NSSize)(unsafe.Pointer(&value)),
-	)
-
-	return
-}
-
-// ExclusionPaths an array of path objects that represents the regions where text doesn’t display in the text container.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444569-exclusionpaths?language=objc for details.
-func (x gen_NSTextContainer) ExclusionPaths() core.NSArray {
-	ret := C.NSTextContainer_inst_ExclusionPaths(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return core.NSArray_FromPointer(ret)
-}
-
-// SetExclusionPaths an array of path objects that represents the regions where text doesn’t display in the text container.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444569-exclusionpaths?language=objc for details.
-func (x gen_NSTextContainer) SetExclusionPaths(
-	value core.NSArrayRef,
-) {
-	C.NSTextContainer_inst_SetExclusionPaths(
-		unsafe.Pointer(x.Pointer()),
-		objc.RefPointer(value),
-	)
-
-	return
-}
-
-// WidthTracksTextView returns a Boolean that controls whether the text container adjusts the width of its bounding rectangle when its text view resizes.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444563-widthtrackstextview?language=objc for details.
-func (x gen_NSTextContainer) WidthTracksTextView() bool {
-	ret := C.NSTextContainer_inst_WidthTracksTextView(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return convertObjCBoolToGo(ret)
-}
-
-// SetWidthTracksTextView returns a Boolean that controls whether the text container adjusts the width of its bounding rectangle when its text view resizes.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444563-widthtrackstextview?language=objc for details.
-func (x gen_NSTextContainer) SetWidthTracksTextView(
-	value bool,
-) {
-	C.NSTextContainer_inst_SetWidthTracksTextView(
-		unsafe.Pointer(x.Pointer()),
-		convertToObjCBool(value),
-	)
-
-	return
-}
-
-// HeightTracksTextView returns a Boolean that controls whether the text container adjusts the height of its bounding rectangle when its text view resizes.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444559-heighttrackstextview?language=objc for details.
-func (x gen_NSTextContainer) HeightTracksTextView() bool {
-	ret := C.NSTextContainer_inst_HeightTracksTextView(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return convertObjCBoolToGo(ret)
-}
-
-// SetHeightTracksTextView returns a Boolean that controls whether the text container adjusts the height of its bounding rectangle when its text view resizes.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444559-heighttrackstextview?language=objc for details.
-func (x gen_NSTextContainer) SetHeightTracksTextView(
-	value bool,
-) {
-	C.NSTextContainer_inst_SetHeightTracksTextView(
-		unsafe.Pointer(x.Pointer()),
-		convertToObjCBool(value),
-	)
-
-	return
-}
-
-// MaximumNumberOfLines returns the maximum number of lines that the text container can store.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444531-maximumnumberoflines?language=objc for details.
-func (x gen_NSTextContainer) MaximumNumberOfLines() core.NSUInteger {
-	ret := C.NSTextContainer_inst_MaximumNumberOfLines(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return core.NSUInteger(ret)
-}
-
-// SetMaximumNumberOfLines returns the maximum number of lines that the text container can store.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444531-maximumnumberoflines?language=objc for details.
-func (x gen_NSTextContainer) SetMaximumNumberOfLines(
-	value core.NSUInteger,
-) {
-	C.NSTextContainer_inst_SetMaximumNumberOfLines(
-		unsafe.Pointer(x.Pointer()),
-		C.ulong(value),
-	)
-
-	return
-}
-
-// LineFragmentPadding returns the value for the text inset within line fragment rectangles.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444527-linefragmentpadding?language=objc for details.
-func (x gen_NSTextContainer) LineFragmentPadding() core.CGFloat {
-	ret := C.NSTextContainer_inst_LineFragmentPadding(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return core.CGFloat(ret)
-}
-
-// SetLineFragmentPadding returns the value for the text inset within line fragment rectangles.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444527-linefragmentpadding?language=objc for details.
-func (x gen_NSTextContainer) SetLineFragmentPadding(
-	value core.CGFloat,
-) {
-	C.NSTextContainer_inst_SetLineFragmentPadding(
-		unsafe.Pointer(x.Pointer()),
-		C.double(value),
-	)
-
-	return
-}
-
-// IsSimpleRectangularTextContainer returns a Boolean that indicates whether the text container’s region is a rectangle with no holes or gaps, and whose edges are parallel to the text view's coordinate system axes.
-//
-// See https://developer.apple.com/documentation/uikit/nstextcontainer/1444525-simplerectangulartextcontainer?language=objc for details.
-func (x gen_NSTextContainer) IsSimpleRectangularTextContainer() bool {
-	ret := C.NSTextContainer_inst_IsSimpleRectangularTextContainer(
-		unsafe.Pointer(x.Pointer()),
-	)
-
-	return convertObjCBoolToGo(ret)
 }
 
 type NSViewControllerRef interface {

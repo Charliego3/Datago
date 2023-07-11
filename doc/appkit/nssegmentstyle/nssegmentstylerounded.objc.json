@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentstyle/nssegmentstylerounded?language=objc",
+  "Title": "NSSegmentStyleRounded",
+  "Type": "Enumeration Case",
+  "Description": "The control is displayed using the rounded style.",
+  "Declaration": "NSSegmentStyleRounded = 1",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.5+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:16:52.188346+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1525743-superscript?language=objc",
+  "Title": "superscript:",
+  "Type": "Instance Method",
+  "Description": "This action method applies a superscript attribute to selected text (or all text if the receiver is a plain text object), raising its baseline offset by a predefined amount.",
+  "Declaration": "- (void)superscript:(id)sender;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:13.801302+08:00",
+  "LastVersion": 2
+}

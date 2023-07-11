@@ -1,0 +1,21 @@
+{
+  "Path": "/documentation/uikit/nstextalignment?language=objc",
+  "Title": "",
+  "Type": "Enumeration",
+  "Description": "Constants that specify text alignment.",
+  "Declaration": "typedef enum NSTextAlignment : NSInteger {\n    ...\n} NSTextAlignment;",
+  "Frameworks": null,
+  "Platforms": [
+    "iOS 6.0+",
+    "iPadOS 6.0+",
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+",
+    "tvOS 9.0+",
+    "watchOS 2.0+",
+    "visionOS 1.0+",
+    "Beta"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:35.737553+08:00",
+  "LastVersion": 2
+}

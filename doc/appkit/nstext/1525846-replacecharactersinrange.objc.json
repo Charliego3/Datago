@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1525846-replacecharactersinrange?language=objc",
+  "Title": "replaceCharactersInRange:withRTFD:",
+  "Type": "Instance Method",
+  "Description": "Replaces the characters in the given range with RTFD text interpreted from the given RTFD data.",
+  "Declaration": "- (void)replaceCharactersInRange:(NSRange)range \n                        withRTFD:(NSData *)rtfdData;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:44.557033+08:00",
+  "LastVersion": 2
+}

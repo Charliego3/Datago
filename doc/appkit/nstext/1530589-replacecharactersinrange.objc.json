@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1530589-replacecharactersinrange?language=objc",
+  "Title": "replaceCharactersInRange:withString:",
+  "Type": "Instance Method",
+  "Description": "Replaces the characters in the given range with those in the given string.",
+  "Declaration": "- (void)replaceCharactersInRange:(NSRange)range \n                      withString:(NSString *)string;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:44.938825+08:00",
+  "LastVersion": 2
+}

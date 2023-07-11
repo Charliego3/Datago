@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519991-valid?language=objc",
+  "Title": "valid",
+  "Type": "Instance Property",
+  "Description": "A Boolean value that indicates whether it is possible to draw an image representation.",
+  "Declaration": "@property(getter=isValid, readonly) BOOL valid;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:59:34.142783+08:00",
+  "LastVersion": 2
+}

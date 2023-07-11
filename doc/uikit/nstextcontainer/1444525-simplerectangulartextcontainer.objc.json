@@ -1,0 +1,20 @@
+{
+  "Path": "/documentation/uikit/nstextcontainer/1444525-simplerectangulartextcontainer?language=objc",
+  "Title": "simpleRectangularTextContainer",
+  "Type": "Instance Property",
+  "Description": "A Boolean that indicates whether the text container’s region is a rectangle with no holes or gaps, and whose edges are parallel to the text view's coordinate system axes.",
+  "Declaration": "@property(getter=isSimpleRectangularTextContainer, readonly, nonatomic) BOOL simpleRectangularTextContainer;",
+  "Frameworks": null,
+  "Platforms": [
+    "iOS 9.0+",
+    "iPadOS 9.0+",
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+",
+    "tvOS 9.0+",
+    "visionOS 1.0+",
+    "Beta"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:29:35.182581+08:00",
+  "LastVersion": 2
+}

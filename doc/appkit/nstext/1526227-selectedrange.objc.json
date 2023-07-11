@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1526227-selectedrange?language=objc",
+  "Title": "selectedRange",
+  "Type": "Instance Property",
+  "Description": "The receiver’s characters within aRange.",
+  "Declaration": "@property NSRange selectedRange;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:42.130275+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519939-initwithcgimage?language=objc",
+  "Title": "initWithCGImage:size:",
+  "Type": "Instance Method",
+  "Description": "Creates a new image using the contents of the provided image.",
+  "Declaration": "- (instancetype)initWithCGImage:(CGImageRef)cgImage \n                           size:(NSSize)size;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.6+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T12:35:03.458074+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519863-drawinrect?language=objc",
+  "Title": "drawInRect:",
+  "Type": "Instance Method",
+  "Description": "Draws the image in the specified rectangle.",
+  "Declaration": "- (void)drawInRect:(NSRect)rect;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.9+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:58:35.391483+08:00",
+  "LastVersion": 2
+}

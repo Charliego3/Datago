@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1531003-richtext?language=objc",
+  "Title": "richText",
+  "Type": "Instance Property",
+  "Description": "A Boolean that controls whether the receiver allows the user to apply attributes to specific ranges of the text.",
+  "Declaration": "@property(getter=isRichText) BOOL richText;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:35.489538+08:00",
+  "LastVersion": 2
+}

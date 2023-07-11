@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519905-alignmentrect?language=objc",
+  "Title": "alignmentRect",
+  "Type": "Instance Property",
+  "Description": "A rectangle that you can use to position the image during layout.",
+  "Declaration": "@property NSRect alignmentRect;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.5+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:59:48.344325+08:00",
+  "LastVersion": 2
+}

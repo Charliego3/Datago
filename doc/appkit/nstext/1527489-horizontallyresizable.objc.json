@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1527489-horizontallyresizable?language=objc",
+  "Title": "horizontallyResizable",
+  "Type": "Instance Property",
+  "Description": "A Boolean that controls whether the receiver changes its width to fit the width of its text.",
+  "Declaration": "@property(getter=isHorizontallyResizable) BOOL horizontallyResizable;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:30.77893+08:00",
+  "LastVersion": 2
+}

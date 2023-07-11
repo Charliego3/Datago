@@ -1,0 +1,20 @@
+{
+  "Path": "/documentation/uikit/nstextcontainer/1444527-linefragmentpadding?language=objc",
+  "Title": "lineFragmentPadding",
+  "Type": "Instance Property",
+  "Description": "The value for the text inset within line fragment rectangles.",
+  "Declaration": "@property(nonatomic) CGFloat lineFragmentPadding;",
+  "Frameworks": null,
+  "Platforms": [
+    "iOS 7.0+",
+    "iPadOS 7.0+",
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+",
+    "tvOS 9.0+",
+    "visionOS 1.0+",
+    "Beta"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:29:31.065085+08:00",
+  "LastVersion": 2
+}

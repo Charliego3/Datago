@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentstyle/nssegmentstyletexturedsquare?language=objc",
+  "Title": "NSSegmentStyleTexturedSquare",
+  "Type": "Enumeration Case",
+  "Description": "The control is displayed using the textured square style.",
+  "Declaration": "NSSegmentStyleTexturedSquare = 4",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.5+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:17:01.504922+08:00",
+  "LastVersion": 2
+}

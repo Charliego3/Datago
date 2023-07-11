@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1528601-string?language=objc",
+  "Title": "string",
+  "Type": "Instance Property",
+  "Description": "The characters of the receiver’s text.",
+  "Declaration": "@property(copy) NSString *string;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:26.463955+08:00",
+  "LastVersion": 2
+}

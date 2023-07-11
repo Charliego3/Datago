@@ -57,8 +57,8 @@ func main() {
 			loadFile("api/appkit/nsstatusbarbutton.objc.json"),
 			loadFile("api/appkit/nsstatusitem.objc.json"),
 			loadFile("api/appkit/nstext.objc.json"),
-			loadFile("api/appkit/nstextfield.objc.json"),
 			loadFile("api/appkit/nstextcontainer.objc.json"),
+			loadFile("api/appkit/nstextfield.objc.json"),
 			loadFile("api/appkit/nsviewcontroller.objc.json"),
 			loadFile("api/appkit/nsvisualeffectview.objc.json"),
 			loadFile("api/appkit/nswindow.objc.json"),
@@ -69,6 +69,7 @@ func main() {
 			loadFile("api/appkit/nssplitviewcontroller.objc.json"),
 			loadFile("api/appkit/nstoolbaritem.objc.json"),
 			loadFile("api/appkit/nstoolbar.objc.json"),
+			// loadFile("api/appkit/nssegmentstyle.objc.json"),
 			loadFile("api/appkit/nssegmentedcell.objc.json"),
 			loadFile("api/appkit/nssegmentedcontrol.objc.json"),
 

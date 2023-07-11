@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519918-initwithcontentsoffile?language=objc",
+  "Title": "initWithContentsOfFile:",
+  "Type": "Instance Method",
+  "Description": "Initializes and returns an image object with the contents of the specified file.",
+  "Declaration": "- (instancetype)initWithContentsOfFile:(NSString *)fileName;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T12:34:57.738907+08:00",
+  "LastVersion": 2
+}

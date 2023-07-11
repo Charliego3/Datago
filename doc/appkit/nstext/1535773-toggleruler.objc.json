@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1535773-toggleruler?language=objc",
+  "Title": "toggleRuler:",
+  "Type": "Instance Method",
+  "Description": "This action method shows or hides the ruler, if the receiver is enclosed in a scroll view.",
+  "Declaration": "- (void)toggleRuler:(id)sender;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:37.751266+08:00",
+  "LastVersion": 2
+}

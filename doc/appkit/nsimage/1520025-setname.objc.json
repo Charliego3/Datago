@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1520025-setname?language=objc",
+  "Title": "setName:",
+  "Type": "Instance Method",
+  "Description": "Registers the image object under the specified name.",
+  "Declaration": "- (BOOL)setName:(NSImageName)string;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T12:34:45.737172+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1520059-backgroundcolor?language=objc",
+  "Title": "backgroundColor",
+  "Type": "Instance Property",
+  "Description": "The background color for the image.",
+  "Declaration": "@property(copy) NSColor *backgroundColor;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:59:40.981286+08:00",
+  "LastVersion": 2
+}

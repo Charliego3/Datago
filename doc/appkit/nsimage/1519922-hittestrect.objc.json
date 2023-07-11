@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519922-hittestrect?language=objc",
+  "Title": "hitTestRect:withImageDestinationRect:context:hints:flipped:",
+  "Type": "Instance Method",
+  "Description": "Returns whether the destination rectangle would intersect a non-transparent portion of the image.",
+  "Declaration": "- (BOOL)hitTestRect:(NSRect)testRectDestSpace \nwithImageDestinationRect:(NSRect)imageRectDestSpace \n            context:(NSGraphicsContext *)context \n              hints:(NSDictionary\u003cNSImageHintKey, id\u003e *)hints \n            flipped:(BOOL)flipped;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.6+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:00:04.475442+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentstyle/nssegmentstyleseparated?language=objc",
+  "Title": "NSSegmentStyleSeparated",
+  "Type": "Enumeration Case",
+  "Description": "The segments in the control are displayed very close to each other but not touching. For example, Safari in macOS 10.10 and later uses this style for the previous and next page segmented control.",
+  "Declaration": "NSSegmentStyleSeparated = 8",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.10+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:17:06.560047+08:00",
+  "LastVersion": 2
+}

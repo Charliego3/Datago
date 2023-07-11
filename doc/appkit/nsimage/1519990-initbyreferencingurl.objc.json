@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519990-initbyreferencingurl?language=objc",
+  "Title": "initByReferencingURL:",
+  "Type": "Instance Method",
+  "Description": "Initializes and returns an image object using the specified URL.",
+  "Declaration": "- (instancetype)initByReferencingURL:(NSURL *)url;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.2+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T12:34:53.455192+08:00",
+  "LastVersion": 2
+}

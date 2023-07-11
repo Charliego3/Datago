@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1534646-font?language=objc",
+  "Title": "font",
+  "Type": "Instance Property",
+  "Description": "The font of all the receiver’s text.",
+  "Declaration": "@property(strong) NSFont *font;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:01.685016+08:00",
+  "LastVersion": 2
+}

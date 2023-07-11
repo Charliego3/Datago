@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1531772-drawsbackground?language=objc",
+  "Title": "drawsBackground",
+  "Type": "Instance Property",
+  "Description": "A Boolean that controls whether the receiver draws its background.",
+  "Declaration": "@property BOOL drawsBackground;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:30.960144+08:00",
+  "LastVersion": 2
+}

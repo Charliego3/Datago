@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstextcontainer/1444567-containspoint?language=objc",
+  "Title": "containsPoint:",
+  "Type": "Instance Method",
+  "Description": "Queries whether a point lies within the text container’s region or on the region’s edge—not simply within its bounding rectangle.",
+  "Declaration": "- (BOOL)containsPoint:(NSPoint)point;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0–10.11",
+    "Deprecated"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:29:37.736746+08:00",
+  "LastVersion": 2
+}

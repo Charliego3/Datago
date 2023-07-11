@@ -24,16 +24,23 @@ func main() {
 		rootView := cocoa.NSView_Init(frame)
 		rootView.AddSubview(tempView)
 
-		cocoa.NSSegmentedControl_Alloc().Init_AsNSSegmentedControl()
+		imageSidebar := cocoa.NSImage_ImageWithSystemSymbolNameAccessibilityDescription(core.String("sidebar.leading"), core.String("sidebar"))
+		// segmented := cocoa.NSSegmentedControlWithIamges(func(_ objc.Object) {
+
+		// }, imageSidebar)
+
+		iamgeView := cocoa.NSImageView_ImageViewWithImage(imageSidebar)
+		view := cocoa.NSView_Init(frame)
+		view.AddSubview(iamgeView)
 
 		controller := cocoa.NSSplitViewController_Alloc().Init_AsNSSplitViewController()
 		controller.SetMinimumThicknessForInlineSidebars(300)
 		sidebarViewController := cocoa.NSViewController_New()
-		sidebarViewController.SetView(rootView)
+		sidebarViewController.SetView(view)
 		controller.AddSplitViewItem(cocoa.NSSplitViewItem_SidebarWithViewController(sidebarViewController))
 
 		contentViewController := cocoa.NSViewController_New()
-		contentViewController.SetView(cocoa.NSView_Init(frame))
+		contentViewController.SetView(view)
 		controller.AddSplitViewItem(cocoa.NSSplitViewItem_SplitViewItemWithViewController(contentViewController))
 
 		toolbar := cocoa.NSToolbar_Alloc().Init_AsNSToolbar()

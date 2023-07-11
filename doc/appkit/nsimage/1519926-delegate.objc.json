@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519926-delegate?language=objc",
+  "Title": "delegate",
+  "Type": "Instance Property",
+  "Description": "The image’s delegate object.",
+  "Declaration": "@property(weak) id\u003cNSImageDelegate\u003e delegate;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:58:11.119037+08:00",
+  "LastVersion": 2
+}

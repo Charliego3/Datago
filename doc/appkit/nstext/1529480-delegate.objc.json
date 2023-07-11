@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1529480-delegate?language=objc",
+  "Title": "delegate",
+  "Type": "Instance Property",
+  "Description": "The receiver’s delegate.",
+  "Declaration": "@property(assign) id\u003cNSTextDelegate\u003e delegate;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:35.301134+08:00",
+  "LastVersion": 2
+}

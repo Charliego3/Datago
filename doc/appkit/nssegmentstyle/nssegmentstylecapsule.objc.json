@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentstyle/nssegmentstylecapsule?language=objc",
+  "Title": "NSSegmentStyleCapsule",
+  "Type": "Enumeration Case",
+  "Description": "The control is displayed using the capsule style. In macOS 10.7 and later, this style uses the artwork defined for NSSegmentStyleTexturedSquare, so you should specify NSSegmentStyleTexturedSquare instead.",
+  "Declaration": "NSSegmentStyleCapsule = 5",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.5+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:17:02.967213+08:00",
+  "LastVersion": 2
+}

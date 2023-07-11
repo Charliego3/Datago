@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519884-name?language=objc",
+  "Title": "name",
+  "Type": "Instance Method",
+  "Description": "Returns the name associated with the image, if any.",
+  "Declaration": "- (NSImageName)name;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T12:34:45.763695+08:00",
+  "LastVersion": 2
+}

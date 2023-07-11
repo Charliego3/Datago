@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1525497-copy?language=objc",
+  "Title": "copy:",
+  "Type": "Instance Method",
+  "Description": "This action method copies the selected text onto the general pasteboard, in as many formats as the receiver supports.",
+  "Declaration": "- (void)copy:(id)sender;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:47.301059+08:00",
+  "LastVersion": 2
+}

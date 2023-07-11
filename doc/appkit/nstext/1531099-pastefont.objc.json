@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1531099-pastefont?language=objc",
+  "Title": "pasteFont:",
+  "Type": "Instance Method",
+  "Description": "This action method pastes font information from the font pasteboard onto the selected text or insertion point of a rich text object, or over all text of a plain text object.",
+  "Declaration": "- (void)pasteFont:(id)sender;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:52.810927+08:00",
+  "LastVersion": 2
+}

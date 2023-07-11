@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentstyle/nssegmentstyleroundrect?language=objc",
+  "Title": "NSSegmentStyleRoundRect",
+  "Type": "Enumeration Case",
+  "Description": "The control is displayed using the round rect style.",
+  "Declaration": "NSSegmentStyleRoundRect = 3",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.5+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:16:52.188381+08:00",
+  "LastVersion": 2
+}

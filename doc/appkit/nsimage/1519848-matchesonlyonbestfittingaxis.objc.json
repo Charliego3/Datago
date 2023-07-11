@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519848-matchesonlyonbestfittingaxis?language=objc",
+  "Title": "matchesOnlyOnBestFittingAxis",
+  "Type": "Instance Property",
+  "Description": "A Boolean value that indicates whether the image matches only on the best fitting axis.",
+  "Declaration": "@property BOOL matchesOnlyOnBestFittingAxis;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.7+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:00:13.255603+08:00",
+  "LastVersion": 2
+}
