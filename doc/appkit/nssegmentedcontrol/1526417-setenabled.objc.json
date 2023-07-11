@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/1526417-setenabled?language=objc",
+  "Title": "setEnabled:forSegment:",
+  "Type": "Instance Method",
+  "Description": "Sets the enabled state of the specified segment",
+  "Declaration": "- (void)setEnabled:(BOOL)enabled \n        forSegment:(NSInteger)segment;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:28:08.430492+08:00",
+  "LastVersion": 2
+}

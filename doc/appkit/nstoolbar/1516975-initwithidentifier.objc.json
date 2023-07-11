@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbar/1516975-initwithidentifier?language=objc",
+  "Title": "initWithIdentifier:",
+  "Type": "Instance Method",
+  "Description": "Creates a newly allocated toolbar with the specified identifier.",
+  "Declaration": "- (instancetype)initWithIdentifier:(NSToolbarIdentifier)identifier;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:28:51.460339+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcell/1500206-isenabledforsegment?language=objc",
+  "Title": "isEnabledForSegment:",
+  "Type": "Instance Method",
+  "Description": "Returns a Boolean value indicating whether the specified segment is enabled.",
+  "Declaration": "- (BOOL)isEnabledForSegment:(NSInteger)segment;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:28:55.329064+08:00",
+  "LastVersion": 2
+}

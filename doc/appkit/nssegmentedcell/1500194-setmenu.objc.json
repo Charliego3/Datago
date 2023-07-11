@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcell/1500194-setmenu?language=objc",
+  "Title": "setMenu:forSegment:",
+  "Type": "Instance Method",
+  "Description": "Sets the menu for the specified segment.",
+  "Declaration": "- (void)setMenu:(NSMenu *)menu \n     forSegment:(NSInteger)segment;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:28:59.181095+08:00",
+  "LastVersion": 2
+}

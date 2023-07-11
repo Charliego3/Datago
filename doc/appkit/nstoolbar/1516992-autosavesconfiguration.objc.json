@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbar/1516992-autosavesconfiguration?language=objc",
+  "Title": "autosavesConfiguration",
+  "Type": "Instance Property",
+  "Description": "A Boolean value that indicates whether the toolbar autosaves its configuration.",
+  "Declaration": "@property BOOL autosavesConfiguration;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:29:19.401729+08:00",
+  "LastVersion": 2
+}

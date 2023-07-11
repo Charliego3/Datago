@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbar/3969238-centereditemidentifiers?language=objc",
+  "Title": "centeredItemIdentifiers",
+  "Type": "Instance Property",
+  "Description": "The set of custom items to display in the center of the toolbar.",
+  "Declaration": "@property(copy) NSSet\u003cNSToolbarItemIdentifier\u003e *centeredItemIdentifiers;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 13.0+",
+    "Mac Catalyst 16.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:29:11.139009+08:00",
+  "LastVersion": 2
+}

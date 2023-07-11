@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbaritem/3237224-bordered?language=objc",
+  "Title": "bordered",
+  "Type": "Instance Property",
+  "Description": "A Boolean value that indicates whether the toolbar item has a bordered style.",
+  "Declaration": "@property(getter=isBordered) BOOL bordered;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.15+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:30:13.586529+08:00",
+  "LastVersion": 2
+}

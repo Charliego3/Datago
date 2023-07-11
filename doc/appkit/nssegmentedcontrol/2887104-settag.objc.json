@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/2887104-settag?language=objc",
+  "Title": "setTag:forSegment:",
+  "Type": "Instance Method",
+  "Description": "",
+  "Declaration": "- (void)setTag:(NSInteger)tag \n    forSegment:(NSInteger)segment;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.13+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:28:13.477883+08:00",
+  "LastVersion": 2
+}

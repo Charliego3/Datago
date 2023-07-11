@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbaritem/1525723-action?language=objc",
+  "Title": "action",
+  "Type": "Instance Property",
+  "Description": "The action method to call when someone clicks on the toolbar item.",
+  "Declaration": "@property SEL action;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:30:08.469062+08:00",
+  "LastVersion": 2
+}

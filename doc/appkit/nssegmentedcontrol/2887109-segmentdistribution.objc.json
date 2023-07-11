@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/2887109-segmentdistribution?language=objc",
+  "Title": "segmentDistribution",
+  "Type": "Instance Property",
+  "Description": "",
+  "Declaration": "@property NSSegmentDistribution segmentDistribution;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.13+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:59.03265+08:00",
+  "LastVersion": 2
+}

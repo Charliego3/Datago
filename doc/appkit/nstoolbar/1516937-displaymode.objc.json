@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbar/1516937-displaymode?language=objc",
+  "Title": "displayMode",
+  "Type": "Instance Property",
+  "Description": "A value that indicates whether the toolbar displays items using a name, icon, or combination of elements.",
+  "Declaration": "@property NSToolbarDisplayMode displayMode;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:28:58.802577+08:00",
+  "LastVersion": 2
+}

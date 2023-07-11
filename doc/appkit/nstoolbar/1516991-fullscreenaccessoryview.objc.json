@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbar/1516991-fullscreenaccessoryview?language=objc",
+  "Title": "fullScreenAccessoryView",
+  "Type": "Instance Property",
+  "Description": "The toolbar’s full screen accessory view.",
+  "Declaration": "@property(strong) NSView *fullScreenAccessoryView;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.7–10.13",
+    "Deprecated"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:29:29.262093+08:00",
+  "LastVersion": 2
+}

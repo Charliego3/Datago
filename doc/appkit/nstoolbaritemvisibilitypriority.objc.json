@@ -1,0 +1,36 @@
+{
+  "Path": "/documentation/appkit/nstoolbaritemvisibilitypriority?language=objc",
+  "Title": "NSToolbarItemVisibilityPriority",
+  "Type": "Type Alias",
+  "Description": "Constants that indicate which toolbar items to keep in the toolbar when space is limited.",
+  "Declaration": "typedef NSInteger NSToolbarItemVisibilityPriority;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.13+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": [
+    {
+      "Section": "Visibility priorities",
+      "Name": "NSToolbarItemVisibilityPriorityStandard",
+      "Path": "/documentation/appkit/nstoolbaritemvisibilityprioritystandard?language=objc"
+    },
+    {
+      "Section": "Visibility priorities",
+      "Name": "NSToolbarItemVisibilityPriorityLow",
+      "Path": "/documentation/appkit/nstoolbaritemvisibilityprioritylow?language=objc"
+    },
+    {
+      "Section": "Visibility priorities",
+      "Name": "NSToolbarItemVisibilityPriorityHigh",
+      "Path": "/documentation/appkit/nstoolbaritemvisibilitypriorityhigh?language=objc"
+    },
+    {
+      "Section": "Visibility priorities",
+      "Name": "NSToolbarItemVisibilityPriorityUser",
+      "Path": "/documentation/appkit/nstoolbaritemvisibilitypriorityuser?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-10T10:30:23.214325+08:00",
+  "LastVersion": 2
+}

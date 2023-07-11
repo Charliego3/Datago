@@ -1,0 +1,43 @@
+{
+  "Path": "/documentation/appkit/nssplitviewcontroller/protocol_implementations?language=objc",
+  "Title": "Protocol Implementations",
+  "Type": "API Collection",
+  "Description": "Access the split view controller’s implementations of protocol methods.",
+  "Declaration": "",
+  "Frameworks": null,
+  "Platforms": null,
+  "Topics": [
+    {
+      "Section": "Configuring and Drawing View Dividers",
+      "Name": "- splitView:effectiveRect:forDrawnRect:ofDividerAtIndex:",
+      "Path": "/documentation/appkit/nssplitviewcontroller/1388897-splitview?language=objc"
+    },
+    {
+      "Section": "Configuring and Drawing View Dividers",
+      "Name": "- splitView:shouldHideDividerAtIndex:",
+      "Path": "/documentation/appkit/nssplitviewcontroller/1388882-splitview?language=objc"
+    },
+    {
+      "Section": "Configuring and Drawing View Dividers",
+      "Name": "- splitView:additionalEffectiveRectOfDividerAtIndex:",
+      "Path": "/documentation/appkit/nssplitviewcontroller/1388922-splitview?language=objc"
+    },
+    {
+      "Section": "Managing Subviews",
+      "Name": "- splitView:canCollapseSubview:",
+      "Path": "/documentation/appkit/nssplitviewcontroller/1388861-splitview?language=objc"
+    },
+    {
+      "Section": "Managing Subviews",
+      "Name": "- splitView:shouldCollapseSubview:forDoubleClickOnDividerAtIndex:",
+      "Path": "/documentation/appkit/nssplitviewcontroller/1388909-splitview?language=objc"
+    },
+    {
+      "Section": "Validating User Interface Items",
+      "Name": "- validateUserInterfaceItem:",
+      "Path": "/documentation/appkit/nssplitviewcontroller/2881936-validateuserinterfaceitem?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-10T09:54:57.908028+08:00",
+  "LastVersion": 2
+}

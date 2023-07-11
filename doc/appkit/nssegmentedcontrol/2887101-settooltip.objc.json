@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/2887101-settooltip?language=objc",
+  "Title": "setToolTip:forSegment:",
+  "Type": "Instance Method",
+  "Description": "",
+  "Declaration": "- (void)setToolTip:(NSString *)toolTip \n        forSegment:(NSInteger)segment;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.13+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:28:14.222863+08:00",
+  "LastVersion": 2
+}

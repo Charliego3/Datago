@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcell/1500198-interiorbackgroundstyleforsegmen?language=objc",
+  "Title": "interiorBackgroundStyleForSegment:",
+  "Type": "Instance Method",
+  "Description": "Returns the interior background style for the specified segment.",
+  "Declaration": "- (NSBackgroundStyle)interiorBackgroundStyleForSegment:(NSInteger)segment;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.5+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:29:07.35588+08:00",
+  "LastVersion": 2
+}

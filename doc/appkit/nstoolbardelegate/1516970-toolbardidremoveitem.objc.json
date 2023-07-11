@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbardelegate/1516970-toolbardidremoveitem?language=objc",
+  "Title": "toolbarDidRemoveItem:",
+  "Type": "Instance Method",
+  "Description": "Tells the delegate that the toolbar removed the specified item.",
+  "Declaration": "- (void)toolbarDidRemoveItem:(NSNotification *)notification;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:57:44.137435+08:00",
+  "LastVersion": 2
+}

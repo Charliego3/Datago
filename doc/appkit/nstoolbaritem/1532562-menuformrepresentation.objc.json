@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstoolbaritem/1532562-menuformrepresentation?language=objc",
+  "Title": "menuFormRepresentation",
+  "Type": "Instance Property",
+  "Description": "The menu item to use when the toolbar item is in the overflow menu.",
+  "Declaration": "@property(strong) NSMenuItem *menuFormRepresentation;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:30:10.802695+08:00",
+  "LastVersion": 2
+}

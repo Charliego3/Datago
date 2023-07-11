@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbaritem/1524627-tooltip?language=objc",
+  "Title": "toolTip",
+  "Type": "Instance Property",
+  "Description": "The tooltip to display when someone hovers over the item in the toolbar.",
+  "Declaration": "@property(copy) NSString *toolTip;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:30:03.114616+08:00",
+  "LastVersion": 2
+}

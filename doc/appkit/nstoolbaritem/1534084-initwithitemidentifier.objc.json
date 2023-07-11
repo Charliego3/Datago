@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbaritem/1534084-initwithitemidentifier?language=objc",
+  "Title": "initWithItemIdentifier:",
+  "Type": "Instance Method",
+  "Description": "Creates a toolbar item with the specified identifier.",
+  "Declaration": "- (instancetype)initWithItemIdentifier:(NSToolbarItemIdentifier)itemIdentifier;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:29:52.121176+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/1526285-trackingmode?language=objc",
+  "Title": "trackingMode",
+  "Type": "Instance Property",
+  "Description": "The type of tracking behavior the control exhibits.",
+  "Declaration": "@property NSSegmentSwitchTracking trackingMode;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:19.133871+08:00",
+  "LastVersion": 2
+}

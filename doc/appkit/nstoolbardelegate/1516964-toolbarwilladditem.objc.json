@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbardelegate/1516964-toolbarwilladditem?language=objc",
+  "Title": "toolbarWillAddItem:",
+  "Type": "Instance Method",
+  "Description": "Tells the delegate that the toolbar is about to add the specified item.",
+  "Declaration": "- (void)toolbarWillAddItem:(NSNotification *)notification;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:57:44.137395+08:00",
+  "LastVersion": 2
+}

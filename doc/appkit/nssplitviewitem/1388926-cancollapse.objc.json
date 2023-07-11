@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssplitviewitem/1388926-cancollapse?language=objc",
+  "Title": "canCollapse",
+  "Type": "Instance Property",
+  "Description": "A Boolean value that determines whether a user interaction can collapse the child view controller that corresponds to the split view item.",
+  "Declaration": "@property BOOL canCollapse;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.10+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T09:55:59.238564+08:00",
+  "LastVersion": 2
+}

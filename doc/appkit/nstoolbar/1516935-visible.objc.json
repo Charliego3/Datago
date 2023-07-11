@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbar/1516935-visible?language=objc",
+  "Title": "visible",
+  "Type": "Instance Property",
+  "Description": "A Boolean value that indicates whether the toolbar is visible.",
+  "Declaration": "@property(getter=isVisible) BOOL visible;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:28:58.790823+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/1525540-setimage?language=objc",
+  "Title": "setImage:forSegment:",
+  "Type": "Instance Method",
+  "Description": "Sets the image for the specified segment.",
+  "Declaration": "- (void)setImage:(NSImage *)image \n      forSegment:(NSInteger)segment;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:34.589344+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssplitviewcontroller/1388874-viewdidload?language=objc",
+  "Title": "viewDidLoad",
+  "Type": "Instance Method",
+  "Description": "Configures the split view controller after its view loads into memory.",
+  "Declaration": "- (void)viewDidLoad;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.10+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T09:54:52.763218+08:00",
+  "LastVersion": 2
+}

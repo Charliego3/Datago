@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbar/2873241-init?language=objc",
+  "Title": "init",
+  "Type": "Instance Method",
+  "Description": "Creates a new toolbar with an empty identifier string.",
+  "Declaration": "- (instancetype)init;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.13+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:28:51.460361+08:00",
+  "LastVersion": 2
+}

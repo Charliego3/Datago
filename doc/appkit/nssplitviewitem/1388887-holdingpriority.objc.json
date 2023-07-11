@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssplitviewitem/1388887-holdingpriority?language=objc",
+  "Title": "holdingPriority",
+  "Type": "Instance Property",
+  "Description": "The priority for a split view item to hold its size.",
+  "Declaration": "@property NSLayoutPriority holdingPriority;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.10+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T09:55:53.383034+08:00",
+  "LastVersion": 2
+}

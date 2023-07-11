@@ -27,6 +27,13 @@
             "program": "${workspaceFolder}/build/bin/datago",
             "preLaunchTask": "build dev",
             "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "MacDriver: main",
+            "type": "go",
+            "request": "launch",
+            "program": "${workspaceFolder}/app",
+            "cwd": "${workspaceFolder}"
         }
     ]
 }

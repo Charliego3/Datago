@@ -1,0 +1,187 @@
+{
+  "Class": {
+    "Name": "NSSplitViewController",
+    "Description": "An object that manages an array of adjacent child views, and has a split view object for managing dividers between those views.",
+    "Declaration": "@interface NSSplitViewController : NSViewController",
+    "Platforms": [
+      "macOS 10.10+"
+    ],
+    "TopicURL": "https://developer.apple.com/documentation/appkit/nssplitviewcontroller?language=objc",
+    "InstanceMethods": [
+      {
+        "Name": "splitViewItemForViewController:",
+        "Description": "Returns the corresponding split view item for the specified child view controller of the split view controller.",
+        "Declaration": "- (NSSplitViewItem *)splitViewItemForViewController:(NSViewController *)viewController;",
+        "Return": {
+          "Name": "NSSplitViewItem",
+          "IsPtr": true
+        },
+        "Args": [
+          {
+            "Name": "viewController",
+            "Type": {
+              "Name": "NSViewController",
+              "IsPtr": true
+            }
+          }
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssplitviewcontroller/1388857-splitviewitemforviewcontroller?language=objc"
+      },
+      {
+        "Name": "addSplitViewItem:",
+        "Description": "Adds a split view item to the end of the array of split view items.",
+        "Declaration": "- (void)addSplitViewItem:(NSSplitViewItem *)splitViewItem;",
+        "Return": {
+          "Name": "void"
+        },
+        "Args": [
+          {
+            "Name": "splitViewItem",
+            "Type": {
+              "Name": "NSSplitViewItem",
+              "IsPtr": true
+            }
+          }
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssplitviewcontroller/1388928-addsplitviewitem?language=objc"
+      },
+      {
+        "Name": "insertSplitViewItem:atIndex:",
+        "Description": "Adds a split view item to the array of split view items at the specified index position.",
+        "Declaration": "- (void)insertSplitViewItem:(NSSplitViewItem *)splitViewItem \n                    atIndex:(NSInteger)index;\n",
+        "Return": {
+          "Name": "void"
+        },
+        "Args": [
+          {
+            "Name": "splitViewItem",
+            "Type": {
+              "Name": "NSSplitViewItem",
+              "IsPtr": true
+            }
+          },
+          {
+            "Name": "index",
+            "Type": {
+              "Name": "NSInteger"
+            }
+          }
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssplitviewcontroller/1388886-insertsplitviewitem?language=objc"
+      },
+      {
+        "Name": "removeSplitViewItem:",
+        "Description": "Removes a specified split view item from the split view controller.",
+        "Declaration": "- (void)removeSplitViewItem:(NSSplitViewItem *)splitViewItem;",
+        "Return": {
+          "Name": "void"
+        },
+        "Args": [
+          {
+            "Name": "splitViewItem",
+            "Type": {
+              "Name": "NSSplitViewItem",
+              "IsPtr": true
+            }
+          }
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssplitviewcontroller/1388903-removesplitviewitem?language=objc"
+      },
+      {
+        "Name": "toggleSidebar:",
+        "Description": "Collapses or expands the first sidebar in the split view controller using an animation.",
+        "Declaration": "- (IBAction)toggleSidebar:(id)sender;",
+        "Return": {
+          "Name": "IBAction"
+        },
+        "Args": [
+          {
+            "Name": "sender",
+            "Type": {
+              "Name": "id"
+            }
+          }
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssplitviewcontroller/1388905-togglesidebar?language=objc"
+      },
+      {
+        "Name": "toggleInspector:",
+        "Description": "",
+        "Declaration": "- (IBAction)toggleInspector:(id)sender;",
+        "Return": {
+          "Name": "IBAction"
+        },
+        "Args": [
+          {
+            "Name": "sender",
+            "Type": {
+              "Name": "id"
+            }
+          }
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssplitviewcontroller/4179465-toggleinspector?language=objc"
+      },
+      {
+        "Name": "viewDidLoad",
+        "Description": "Configures the split view controller after its view loads into memory.",
+        "Declaration": "- (void)viewDidLoad;",
+        "Return": {
+          "Name": "void"
+        },
+        "Args": null,
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssplitviewcontroller/1388874-viewdidload?language=objc"
+      }
+    ],
+    "InstanceProperties": [
+      {
+        "Name": "splitView",
+        "Description": "The split view that the split view controller manages.",
+        "Declaration": "@property(strong) NSSplitView *splitView;",
+        "Type": {
+          "Name": "NSSplitView",
+          "IsPtr": true
+        },
+        "Attrs": {
+          "strong": true
+        },
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssplitviewcontroller/1388907-splitview?language=objc"
+      },
+      {
+        "Name": "splitViewItems",
+        "Description": "The array of split view items that correspond to the split view controller’s child view controllers.",
+        "Declaration": "@property(copy) NSArray\u003c__kindof NSSplitViewItem *\u003e *splitViewItems;",
+        "Type": {
+          "Name": "NSArray",
+          "IsPtr": true,
+          "Params": [
+            {
+              "Name": "NSSplitViewItem",
+              "IsPtr": true,
+              "Annotations": [
+                "__kindof"
+              ]
+            }
+          ]
+        },
+        "Attrs": {
+          "copy": true
+        },
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssplitviewcontroller/1388876-splitviewitems?language=objc"
+      },
+      {
+        "Name": "minimumThicknessForInlineSidebars",
+        "Description": "The minimum thickness for a sidebar before it automatically collapses.",
+        "Declaration": "@property CGFloat minimumThicknessForInlineSidebars;",
+        "Type": {
+          "Name": "CGFloat"
+        },
+        "Attrs": {},
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nssplitviewcontroller/1388863-minimumthicknessforinlinesidebar?language=objc"
+      }
+    ]
+  },
+  "APICollection": null,
+  "Kind": "class",
+  "PullDate": "2023-07-10T09:54:36.891192+08:00",
+  "Version": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/1525880-menuforsegment?language=objc",
+  "Title": "menuForSegment:",
+  "Type": "Instance Method",
+  "Description": "Returns the menu for the specified segment.",
+  "Declaration": "- (NSMenu *)menuForSegment:(NSInteger)segment;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:41.435111+08:00",
+  "LastVersion": 2
+}

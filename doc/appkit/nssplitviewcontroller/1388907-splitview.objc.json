@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssplitviewcontroller/1388907-splitview?language=objc",
+  "Title": "splitView",
+  "Type": "Instance Property",
+  "Description": "The split view that the split view controller manages.",
+  "Declaration": "@property(strong) NSSplitView *splitView;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.10+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T09:54:41.132423+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcell/1500196-selectsegmentwithtag?language=objc",
+  "Title": "selectSegmentWithTag:",
+  "Type": "Instance Method",
+  "Description": "Selects the segment with the specified tag.",
+  "Declaration": "- (BOOL)selectSegmentWithTag:(NSInteger)tag;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.4+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:28:35.341881+08:00",
+  "LastVersion": 2
+}
