@@ -1,0 +1,220 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol?language=objc",
+  "Title": "NSSegmentedControl",
+  "Type": "Class",
+  "Description": "Display one or more buttons in a single horizontal group.",
+  "Declaration": "@interface NSSegmentedControl : NSControl",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.3+"
+  ],
+  "Topics": [
+    {
+      "Section": "Creating a Segmented Control",
+      "Name": "+ segmentedControlWithImages:trackingMode:target:action:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1644010-segmentedcontrolwithimages?language=objc"
+    },
+    {
+      "Section": "Creating a Segmented Control",
+      "Name": "+ segmentedControlWithLabels:trackingMode:target:action:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1644011-segmentedcontrolwithlabels?language=objc"
+    },
+    {
+      "Section": "Configuring the Cell",
+      "Name": "NSSegmentedCell",
+      "Path": "/documentation/appkit/nssegmentedcell?language=objc"
+    },
+    {
+      "Section": "Specifying the Segment Behavior",
+      "Name": "trackingMode",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1526285-trackingmode?language=objc"
+    },
+    {
+      "Section": "Specifying the Segment Behavior",
+      "Name": "NSSegmentSwitchTracking",
+      "Path": "/documentation/appkit/nssegmentswitchtracking?language=objc"
+    },
+    {
+      "Section": "Specifying the Segment Behavior",
+      "Name": "segmentStyle",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1528507-segmentstyle?language=objc"
+    },
+    {
+      "Section": "Specifying the Segment Behavior",
+      "Name": "NSSegmentStyle",
+      "Path": "/documentation/appkit/nssegmentstyle?language=objc"
+    },
+    {
+      "Section": "Specifying Number of Segments",
+      "Name": "segmentCount",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1527451-segmentcount?language=objc"
+    },
+    {
+      "Section": "Configuring the Segment Text",
+      "Name": "- labelForSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1524322-labelforsegment?language=objc"
+    },
+    {
+      "Section": "Configuring the Segment Text",
+      "Name": "- setLabel:forSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1533073-setlabel?language=objc"
+    },
+    {
+      "Section": "Configuring the Segment Text",
+      "Name": "- setAlignment:forSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2887107-setalignment?language=objc"
+    },
+    {
+      "Section": "Configuring the Segment Text",
+      "Name": "- alignmentForSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2887114-alignmentforsegment?language=objc"
+    },
+    {
+      "Section": "Configuring a Segment Image",
+      "Name": "- setImage:forSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1525540-setimage?language=objc"
+    },
+    {
+      "Section": "Configuring a Segment Image",
+      "Name": "- imageForSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1527623-imageforsegment?language=objc"
+    },
+    {
+      "Section": "Configuring a Segment Image",
+      "Name": "- setImageScaling:forSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1532914-setimagescaling?language=objc"
+    },
+    {
+      "Section": "Configuring a Segment Image",
+      "Name": "- imageScalingForSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1532175-imagescalingforsegment?language=objc"
+    },
+    {
+      "Section": "Configuring a Segment Menu",
+      "Name": "- setMenu:forSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1528853-setmenu?language=objc"
+    },
+    {
+      "Section": "Configuring a Segment Menu",
+      "Name": "- menuForSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1525880-menuforsegment?language=objc"
+    },
+    {
+      "Section": "Configuring a Segment Menu",
+      "Name": "- setShowsMenuIndicator:forSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2887112-setshowsmenuindicator?language=objc"
+    },
+    {
+      "Section": "Configuring a Segment Menu",
+      "Name": "- showsMenuIndicatorForSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2887111-showsmenuindicatorforsegment?language=objc"
+    },
+    {
+      "Section": "Configuring a Segment Menu",
+      "Name": "springLoaded",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1534122-springloaded?language=objc"
+    },
+    {
+      "Section": "Managing the Selected Segment",
+      "Name": "selectedSegment",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1534490-selectedsegment?language=objc"
+    },
+    {
+      "Section": "Managing the Selected Segment",
+      "Name": "indexOfSelectedItem",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2887105-indexofselecteditem?language=objc"
+    },
+    {
+      "Section": "Managing the Selected Segment",
+      "Name": "- selectSegmentWithTag:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1534016-selectsegmentwithtag?language=objc"
+    },
+    {
+      "Section": "Managing the Selected Segment",
+      "Name": "- setSelected:forSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1528334-setselected?language=objc"
+    },
+    {
+      "Section": "Managing the Selected Segment",
+      "Name": "- isSelectedForSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1525676-isselectedforsegment?language=objc"
+    },
+    {
+      "Section": "Managing the Selected Segment",
+      "Name": "selectedSegmentBezelColor",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2561002-selectedsegmentbezelcolor?language=objc"
+    },
+    {
+      "Section": "Managing the Selected Segment",
+      "Name": "doubleValueForSelectedSegment",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1529727-doublevalueforselectedsegment?language=objc"
+    },
+    {
+      "Section": "Adjusting the Segment Spacing",
+      "Name": "- setWidth:forSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1534487-setwidth?language=objc"
+    },
+    {
+      "Section": "Adjusting the Segment Spacing",
+      "Name": "- widthForSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1533866-widthforsegment?language=objc"
+    },
+    {
+      "Section": "Adjusting the Segment Spacing",
+      "Name": "segmentDistribution",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2887109-segmentdistribution?language=objc"
+    },
+    {
+      "Section": "Adjusting the Segment Spacing",
+      "Name": "NSSegmentDistribution",
+      "Path": "/documentation/appkit/nssegmentdistribution?language=objc"
+    },
+    {
+      "Section": "Adjusting the Segment Spacing",
+      "Name": "activeCompressionOptions",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2952062-activecompressionoptions?language=objc"
+    },
+    {
+      "Section": "Adjusting the Segment Spacing",
+      "Name": "- compressWithPrioritizedCompressionOptions:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2952064-compresswithprioritizedcompressi?language=objc"
+    },
+    {
+      "Section": "Adjusting the Segment Spacing",
+      "Name": "- minimumSizeWithPrioritizedCompressionOptions:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2952063-minimumsizewithprioritizedcompre?language=objc"
+    },
+    {
+      "Section": "Enabling and Disabling Segments",
+      "Name": "- setEnabled:forSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1526417-setenabled?language=objc"
+    },
+    {
+      "Section": "Enabling and Disabling Segments",
+      "Name": "- isEnabledForSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/1524542-isenabledforsegment?language=objc"
+    },
+    {
+      "Section": "Managing Tags and Tool Tips",
+      "Name": "- tagForSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2887113-tagforsegment?language=objc"
+    },
+    {
+      "Section": "Managing Tags and Tool Tips",
+      "Name": "- setTag:forSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2887104-settag?language=objc"
+    },
+    {
+      "Section": "Managing Tags and Tool Tips",
+      "Name": "- setToolTip:forSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2887101-settooltip?language=objc"
+    },
+    {
+      "Section": "Managing Tags and Tool Tips",
+      "Name": "- toolTipForSegment:",
+      "Path": "/documentation/appkit/nssegmentedcontrol/2887103-tooltipforsegment?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-11T11:27:13.786651+08:00",
+  "LastVersion": 2
+}

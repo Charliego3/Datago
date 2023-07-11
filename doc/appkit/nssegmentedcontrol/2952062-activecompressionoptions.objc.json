@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/2952062-activecompressionoptions?language=objc",
+  "Title": "activeCompressionOptions",
+  "Type": "Instance Property",
+  "Description": "",
+  "Declaration": "@property(readonly, copy) NSUserInterfaceCompressionOptions *activeCompressionOptions;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.13+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:28:04.032947+08:00",
+  "LastVersion": 2
+}

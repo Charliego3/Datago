@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssplitviewitem/1388885-preferredthicknessfraction?language=objc",
+  "Title": "preferredThicknessFraction",
+  "Type": "Instance Property",
+  "Description": "The preferred thickness of the split view item relative to the split view.",
+  "Declaration": "@property CGFloat preferredThicknessFraction;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.11+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T09:55:47.293178+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/2887114-alignmentforsegment?language=objc",
+  "Title": "alignmentForSegment:",
+  "Type": "Instance Method",
+  "Description": "",
+  "Declaration": "- (NSTextAlignment)alignmentForSegment:(NSInteger)segment;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.13+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:31.619137+08:00",
+  "LastVersion": 2
+}

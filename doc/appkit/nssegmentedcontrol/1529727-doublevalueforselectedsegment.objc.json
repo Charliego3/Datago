@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/1529727-doublevalueforselectedsegment?language=objc",
+  "Title": "doubleValueForSelectedSegment",
+  "Type": "Instance Property",
+  "Description": "When the tracking mode for the control is set to use a momentary accelerator, returns a value for the selected segment.",
+  "Declaration": "@property(readonly) double doubleValueForSelectedSegment;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:55.271411+08:00",
+  "LastVersion": 2
+}

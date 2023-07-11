@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbaritem/1525982-target?language=objc",
+  "Title": "target",
+  "Type": "Instance Property",
+  "Description": "The object that defines the action method the toolbar item calls when clicked.",
+  "Declaration": "@property(weak) id target;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:30:05.044979+08:00",
+  "LastVersion": 2
+}

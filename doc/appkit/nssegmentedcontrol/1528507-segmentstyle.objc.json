@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/1528507-segmentstyle?language=objc",
+  "Title": "segmentStyle",
+  "Type": "Instance Property",
+  "Description": "The visual style used to display the control.",
+  "Declaration": "@property NSSegmentStyle segmentStyle;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.5+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:23.972541+08:00",
+  "LastVersion": 2
+}

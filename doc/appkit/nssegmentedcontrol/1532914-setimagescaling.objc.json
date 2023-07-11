@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/1532914-setimagescaling?language=objc",
+  "Title": "setImageScaling:forSegment:",
+  "Type": "Instance Method",
+  "Description": "Sets the scaling mode used to display the specified segment’s image.",
+  "Declaration": "- (void)setImageScaling:(NSImageScaling)scaling \n             forSegment:(NSInteger)segment;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.5+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:37.033364+08:00",
+  "LastVersion": 2
+}

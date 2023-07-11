@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcell/1500202-setwidth?language=objc",
+  "Title": "setWidth:forSegment:",
+  "Type": "Instance Method",
+  "Description": "Sets the width of the specified segment.",
+  "Declaration": "- (void)setWidth:(CGFloat)width \n      forSegment:(NSInteger)segment;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:28:52.655724+08:00",
+  "LastVersion": 2
+}

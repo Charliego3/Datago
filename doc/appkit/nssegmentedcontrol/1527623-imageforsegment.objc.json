@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/1527623-imageforsegment?language=objc",
+  "Title": "imageForSegment:",
+  "Type": "Instance Method",
+  "Description": "Returns the image associated with the specified segment.",
+  "Declaration": "- (NSImage *)imageForSegment:(NSInteger)segment;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:35.443097+08:00",
+  "LastVersion": 2
+}

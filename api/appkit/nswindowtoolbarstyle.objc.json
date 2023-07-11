@@ -1,0 +1,70 @@
+{
+  "Enum": {
+    "Name": "NSWindowToolbarStyle",
+    "Description": "Styles that determine the appearance and location of the toolbar in relation to the title bar.",
+    "Declaration": "typedef enum NSWindowToolbarStyle : NSInteger {\n    ...\n} NSWindowToolbarStyle;",
+    "Platforms": [
+      "macOS 11.0+"
+    ],
+    "TopicURL": "https://developer.apple.com/documentation/appkit/nswindowtoolbarstyle?language=objc",
+    "Type": {
+      "Name": "NSInteger"
+    },
+    "Cases": [
+      {
+        "Name": "NSWindowToolbarStyleAutomatic",
+        "Description": "A style indicating that the system determines the toolbar’s appearance and location.",
+        "Declaration": "NSWindowToolbarStyleAutomatic",
+        "Platforms": [
+          "macOS 11.0+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nswindowtoolbarstyle/nswindowtoolbarstyleautomatic?language=objc",
+        "Type": {}
+      },
+      {
+        "Name": "NSWindowToolbarStyleExpanded",
+        "Description": "A style indicating that the toolbar appears below the window title.",
+        "Declaration": "NSWindowToolbarStyleExpanded",
+        "Platforms": [
+          "macOS 11.0+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nswindowtoolbarstyle/nswindowtoolbarstyleexpanded?language=objc",
+        "Type": {}
+      },
+      {
+        "Name": "NSWindowToolbarStylePreference",
+        "Description": "A style indicating that the toolbar appears below the window title with toolbar items centered in the toolbar.",
+        "Declaration": "NSWindowToolbarStylePreference",
+        "Platforms": [
+          "macOS 11.0+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nswindowtoolbarstyle/nswindowtoolbarstylepreference?language=objc",
+        "Type": {}
+      },
+      {
+        "Name": "NSWindowToolbarStyleUnified",
+        "Description": "A style indicating that the toolbar appears next to the window title.",
+        "Declaration": "NSWindowToolbarStyleUnified",
+        "Platforms": [
+          "macOS 11.0+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nswindowtoolbarstyle/nswindowtoolbarstyleunified?language=objc",
+        "Type": {}
+      },
+      {
+        "Name": "NSWindowToolbarStyleUnifiedCompact",
+        "Description": "A style indicating that the toolbar appears next to the window title and with reduced margins to allow more focus on the window’s contents.",
+        "Declaration": "NSWindowToolbarStyleUnifiedCompact",
+        "Platforms": [
+          "macOS 11.0+"
+        ],
+        "TopicURL": "https://developer.apple.com/documentation/appkit/nswindowtoolbarstyle/nswindowtoolbarstyleunifiedcompact?language=objc",
+        "Type": {}
+      }
+    ]
+  },
+  "APICollection": null,
+  "Kind": "enum",
+  "PullDate": "2023-07-10T12:16:17.614005+08:00",
+  "Version": 2
+}

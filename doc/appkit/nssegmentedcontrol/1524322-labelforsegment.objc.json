@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/1524322-labelforsegment?language=objc",
+  "Title": "labelForSegment:",
+  "Type": "Instance Method",
+  "Description": "Returns the label of the specified segment.",
+  "Declaration": "- (NSString *)labelForSegment:(NSInteger)segment;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:29.556564+08:00",
+  "LastVersion": 2
+}

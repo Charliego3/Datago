@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssplitviewitem/1388853-minimumthickness?language=objc",
+  "Title": "minimumThickness",
+  "Type": "Instance Property",
+  "Description": "The minimum thickness of the split view item.",
+  "Declaration": "@property CGFloat minimumThickness;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.11+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T09:55:47.362933+08:00",
+  "LastVersion": 2
+}

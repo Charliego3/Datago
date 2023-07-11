@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstoolbaritem/1534039-view?language=objc",
+  "Title": "view",
+  "Type": "Instance Property",
+  "Description": "The custom view you use to draw the toolbar item.",
+  "Declaration": "@property(strong) NSView *view;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:30:04.946038+08:00",
+  "LastVersion": 2
+}

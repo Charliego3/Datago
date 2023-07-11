@@ -1,0 +1,35 @@
+{
+  "Path": "/documentation/appkit/nssegmentdistribution?language=objc",
+  "Title": "NSSegmentDistribution",
+  "Type": "Enumeration",
+  "Description": "",
+  "Declaration": "typedef enum NSSegmentDistribution : NSInteger {\n    ...\n} NSSegmentDistribution;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.13+"
+  ],
+  "Topics": [
+    {
+      "Section": "Distribution Options",
+      "Name": "NSSegmentDistributionFit",
+      "Path": "/documentation/appkit/nssegmentdistribution/nssegmentdistributionfit?language=objc"
+    },
+    {
+      "Section": "Distribution Options",
+      "Name": "NSSegmentDistributionFill",
+      "Path": "/documentation/appkit/nssegmentdistribution/nssegmentdistributionfill?language=objc"
+    },
+    {
+      "Section": "Distribution Options",
+      "Name": "NSSegmentDistributionFillEqually",
+      "Path": "/documentation/appkit/nssegmentdistribution/nssegmentdistributionfillequally?language=objc"
+    },
+    {
+      "Section": "Distribution Options",
+      "Name": "NSSegmentDistributionFillProportionally",
+      "Path": "/documentation/appkit/nssegmentdistribution/nssegmentdistributionfillproportionally?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-11T11:28:03.660546+08:00",
+  "LastVersion": 2
+}

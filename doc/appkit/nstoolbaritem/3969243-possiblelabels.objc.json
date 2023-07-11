@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbaritem/3969243-possiblelabels?language=objc",
+  "Title": "possibleLabels",
+  "Type": "Instance Property",
+  "Description": "The set of labels that the item might display.",
+  "Declaration": "@property(copy) NSSet\u003cNSString *\u003e *possibleLabels;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 13.0+",
+    "Mac Catalyst 16.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:29:57.584725+08:00",
+  "LastVersion": 2
+}

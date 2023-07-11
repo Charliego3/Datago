@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbardelegate/1516985-toolbar?language=objc",
+  "Title": "toolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:",
+  "Type": "Instance Method",
+  "Description": "Asks the delegate for the toolbar item associated with the specified identifier.",
+  "Declaration": "- (NSToolbarItem *)toolbar:(NSToolbar *)toolbar \n     itemForItemIdentifier:(NSToolbarItemIdentifier)itemIdentifier \n willBeInsertedIntoToolbar:(BOOL)flag;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:57:44.13769+08:00",
+  "LastVersion": 2
+}

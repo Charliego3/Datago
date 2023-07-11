@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/1534122-springloaded?language=objc",
+  "Title": "springLoaded",
+  "Type": "Instance Property",
+  "Description": "A Boolean value that indicates whether spring loading is enabled for the control.",
+  "Declaration": "@property(getter=isSpringLoaded) BOOL springLoaded;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:47.223773+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbardelegate/3969240-toolbarimmovableitemidentifiers?language=objc",
+  "Title": "toolbarImmovableItemIdentifiers:",
+  "Type": "Instance Method",
+  "Description": "Asks the delegate to provide the items that people can’t remove from the toolbar or rearrange during the customization process.",
+  "Declaration": "- (NSSet\u003cNSToolbarItemIdentifier\u003e *)toolbarImmovableItemIdentifiers:(NSToolbar *)toolbar;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 13.0+",
+    "Mac Catalyst 16.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:57:49.928957+08:00",
+  "LastVersion": 2
+}

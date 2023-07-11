@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbaritem/1527749-image?language=objc",
+  "Title": "image",
+  "Type": "Instance Property",
+  "Description": "The image to display for the toolbar item.",
+  "Declaration": "@property(strong) NSImage *image;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:30:04.723861+08:00",
+  "LastVersion": 2
+}

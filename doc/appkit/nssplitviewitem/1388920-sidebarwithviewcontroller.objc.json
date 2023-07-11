@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssplitviewitem/1388920-sidebarwithviewcontroller?language=objc",
+  "Title": "sidebarWithViewController:",
+  "Type": "Type Method",
+  "Description": "Creates a split view item that represents a sidebar for the specified view controller.",
+  "Declaration": "+ (instancetype)sidebarWithViewController:(NSViewController *)viewController;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.11+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T09:55:41.04779+08:00",
+  "LastVersion": 2
+}

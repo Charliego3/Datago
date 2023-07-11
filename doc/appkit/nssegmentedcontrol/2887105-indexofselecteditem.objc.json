@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/2887105-indexofselecteditem?language=objc",
+  "Title": "indexOfSelectedItem",
+  "Type": "Instance Property",
+  "Description": "",
+  "Declaration": "@property(readonly) NSInteger indexOfSelectedItem;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.4+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:48.077502+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/1533073-setlabel?language=objc",
+  "Title": "setLabel:forSegment:",
+  "Type": "Instance Method",
+  "Description": "Sets the label for the specified segment.",
+  "Declaration": "- (void)setLabel:(NSString *)label \n      forSegment:(NSInteger)segment;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.3+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:27:29.916115+08:00",
+  "LastVersion": 2
+}

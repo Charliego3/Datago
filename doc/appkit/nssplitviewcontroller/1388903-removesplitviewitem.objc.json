@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssplitviewcontroller/1388903-removesplitviewitem?language=objc",
+  "Title": "removeSplitViewItem:",
+  "Type": "Instance Method",
+  "Description": "Removes a specified split view item from the split view controller.",
+  "Declaration": "- (void)removeSplitViewItem:(NSSplitViewItem *)splitViewItem;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.10+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T09:54:46.725266+08:00",
+  "LastVersion": 2
+}

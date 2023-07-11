@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentedcontrol/2952063-minimumsizewithprioritizedcompre?language=objc",
+  "Title": "minimumSizeWithPrioritizedCompressionOptions:",
+  "Type": "Instance Method",
+  "Description": "",
+  "Declaration": "- (NSSize)minimumSizeWithPrioritizedCompressionOptions:(NSArray\u003cNSUserInterfaceCompressionOptions *\u003e *)prioritizedOptions;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.13+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T11:28:05.865045+08:00",
+  "LastVersion": 2
+}

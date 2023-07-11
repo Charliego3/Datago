@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssplitviewitem/1388895-springloaded?language=objc",
+  "Title": "springLoaded",
+  "Type": "Instance Property",
+  "Description": "A Boolean value that determines whether the split view item can temporarily expand during a drag.",
+  "Declaration": "@property(getter=isSpringLoaded) BOOL springLoaded;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.11+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T09:56:03.537734+08:00",
+  "LastVersion": 2
+}

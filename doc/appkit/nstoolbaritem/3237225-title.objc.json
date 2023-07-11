@@ -1,0 +1,15 @@
+{
+  "Path": "/documentation/appkit/nstoolbaritem/3237225-title?language=objc",
+  "Title": "title",
+  "Type": "Instance Property",
+  "Description": "The title of the toolbar item.",
+  "Declaration": "@property(copy) NSString *title;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.15+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-10T10:29:58.841835+08:00",
+  "LastVersion": 2
+}
