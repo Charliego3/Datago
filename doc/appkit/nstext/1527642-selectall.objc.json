@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1527642-selectall?language=objc",
+  "Title": "selectAll:",
+  "Type": "Instance Method",
+  "Description": "This action method selects all of the receiver’s text.",
+  "Declaration": "- (void)selectAll:(id)sender;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:46.858644+08:00",
+  "LastVersion": 2
+}

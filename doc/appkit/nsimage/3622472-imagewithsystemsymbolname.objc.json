@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/3622472-imagewithsystemsymbolname?language=objc",
+  "Title": "imageWithSystemSymbolName:accessibilityDescription:",
+  "Type": "Type Method",
+  "Description": "Creates a symbol image with the system symbol name and accessibility description you specify.",
+  "Declaration": "+ (instancetype)imageWithSystemSymbolName:(NSString *)name \n                 accessibilityDescription:(NSString *)description;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 11.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T12:34:38.29712+08:00",
+  "LastVersion": 2
+}

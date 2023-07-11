@@ -1,0 +1,12 @@
+{
+  "Path": "/documentation/appkit/nsimage/1807274-istemplate?language=objc",
+  "Title": "isTemplate",
+  "Type": "Instance Method",
+  "Description": "Returns a Boolean value that indicates whether the image is a template image.",
+  "Declaration": "- (BOOL)isTemplate",
+  "Frameworks": null,
+  "Platforms": null,
+  "Topics": null,
+  "LastFetch": "2023-07-11T12:35:23.68155+08:00",
+  "LastVersion": 2
+}

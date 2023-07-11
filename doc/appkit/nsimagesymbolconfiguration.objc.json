@@ -1,0 +1,80 @@
+{
+  "Path": "/documentation/appkit/nsimagesymbolconfiguration?language=objc",
+  "Title": "NSImageSymbolConfiguration",
+  "Type": "Class",
+  "Description": "An object that contains the specific font, style, and weight attributes to apply to a symbol image.",
+  "Declaration": "@interface NSImageSymbolConfiguration : NSObject",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 11.0+"
+  ],
+  "Topics": [
+    {
+      "Section": "Creating a Symbol Configuration",
+      "Name": "+ configurationWithPointSize:weight:",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration/3656510-configurationwithpointsize?language=objc"
+    },
+    {
+      "Section": "Creating a Symbol Configuration",
+      "Name": "+ configurationWithPointSize:weight:scale:",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration/3656511-configurationwithpointsize?language=objc"
+    },
+    {
+      "Section": "Creating a Symbol Configuration",
+      "Name": "+ configurationWithTextStyle:",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration/3656512-configurationwithtextstyle?language=objc"
+    },
+    {
+      "Section": "Creating a Symbol Configuration",
+      "Name": "+ configurationWithTextStyle:scale:",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration/3656513-configurationwithtextstyle?language=objc"
+    },
+    {
+      "Section": "Creating a Symbol Configuration",
+      "Name": "+ configurationWithScale:",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration/3667455-configurationwithscale?language=objc"
+    },
+    {
+      "Section": "Creating a Symbol Configuration",
+      "Name": "NSFontTextStyle",
+      "Path": "/documentation/appkit/nsfonttextstyle?language=objc"
+    },
+    {
+      "Section": "Creating a Symbol Configuration",
+      "Name": "NSImageSymbolScale",
+      "Path": "/documentation/appkit/nsimagesymbolscale?language=objc"
+    },
+    {
+      "Section": "Applying a Configuration",
+      "Name": "- configurationByApplyingConfiguration:",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration/3852560-configurationbyapplyingconfigura?language=objc"
+    },
+    {
+      "Section": "Creating a Color Configuration",
+      "Name": "+ configurationWithPaletteColors:",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration/3852563-configurationwithpalettecolors?language=objc"
+    },
+    {
+      "Section": "Creating a Color Configuration",
+      "Name": "+ configurationWithHierarchicalColor:",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration/3852562-configurationwithhierarchicalcol?language=objc"
+    },
+    {
+      "Section": "Creating a Color Configuration",
+      "Name": "+ configurationPreferringMulticolor",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration/3852561-configurationpreferringmulticolo?language=objc"
+    },
+    {
+      "Section": "Type Methods",
+      "Name": "+ configurationPreferringHierarchical",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration/4048300-configurationpreferringhierarchi?language=objc"
+    },
+    {
+      "Section": "Type Methods",
+      "Name": "+ configurationPreferringMonochrome",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration/4048301-configurationpreferringmonochrom?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-11T12:35:12.403199+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstextmovementuserinfokey?language=objc",
+  "Title": "NSTextMovementUserInfoKey",
+  "Type": "Global Variable",
+  "Description": "The userInfo dictionary key for the NSTextDidEndEditingNotification notification.",
+  "Declaration": "NSString *const NSTextMovementUserInfoKey;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.13+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:45.760647+08:00",
+  "LastVersion": 2
+}

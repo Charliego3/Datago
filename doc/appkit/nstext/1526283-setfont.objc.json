@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1526283-setfont?language=objc",
+  "Title": "setFont:range:",
+  "Type": "Instance Method",
+  "Description": "Sets the font of characters within aRange to aFont.",
+  "Declaration": "- (void)setFont:(NSFont *)font \n          range:(NSRange)range;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:01.90269+08:00",
+  "LastVersion": 2
+}

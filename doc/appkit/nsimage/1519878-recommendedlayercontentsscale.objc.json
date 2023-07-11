@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519878-recommendedlayercontentsscale?language=objc",
+  "Title": "recommendedLayerContentsScale:",
+  "Type": "Instance Method",
+  "Description": "Returns the recommended layer contents scale for this image.",
+  "Declaration": "- (CGFloat)recommendedLayerContentsScale:(CGFloat)preferredContentsScale;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.7+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:00:08.229526+08:00",
+  "LastVersion": 2
+}

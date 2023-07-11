@@ -1,0 +1,65 @@
+{
+  "Path": "/documentation/appkit/1540619-common_unicode_characters?language=objc",
+  "Title": "Common Unicode Characters",
+  "Type": "Enumeration",
+  "Description": "",
+  "Declaration": "enum : unsigned int {\n    ...\n};",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": [
+    {
+      "Section": "Constants",
+      "Name": "NSEnterCharacter",
+      "Path": "/documentation/appkit/1540619-common_unicode_characters/nsentercharacter?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "NSBackspaceCharacter",
+      "Path": "/documentation/appkit/1540619-common_unicode_characters/nsbackspacecharacter?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "NSTabCharacter",
+      "Path": "/documentation/appkit/1540619-common_unicode_characters/nstabcharacter?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "NSNewlineCharacter",
+      "Path": "/documentation/appkit/1540619-common_unicode_characters/nsnewlinecharacter?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "NSFormFeedCharacter",
+      "Path": "/documentation/appkit/1540619-common_unicode_characters/nsformfeedcharacter?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "NSCarriageReturnCharacter",
+      "Path": "/documentation/appkit/1540619-common_unicode_characters/nscarriagereturncharacter?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "NSBackTabCharacter",
+      "Path": "/documentation/appkit/1540619-common_unicode_characters/nsbacktabcharacter?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "NSDeleteCharacter",
+      "Path": "/documentation/appkit/1540619-common_unicode_characters/nsdeletecharacter?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "NSLineSeparatorCharacter",
+      "Path": "/documentation/appkit/1540619-common_unicode_characters/nslineseparatorcharacter?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "NSParagraphSeparatorCharacter",
+      "Path": "/documentation/appkit/1540619-common_unicode_characters/nsparagraphseparatorcharacter?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-11T14:28:40.333347+08:00",
+  "LastVersion": 2
+}

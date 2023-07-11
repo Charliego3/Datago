@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nssegmentstyle/nssegmentstylesmallsquare?language=objc",
+  "Title": "NSSegmentStyleSmallSquare",
+  "Type": "Enumeration Case",
+  "Description": "The control is displayed using the small square style.",
+  "Declaration": "NSSegmentStyleSmallSquare = 6",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.5+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:17:03.211707+08:00",
+  "LastVersion": 2
+}

@@ -47,12 +47,12 @@ func init() {
 	})
 	c.AddMethod("toolbarAllowedItemIdentifiers:", func(_ objc.Object) objc.Object {
 		log.Println("toolbarAllowedItemIdentifiers items called..........")
-		return core.NSArray_FromRef(objc.Get("NSArray").Send("arrayWithObjects:", sidebarItem))
+		return core.NSArray_FromRef(objc.Get("NSArray").Send("arrayWithObjects:", core.String("NSToolbarToggleSidebarItemIdentifier")))
 	})
-	c.AddMethod("toolbarDefaultItemIdentifiers:", func(_ objc.Object) objc.Object {
-		log.Println("toolbarDefaultItemIdentifiers items called..........")
-		// return core.NSArray_FromRef(objc.Get("NSArray").Send("arrayWithObjects:", sidebarItem))
-		return core.NSArray_Alloc().Init()
-	})
+	// c.AddMethod("toolbarDefaultItemIdentifiers:", func(_ objc.Object) objc.Object {
+	// 	log.Println("toolbarDefaultItemIdentifiers items called..........")
+	// 	// return core.NSArray_FromRef(objc.Get("NSArray").Send("arrayWithObjects:", sidebarItem))
+	// 	return core.NSArray_FromRef(objc.Get("NSArray").Send("arrayWithObjects:", core.String("NSToolbarToggleSidebarItemIdentifier")))
+	// })
 	objc.RegisterClass(c)
 }

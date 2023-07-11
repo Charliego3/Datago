@@ -20,10 +20,6 @@ func NSImage_ImageNamed(name string) NSImage {
 	return NSImage_FromRef(NSImage_Alloc().Send("imageNamed:", core.String(name)))
 }
 
-func NSImage_SystemSymbolName(name string) NSImage {
-	return NSImage_FromRef(NSImage_Alloc().Send("imageWithSystemSymbolName:accessibilityDescription:", core.String(name), core.String("accessibility")))
-}
-
 func (i NSImage) SetValueForKey(value, key interface{}) {
 	i.Send("setValue:forKey:", value, key)
 }

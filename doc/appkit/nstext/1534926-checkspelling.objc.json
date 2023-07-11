@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1534926-checkspelling?language=objc",
+  "Title": "checkSpelling:",
+  "Type": "Instance Method",
+  "Description": "This action method searches for a misspelled word in the receiver’s text.",
+  "Declaration": "- (void)checkSpelling:(id)sender;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:24.874504+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1520060-resizingmode?language=objc",
+  "Title": "resizingMode",
+  "Type": "Instance Property",
+  "Description": "The resizing mode for the image.",
+  "Declaration": "@property NSImageResizingMode resizingMode;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.10+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:59:41.666168+08:00",
+  "LastVersion": 2
+}

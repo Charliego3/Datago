@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1530110-settextcolor?language=objc",
+  "Title": "setTextColor:range:",
+  "Type": "Instance Method",
+  "Description": "Sets the text color of characters within the specified range to the specified color.",
+  "Declaration": "- (void)setTextColor:(NSColor *)color \n               range:(NSRange)range;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:11.487489+08:00",
+  "LastVersion": 2
+}

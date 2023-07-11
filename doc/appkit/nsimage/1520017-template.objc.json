@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1520017-template?language=objc",
+  "Title": "template",
+  "Type": "Instance Property",
+  "Description": "A Boolean value that determines whether the image represents a template image.",
+  "Declaration": "@property(getter=isTemplate) BOOL template;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.5+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T12:35:22.221929+08:00",
+  "LastVersion": 2
+}

@@ -1,0 +1,325 @@
+{
+  "Path": "/documentation/appkit/nstext?language=objc",
+  "Title": "NSText",
+  "Type": "Class",
+  "Description": "The most general programmatic interface for objects that manage text.",
+  "Declaration": "@interface NSText : NSView",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": [
+    {
+      "Section": "Creating a Text Object",
+      "Name": "- initWithCoder:",
+      "Path": "/documentation/appkit/nstext/1535093-initwithcoder?language=objc"
+    },
+    {
+      "Section": "Creating a Text Object",
+      "Name": "- initWithFrame:",
+      "Path": "/documentation/appkit/nstext/1525191-initwithframe?language=objc"
+    },
+    {
+      "Section": "Getting the characters",
+      "Name": "string",
+      "Path": "/documentation/appkit/nstext/1528601-string?language=objc"
+    },
+    {
+      "Section": "Setting graphics attributes",
+      "Name": "backgroundColor",
+      "Path": "/documentation/appkit/nstext/1535324-backgroundcolor?language=objc"
+    },
+    {
+      "Section": "Setting graphics attributes",
+      "Name": "drawsBackground",
+      "Path": "/documentation/appkit/nstext/1531772-drawsbackground?language=objc"
+    },
+    {
+      "Section": "Setting behavioral attributes",
+      "Name": "editable",
+      "Path": "/documentation/appkit/nstext/1529876-editable?language=objc"
+    },
+    {
+      "Section": "Setting behavioral attributes",
+      "Name": "selectable",
+      "Path": "/documentation/appkit/nstext/1535368-selectable?language=objc"
+    },
+    {
+      "Section": "Setting behavioral attributes",
+      "Name": "fieldEditor",
+      "Path": "/documentation/appkit/nstext/1533080-fieldeditor?language=objc"
+    },
+    {
+      "Section": "Setting behavioral attributes",
+      "Name": "richText",
+      "Path": "/documentation/appkit/nstext/1531003-richtext?language=objc"
+    },
+    {
+      "Section": "Setting behavioral attributes",
+      "Name": "importsGraphics",
+      "Path": "/documentation/appkit/nstext/1531887-importsgraphics?language=objc"
+    },
+    {
+      "Section": "Using the Font panel and menu",
+      "Name": "usesFontPanel",
+      "Path": "/documentation/appkit/nstext/1527431-usesfontpanel?language=objc"
+    },
+    {
+      "Section": "Using the ruler",
+      "Name": "- toggleRuler:",
+      "Path": "/documentation/appkit/nstext/1535773-toggleruler?language=objc"
+    },
+    {
+      "Section": "Using the ruler",
+      "Name": "rulerVisible",
+      "Path": "/documentation/appkit/nstext/1533732-rulervisible?language=objc"
+    },
+    {
+      "Section": "Changing the selection",
+      "Name": "selectedRange",
+      "Path": "/documentation/appkit/nstext/1526227-selectedrange?language=objc"
+    },
+    {
+      "Section": "Replacing text",
+      "Name": "- replaceCharactersInRange:withRTF:",
+      "Path": "/documentation/appkit/nstext/1527249-replacecharactersinrange?language=objc"
+    },
+    {
+      "Section": "Replacing text",
+      "Name": "- replaceCharactersInRange:withRTFD:",
+      "Path": "/documentation/appkit/nstext/1525846-replacecharactersinrange?language=objc"
+    },
+    {
+      "Section": "Replacing text",
+      "Name": "- replaceCharactersInRange:withString:",
+      "Path": "/documentation/appkit/nstext/1530589-replacecharactersinrange?language=objc"
+    },
+    {
+      "Section": "Action methods for editing",
+      "Name": "- selectAll:",
+      "Path": "/documentation/appkit/nstext/1527642-selectall?language=objc"
+    },
+    {
+      "Section": "Action methods for editing",
+      "Name": "- copy:",
+      "Path": "/documentation/appkit/nstext/1525497-copy?language=objc"
+    },
+    {
+      "Section": "Action methods for editing",
+      "Name": "- cut:",
+      "Path": "/documentation/appkit/nstext/1524858-cut?language=objc"
+    },
+    {
+      "Section": "Action methods for editing",
+      "Name": "- paste:",
+      "Path": "/documentation/appkit/nstext/1527209-paste?language=objc"
+    },
+    {
+      "Section": "Action methods for editing",
+      "Name": "- copyFont:",
+      "Path": "/documentation/appkit/nstext/1531255-copyfont?language=objc"
+    },
+    {
+      "Section": "Action methods for editing",
+      "Name": "- pasteFont:",
+      "Path": "/documentation/appkit/nstext/1531099-pastefont?language=objc"
+    },
+    {
+      "Section": "Action methods for editing",
+      "Name": "- copyRuler:",
+      "Path": "/documentation/appkit/nstext/1533303-copyruler?language=objc"
+    },
+    {
+      "Section": "Action methods for editing",
+      "Name": "- pasteRuler:",
+      "Path": "/documentation/appkit/nstext/1530420-pasteruler?language=objc"
+    },
+    {
+      "Section": "Action methods for editing",
+      "Name": "- delete:",
+      "Path": "/documentation/appkit/nstext/1524660-delete?language=objc"
+    },
+    {
+      "Section": "Changing the font",
+      "Name": "- changeFont:",
+      "Path": "/documentation/appkit/nstext/1531459-changefont?language=objc"
+    },
+    {
+      "Section": "Changing the font",
+      "Name": "font",
+      "Path": "/documentation/appkit/nstext/1534646-font?language=objc"
+    },
+    {
+      "Section": "Changing the font",
+      "Name": "- setFont:range:",
+      "Path": "/documentation/appkit/nstext/1526283-setfont?language=objc"
+    },
+    {
+      "Section": "Setting text alignment",
+      "Name": "alignment",
+      "Path": "/documentation/appkit/nstext/1534102-alignment?language=objc"
+    },
+    {
+      "Section": "Setting text alignment",
+      "Name": "- alignCenter:",
+      "Path": "/documentation/appkit/nstext/1535569-aligncenter?language=objc"
+    },
+    {
+      "Section": "Setting text alignment",
+      "Name": "- alignLeft:",
+      "Path": "/documentation/appkit/nstext/1535705-alignleft?language=objc"
+    },
+    {
+      "Section": "Setting text alignment",
+      "Name": "- alignRight:",
+      "Path": "/documentation/appkit/nstext/1526477-alignright?language=objc"
+    },
+    {
+      "Section": "Setting text color",
+      "Name": "textColor",
+      "Path": "/documentation/appkit/nstext/1534875-textcolor?language=objc"
+    },
+    {
+      "Section": "Setting text color",
+      "Name": "- setTextColor:range:",
+      "Path": "/documentation/appkit/nstext/1530110-settextcolor?language=objc"
+    },
+    {
+      "Section": "Writing direction",
+      "Name": "baseWritingDirection",
+      "Path": "/documentation/appkit/nstext/1526206-basewritingdirection?language=objc"
+    },
+    {
+      "Section": "Setting superscripting and subscripting",
+      "Name": "- superscript:",
+      "Path": "/documentation/appkit/nstext/1525743-superscript?language=objc"
+    },
+    {
+      "Section": "Setting superscripting and subscripting",
+      "Name": "- subscript:",
+      "Path": "/documentation/appkit/nstext/1535373-subscript?language=objc"
+    },
+    {
+      "Section": "Setting superscripting and subscripting",
+      "Name": "- unscript:",
+      "Path": "/documentation/appkit/nstext/1527542-unscript?language=objc"
+    },
+    {
+      "Section": "Underlining text",
+      "Name": "- underline:",
+      "Path": "/documentation/appkit/nstext/1534203-underline?language=objc"
+    },
+    {
+      "Section": "Reading and writing RTF files",
+      "Name": "- readRTFDFromFile:",
+      "Path": "/documentation/appkit/nstext/1532564-readrtfdfromfile?language=objc"
+    },
+    {
+      "Section": "Reading and writing RTF files",
+      "Name": "- writeRTFDToFile:atomically:",
+      "Path": "/documentation/appkit/nstext/1527085-writertfdtofile?language=objc"
+    },
+    {
+      "Section": "Reading and writing RTF files",
+      "Name": "- RTFDFromRange:",
+      "Path": "/documentation/appkit/nstext/1528394-rtfdfromrange?language=objc"
+    },
+    {
+      "Section": "Reading and writing RTF files",
+      "Name": "- RTFFromRange:",
+      "Path": "/documentation/appkit/nstext/1527004-rtffromrange?language=objc"
+    },
+    {
+      "Section": "Checking spelling",
+      "Name": "- checkSpelling:",
+      "Path": "/documentation/appkit/nstext/1534926-checkspelling?language=objc"
+    },
+    {
+      "Section": "Checking spelling",
+      "Name": "- showGuessPanel:",
+      "Path": "/documentation/appkit/nstext/1533456-showguesspanel?language=objc"
+    },
+    {
+      "Section": "Constraining size",
+      "Name": "maxSize",
+      "Path": "/documentation/appkit/nstext/1535900-maxsize?language=objc"
+    },
+    {
+      "Section": "Constraining size",
+      "Name": "minSize",
+      "Path": "/documentation/appkit/nstext/1526222-minsize?language=objc"
+    },
+    {
+      "Section": "Constraining size",
+      "Name": "verticallyResizable",
+      "Path": "/documentation/appkit/nstext/1535082-verticallyresizable?language=objc"
+    },
+    {
+      "Section": "Constraining size",
+      "Name": "horizontallyResizable",
+      "Path": "/documentation/appkit/nstext/1527489-horizontallyresizable?language=objc"
+    },
+    {
+      "Section": "Constraining size",
+      "Name": "- sizeToFit",
+      "Path": "/documentation/appkit/nstext/1533991-sizetofit?language=objc"
+    },
+    {
+      "Section": "Scrolling",
+      "Name": "- scrollRangeToVisible:",
+      "Path": "/documentation/appkit/nstext/1529884-scrollrangetovisible?language=objc"
+    },
+    {
+      "Section": "Setting the delegate",
+      "Name": "delegate",
+      "Path": "/documentation/appkit/nstext/1529480-delegate?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "NSTextAlignment",
+      "Path": "/documentation/uikit/nstextalignment?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "NSWritingDirection",
+      "Path": "/documentation/uikit/nswritingdirection?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "Movement Codes",
+      "Path": "/documentation/appkit/1540711-movement_codes?language=objc"
+    },
+    {
+      "Section": "Constants",
+      "Name": "Common Unicode Characters",
+      "Path": "/documentation/appkit/1540619-common_unicode_characters?language=objc"
+    },
+    {
+      "Section": "Notifications",
+      "Name": "NSTextDidBeginEditingNotification",
+      "Path": "/documentation/appkit/nstextdidbegineditingnotification?language=objc"
+    },
+    {
+      "Section": "Notifications",
+      "Name": "NSTextDidChangeNotification",
+      "Path": "/documentation/appkit/nstextdidchangenotification?language=objc"
+    },
+    {
+      "Section": "Notifications",
+      "Name": "NSTextDidEndEditingNotification",
+      "Path": "/documentation/appkit/nstextdidendeditingnotification?language=objc"
+    },
+    {
+      "Section": "Notifications",
+      "Name": "NSTextMovementUserInfoKey",
+      "Path": "/documentation/appkit/nstextmovementuserinfokey?language=objc"
+    },
+    {
+      "Section": "Notifications",
+      "Name": "NSTextMovement",
+      "Path": "/documentation/appkit/nstextmovement?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-11T14:27:21.241316+08:00",
+  "LastVersion": 2
+}

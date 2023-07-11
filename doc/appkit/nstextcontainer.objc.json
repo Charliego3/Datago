@@ -1,0 +1,116 @@
+{
+  "Path": "/documentation/appkit/nstextcontainer?language=objc",
+  "Title": "NSTextContainer",
+  "Type": "Class",
+  "Description": "A region where text layout occurs.",
+  "Declaration": "@interface NSTextContainer : NSObject",
+  "Frameworks": null,
+  "Platforms": [
+    "iOS 7.0+",
+    "iPadOS 7.0+",
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+",
+    "tvOS 9.0+",
+    "visionOS 1.0+",
+    "Beta"
+  ],
+  "Topics": [
+    {
+      "Section": "Creating a Text Container",
+      "Name": "- initWithSize:",
+      "Path": "/documentation/uikit/nstextcontainer/1444529-initwithsize?language=objc"
+    },
+    {
+      "Section": "Creating a Text Container",
+      "Name": "- initWithCoder:",
+      "Path": "/documentation/uikit/nstextcontainer/1444573-initwithcoder?language=objc"
+    },
+    {
+      "Section": "Managing Text Components",
+      "Name": "layoutManager",
+      "Path": "/documentation/uikit/nstextcontainer/1444517-layoutmanager?language=objc"
+    },
+    {
+      "Section": "Managing Text Components",
+      "Name": "textLayoutManager",
+      "Path": "/documentation/uikit/nstextcontainer/3809914-textlayoutmanager?language=objc"
+    },
+    {
+      "Section": "Managing Text Components",
+      "Name": "- replaceLayoutManager:",
+      "Path": "/documentation/uikit/nstextcontainer/1444545-replacelayoutmanager?language=objc"
+    },
+    {
+      "Section": "Managing Text Components",
+      "Name": "textView",
+      "Path": "/documentation/appkit/nstextcontainer/1444537-textview?language=objc"
+    },
+    {
+      "Section": "Defining the Container Shape",
+      "Name": "size",
+      "Path": "/documentation/uikit/nstextcontainer/1444553-size?language=objc"
+    },
+    {
+      "Section": "Defining the Container Shape",
+      "Name": "exclusionPaths",
+      "Path": "/documentation/uikit/nstextcontainer/1444569-exclusionpaths?language=objc"
+    },
+    {
+      "Section": "Defining the Container Shape",
+      "Name": "lineBreakMode",
+      "Path": "/documentation/uikit/nstextcontainer/1444519-linebreakmode?language=objc"
+    },
+    {
+      "Section": "Defining the Container Shape",
+      "Name": "widthTracksTextView",
+      "Path": "/documentation/uikit/nstextcontainer/1444563-widthtrackstextview?language=objc"
+    },
+    {
+      "Section": "Defining the Container Shape",
+      "Name": "heightTracksTextView",
+      "Path": "/documentation/uikit/nstextcontainer/1444559-heighttrackstextview?language=objc"
+    },
+    {
+      "Section": "Constraining Text Layout",
+      "Name": "maximumNumberOfLines",
+      "Path": "/documentation/uikit/nstextcontainer/1444531-maximumnumberoflines?language=objc"
+    },
+    {
+      "Section": "Constraining Text Layout",
+      "Name": "lineFragmentPadding",
+      "Path": "/documentation/uikit/nstextcontainer/1444527-linefragmentpadding?language=objc"
+    },
+    {
+      "Section": "Constraining Text Layout",
+      "Name": "- lineFragmentRectForProposedRect:atIndex:writingDirection:remainingRect:",
+      "Path": "/documentation/uikit/nstextcontainer/1444555-linefragmentrectforproposedrect?language=objc"
+    },
+    {
+      "Section": "Constraining Text Layout",
+      "Name": "simpleRectangularTextContainer",
+      "Path": "/documentation/uikit/nstextcontainer/1444525-simplerectangulartextcontainer?language=objc"
+    },
+    {
+      "Section": "Deprecated",
+      "Name": "- initWithContainerSize:",
+      "Path": "/documentation/appkit/nstextcontainer/1444543-initwithcontainersize?language=objc"
+    },
+    {
+      "Section": "Deprecated",
+      "Name": "- lineFragmentRectForProposedRect:sweepDirection:movementDirection:remainingRect:",
+      "Path": "/documentation/appkit/nstextcontainer/1444571-linefragmentrectforproposedrect?language=objc"
+    },
+    {
+      "Section": "Deprecated",
+      "Name": "- containsPoint:",
+      "Path": "/documentation/appkit/nstextcontainer/1444567-containspoint?language=objc"
+    },
+    {
+      "Section": "Deprecated",
+      "Name": "containerSize",
+      "Path": "/documentation/appkit/nstextcontainer/1444551-containersize?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-11T14:29:15.214537+08:00",
+  "LastVersion": 2
+}

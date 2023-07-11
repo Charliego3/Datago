@@ -1,0 +1,60 @@
+{
+  "Path": "/documentation/appkit/nstextmovement?language=objc",
+  "Title": "NSTextMovement",
+  "Type": "Enumeration",
+  "Description": "",
+  "Declaration": "typedef enum NSTextMovement : NSInteger {\n    ...\n} NSTextMovement;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.13+"
+  ],
+  "Topics": [
+    {
+      "Section": "Movement Options",
+      "Name": "NSTextMovementReturn",
+      "Path": "/documentation/appkit/nstextmovement/nstextmovementreturn?language=objc"
+    },
+    {
+      "Section": "Movement Options",
+      "Name": "NSTextMovementTab",
+      "Path": "/documentation/appkit/nstextmovement/nstextmovementtab?language=objc"
+    },
+    {
+      "Section": "Movement Options",
+      "Name": "NSTextMovementBacktab",
+      "Path": "/documentation/appkit/nstextmovement/nstextmovementbacktab?language=objc"
+    },
+    {
+      "Section": "Movement Options",
+      "Name": "NSTextMovementLeft",
+      "Path": "/documentation/appkit/nstextmovement/nstextmovementleft?language=objc"
+    },
+    {
+      "Section": "Movement Options",
+      "Name": "NSTextMovementRight",
+      "Path": "/documentation/appkit/nstextmovement/nstextmovementright?language=objc"
+    },
+    {
+      "Section": "Movement Options",
+      "Name": "NSTextMovementUp",
+      "Path": "/documentation/appkit/nstextmovement/nstextmovementup?language=objc"
+    },
+    {
+      "Section": "Movement Options",
+      "Name": "NSTextMovementDown",
+      "Path": "/documentation/appkit/nstextmovement/nstextmovementdown?language=objc"
+    },
+    {
+      "Section": "Movement Options",
+      "Name": "NSTextMovementCancel",
+      "Path": "/documentation/appkit/nstextmovement/nstextmovementcancel?language=objc"
+    },
+    {
+      "Section": "Movement Options",
+      "Name": "NSTextMovementOther",
+      "Path": "/documentation/appkit/nstextmovement/nstextmovementother?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-11T14:28:47.382535+08:00",
+  "LastVersion": 2
+}

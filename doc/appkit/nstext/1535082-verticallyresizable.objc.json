@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1535082-verticallyresizable?language=objc",
+  "Title": "verticallyResizable",
+  "Type": "Instance Property",
+  "Description": "A Boolean that controls whether the receiver changes its height to fit the height of its text.",
+  "Declaration": "@property(getter=isVerticallyResizable) BOOL verticallyResizable;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:30.389817+08:00",
+  "LastVersion": 2
+}

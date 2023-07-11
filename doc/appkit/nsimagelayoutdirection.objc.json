@@ -1,0 +1,30 @@
+{
+  "Path": "/documentation/appkit/nsimagelayoutdirection?language=objc",
+  "Title": "NSImageLayoutDirection",
+  "Type": "Enumeration",
+  "Description": "Constants that describe the layout direction for the image.",
+  "Declaration": "typedef enum NSImageLayoutDirection : NSInteger {\n    ...\n} NSImageLayoutDirection;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.12+"
+  ],
+  "Topics": [
+    {
+      "Section": "Layout Directions",
+      "Name": "NSImageLayoutDirectionUnspecified",
+      "Path": "/documentation/appkit/nsimagelayoutdirection/nsimagelayoutdirectionunspecified?language=objc"
+    },
+    {
+      "Section": "Layout Directions",
+      "Name": "NSImageLayoutDirectionLeftToRight",
+      "Path": "/documentation/appkit/nsimagelayoutdirection/nsimagelayoutdirectionlefttoright?language=objc"
+    },
+    {
+      "Section": "Layout Directions",
+      "Name": "NSImageLayoutDirectionRightToLeft",
+      "Path": "/documentation/appkit/nsimagelayoutdirection/nsimagelayoutdirectionrighttoleft?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-11T13:58:28.953334+08:00",
+  "LastVersion": 2
+}

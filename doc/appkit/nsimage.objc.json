@@ -1,0 +1,356 @@
+{
+  "Path": "/documentation/appkit/nsimage?language=objc",
+  "Title": "NSImage",
+  "Type": "Class",
+  "Description": "A high-level interface for manipulating image data.",
+  "Declaration": "@interface NSImage : NSObject",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+"
+  ],
+  "Topics": [
+    {
+      "Section": "Creating Images by Name",
+      "Name": "Configuring and displaying symbol images in your UI",
+      "Path": "/documentation/uikit/uiimage/configuring_and_displaying_symbol_images_in_your_ui?language=objc"
+    },
+    {
+      "Section": "Creating Images by Name",
+      "Name": "+ imageNamed:",
+      "Path": "/documentation/appkit/nsimage/1520015-imagenamed?language=objc"
+    },
+    {
+      "Section": "Creating Images by Name",
+      "Name": "+ imageWithSystemSymbolName:accessibilityDescription:",
+      "Path": "/documentation/appkit/nsimage/3622472-imagewithsystemsymbolname?language=objc"
+    },
+    {
+      "Section": "Creating Images by Name",
+      "Name": "+ imageWithSystemSymbolName:variableValue:accessibilityDescription:",
+      "Path": "/documentation/appkit/nsimage/3955213-imagewithsystemsymbolname?language=objc"
+    },
+    {
+      "Section": "Creating Images by Name",
+      "Name": "+ imageWithSymbolName:variableValue:",
+      "Path": "/documentation/appkit/nsimage/3955212-imagewithsymbolname?language=objc"
+    },
+    {
+      "Section": "Creating Images by Name",
+      "Name": "+ imageWithSymbolName:bundle:variableValue:",
+      "Path": "/documentation/appkit/nsimage/4077772-imagewithsymbolname?language=objc"
+    },
+    {
+      "Section": "Creating Images by Name",
+      "Name": "- setName:",
+      "Path": "/documentation/appkit/nsimage/1520025-setname?language=objc"
+    },
+    {
+      "Section": "Creating Images by Name",
+      "Name": "- name",
+      "Path": "/documentation/appkit/nsimage/1519884-name?language=objc"
+    },
+    {
+      "Section": "Creating Images by Name",
+      "Name": "NSImageName",
+      "Path": "/documentation/appkit/nsimagename?language=objc"
+    },
+    {
+      "Section": "Creating Dynamically Drawn Images",
+      "Name": "+ imageWithSize:flipped:drawingHandler:",
+      "Path": "/documentation/appkit/nsimage/1519860-imagewithsize?language=objc"
+    },
+    {
+      "Section": "Creating Images from Resource Files",
+      "Name": "- initByReferencingFile:",
+      "Path": "/documentation/appkit/nsimage/1519955-initbyreferencingfile?language=objc"
+    },
+    {
+      "Section": "Creating Images from Resource Files",
+      "Name": "- initByReferencingURL:",
+      "Path": "/documentation/appkit/nsimage/1519990-initbyreferencingurl?language=objc"
+    },
+    {
+      "Section": "Creating Images from Resource Files",
+      "Name": "- initWithContentsOfFile:",
+      "Path": "/documentation/appkit/nsimage/1519918-initwithcontentsoffile?language=objc"
+    },
+    {
+      "Section": "Creating Images from Resource Files",
+      "Name": "- initWithContentsOfURL:",
+      "Path": "/documentation/appkit/nsimage/1519907-initwithcontentsofurl?language=objc"
+    },
+    {
+      "Section": "Creating Images from Existing Data",
+      "Name": "- initWithData:",
+      "Path": "/documentation/appkit/nsimage/1519941-initwithdata?language=objc"
+    },
+    {
+      "Section": "Creating Images from Existing Data",
+      "Name": "- initWithDataIgnoringOrientation:",
+      "Path": "/documentation/appkit/nsimage/1519915-initwithdataignoringorientation?language=objc"
+    },
+    {
+      "Section": "Creating Images from Existing Data",
+      "Name": "- initWithCGImage:size:",
+      "Path": "/documentation/appkit/nsimage/1519939-initwithcgimage?language=objc"
+    },
+    {
+      "Section": "Creating Images from Existing Data",
+      "Name": "- initWithPasteboard:",
+      "Path": "/documentation/appkit/nsimage/1519952-initwithpasteboard?language=objc"
+    },
+    {
+      "Section": "Creating Images from Existing Data",
+      "Name": "- initWithCoder:",
+      "Path": "/documentation/appkit/nsimage/2177315-initwithcoder?language=objc"
+    },
+    {
+      "Section": "Creating Empty Images",
+      "Name": "- initWithSize:",
+      "Path": "/documentation/appkit/nsimage/1520033-initwithsize?language=objc"
+    },
+    {
+      "Section": "Creating Symbol Images",
+      "Name": "- imageWithSymbolConfiguration:",
+      "Path": "/documentation/appkit/nsimage/3656508-imagewithsymbolconfiguration?language=objc"
+    },
+    {
+      "Section": "Creating Symbol Images",
+      "Name": "NSImageSymbolConfiguration",
+      "Path": "/documentation/appkit/nsimagesymbolconfiguration?language=objc"
+    },
+    {
+      "Section": "Getting the Symbol Image Configuration",
+      "Name": "symbolConfiguration",
+      "Path": "/documentation/appkit/nsimage/3852559-symbolconfiguration?language=objc"
+    },
+    {
+      "Section": "Managing Loading and Drawing of Images",
+      "Name": "delegate",
+      "Path": "/documentation/appkit/nsimage/1519926-delegate?language=objc"
+    },
+    {
+      "Section": "Managing Loading and Drawing of Images",
+      "Name": "NSImageDelegate",
+      "Path": "/documentation/appkit/nsimagedelegate?language=objc"
+    },
+    {
+      "Section": "Setting Attributes of Images",
+      "Name": "size",
+      "Path": "/documentation/appkit/nsimage/1519987-size?language=objc"
+    },
+    {
+      "Section": "Setting Attributes of Images",
+      "Name": "template",
+      "Path": "/documentation/appkit/nsimage/1520017-template?language=objc"
+    },
+    {
+      "Section": "Setting Attributes of Images",
+      "Name": "isTemplate",
+      "Path": "/documentation/appkit/nsimage/1807274-istemplate?language=objc"
+    },
+    {
+      "Section": "Determining Supported Types of Images",
+      "Name": "+ canInitWithPasteboard:",
+      "Path": "/documentation/appkit/nsimage/1520039-caninitwithpasteboard?language=objc"
+    },
+    {
+      "Section": "Determining Supported Types of Images",
+      "Name": "imageTypes",
+      "Path": "/documentation/appkit/nsimage/1519988-imagetypes?language=objc"
+    },
+    {
+      "Section": "Determining Supported Types of Images",
+      "Name": "imageUnfilteredTypes",
+      "Path": "/documentation/appkit/nsimage/1519899-imageunfilteredtypes?language=objc"
+    },
+    {
+      "Section": "Working with Representations of Images",
+      "Name": "- addRepresentation:",
+      "Path": "/documentation/appkit/nsimage/1519911-addrepresentation?language=objc"
+    },
+    {
+      "Section": "Working with Representations of Images",
+      "Name": "- addRepresentations:",
+      "Path": "/documentation/appkit/nsimage/1519964-addrepresentations?language=objc"
+    },
+    {
+      "Section": "Working with Representations of Images",
+      "Name": "representations",
+      "Path": "/documentation/appkit/nsimage/1519858-representations?language=objc"
+    },
+    {
+      "Section": "Working with Representations of Images",
+      "Name": "- removeRepresentation:",
+      "Path": "/documentation/appkit/nsimage/1519995-removerepresentation?language=objc"
+    },
+    {
+      "Section": "Working with Representations of Images",
+      "Name": "- bestRepresentationForRect:context:hints:",
+      "Path": "/documentation/appkit/nsimage/1519961-bestrepresentationforrect?language=objc"
+    },
+    {
+      "Section": "Working with Representations of Images",
+      "Name": "NSImageHintKey",
+      "Path": "/documentation/appkit/nsimagehintkey?language=objc"
+    },
+    {
+      "Section": "Working with Representations of Images",
+      "Name": "NSImageLayoutDirection",
+      "Path": "/documentation/appkit/nsimagelayoutdirection?language=objc"
+    },
+    {
+      "Section": "Setting the Representation Selection Criteria for Images",
+      "Name": "prefersColorMatch",
+      "Path": "/documentation/appkit/nsimage/1520010-preferscolormatch?language=objc"
+    },
+    {
+      "Section": "Setting the Representation Selection Criteria for Images",
+      "Name": "usesEPSOnResolutionMismatch",
+      "Path": "/documentation/appkit/nsimage/1519868-usesepsonresolutionmismatch?language=objc"
+    },
+    {
+      "Section": "Setting the Representation Selection Criteria for Images",
+      "Name": "matchesOnMultipleResolution",
+      "Path": "/documentation/appkit/nsimage/1519963-matchesonmultipleresolution?language=objc"
+    },
+    {
+      "Section": "Drawing Images",
+      "Name": "- drawInRect:",
+      "Path": "/documentation/appkit/nsimage/1519863-drawinrect?language=objc"
+    },
+    {
+      "Section": "Drawing Images",
+      "Name": "- drawAtPoint:fromRect:operation:fraction:",
+      "Path": "/documentation/appkit/nsimage/1519981-drawatpoint?language=objc"
+    },
+    {
+      "Section": "Drawing Images",
+      "Name": "- drawInRect:fromRect:operation:fraction:",
+      "Path": "/documentation/appkit/nsimage/1520067-drawinrect?language=objc"
+    },
+    {
+      "Section": "Drawing Images",
+      "Name": "- drawInRect:fromRect:operation:fraction:respectFlipped:hints:",
+      "Path": "/documentation/appkit/nsimage/1520043-drawinrect?language=objc"
+    },
+    {
+      "Section": "Drawing Images",
+      "Name": "- drawRepresentation:inRect:",
+      "Path": "/documentation/appkit/nsimage/1519904-drawrepresentation?language=objc"
+    },
+    {
+      "Section": "Drawing Images",
+      "Name": "NSCompositingOperation",
+      "Path": "/documentation/appkit/nscompositingoperation?language=objc"
+    },
+    {
+      "Section": "Managing Drawing Options",
+      "Name": "valid",
+      "Path": "/documentation/appkit/nsimage/1519991-valid?language=objc"
+    },
+    {
+      "Section": "Managing Drawing Options",
+      "Name": "backgroundColor",
+      "Path": "/documentation/appkit/nsimage/1520059-backgroundcolor?language=objc"
+    },
+    {
+      "Section": "Managing Drawing Options",
+      "Name": "capInsets",
+      "Path": "/documentation/appkit/nsimage/1520012-capinsets?language=objc"
+    },
+    {
+      "Section": "Managing Drawing Options",
+      "Name": "resizingMode",
+      "Path": "/documentation/appkit/nsimage/1520060-resizingmode?language=objc"
+    },
+    {
+      "Section": "Managing Drawing Options",
+      "Name": "NSImageResizingMode",
+      "Path": "/documentation/appkit/nsimageresizingmode?language=objc"
+    },
+    {
+      "Section": "Working with Alignment Metadata",
+      "Name": "alignmentRect",
+      "Path": "/documentation/appkit/nsimage/1519905-alignmentrect?language=objc"
+    },
+    {
+      "Section": "Managing Caching Options",
+      "Name": "cacheMode",
+      "Path": "/documentation/appkit/nsimage/1519850-cachemode?language=objc"
+    },
+    {
+      "Section": "Managing Caching Options",
+      "Name": "- recache",
+      "Path": "/documentation/appkit/nsimage/1519890-recache?language=objc"
+    },
+    {
+      "Section": "Managing Caching Options",
+      "Name": "NSImageCacheMode",
+      "Path": "/documentation/appkit/nsimagecachemode?language=objc"
+    },
+    {
+      "Section": "Producing TIFF Data for Images",
+      "Name": "TIFFRepresentation",
+      "Path": "/documentation/appkit/nsimage/1519841-tiffrepresentation?language=objc"
+    },
+    {
+      "Section": "Producing TIFF Data for Images",
+      "Name": "- TIFFRepresentationUsingCompression:factor:",
+      "Path": "/documentation/appkit/nsimage/1519949-tiffrepresentationusingcompressi?language=objc"
+    },
+    {
+      "Section": "Producing Core Graphics Images",
+      "Name": "- CGImageForProposedRect:context:hints:",
+      "Path": "/documentation/appkit/nsimage/1519861-cgimageforproposedrect?language=objc"
+    },
+    {
+      "Section": "Managing Incremental Loads",
+      "Name": "- cancelIncrementalLoad",
+      "Path": "/documentation/appkit/nsimage/1520041-cancelincrementalload?language=objc"
+    },
+    {
+      "Section": "Hit-Testing Images",
+      "Name": "- hitTestRect:withImageDestinationRect:context:hints:flipped:",
+      "Path": "/documentation/appkit/nsimage/1519922-hittestrect?language=objc"
+    },
+    {
+      "Section": "Managing Image Accessibility",
+      "Name": "accessibilityDescription",
+      "Path": "/documentation/appkit/nsimage/1519943-accessibilitydescription?language=objc"
+    },
+    {
+      "Section": "Using Images with Core Animation",
+      "Name": "- layerContentsForContentsScale:",
+      "Path": "/documentation/appkit/nsimage/1519851-layercontentsforcontentsscale?language=objc"
+    },
+    {
+      "Section": "Using Images with Core Animation",
+      "Name": "- recommendedLayerContentsScale:",
+      "Path": "/documentation/appkit/nsimage/1519878-recommendedlayercontentsscale?language=objc"
+    },
+    {
+      "Section": "Managing Axis Matching",
+      "Name": "matchesOnlyOnBestFittingAxis",
+      "Path": "/documentation/appkit/nsimage/1519848-matchesonlyonbestfittingaxis?language=objc"
+    },
+    {
+      "Section": "Localizing Images",
+      "Name": "- imageWithLocale:",
+      "Path": "/documentation/appkit/nsimage/4230594-imagewithlocale?language=objc"
+    },
+    {
+      "Section": "Localizing Images",
+      "Name": "locale",
+      "Path": "/documentation/appkit/nsimage/4230595-locale?language=objc"
+    },
+    {
+      "Section": "Deprecated",
+      "Name": "Deprecated Symbols",
+      "Path": "/documentation/appkit/nsimage/deprecated_symbols?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-11T12:34:31.901848+08:00",
+  "LastVersion": 2
+}

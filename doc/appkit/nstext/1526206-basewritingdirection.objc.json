@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1526206-basewritingdirection?language=objc",
+  "Title": "baseWritingDirection",
+  "Type": "Instance Property",
+  "Description": "The initial writing direction used to determine the actual writing direction for text.",
+  "Declaration": "@property NSWritingDirection baseWritingDirection;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.4+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:12.190502+08:00",
+  "LastVersion": 2
+}

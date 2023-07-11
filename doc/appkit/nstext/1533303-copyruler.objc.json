@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1533303-copyruler?language=objc",
+  "Title": "copyRuler:",
+  "Type": "Instance Method",
+  "Description": "This action method copies the paragraph style information for first selected paragraph onto the ruler pasteboard, as NSRulerPboardType, and expands the selection to paragraph boundaries.",
+  "Declaration": "- (void)copyRuler:(id)sender;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:27:55.07301+08:00",
+  "LastVersion": 2
+}

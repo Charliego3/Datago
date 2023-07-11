@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519899-imageunfilteredtypes?language=objc",
+  "Title": "imageUnfilteredTypes",
+  "Type": "Type Property",
+  "Description": "Returns an array of UTI strings identifying the image types supported directly by the registered image representation objects.",
+  "Declaration": "@property(class, readonly, copy) NSArray\u003cNSString *\u003e *imageUnfilteredTypes;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.5+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:58:11.121336+08:00",
+  "LastVersion": 2
+}

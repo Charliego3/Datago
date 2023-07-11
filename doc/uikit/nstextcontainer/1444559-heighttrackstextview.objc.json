@@ -1,0 +1,20 @@
+{
+  "Path": "/documentation/uikit/nstextcontainer/1444559-heighttrackstextview?language=objc",
+  "Title": "heightTracksTextView",
+  "Type": "Instance Property",
+  "Description": "A Boolean that controls whether the text container adjusts the height of its bounding rectangle when its text view resizes.",
+  "Declaration": "@property(nonatomic) BOOL heightTracksTextView;",
+  "Frameworks": null,
+  "Platforms": [
+    "iOS 7.0+",
+    "iPadOS 7.0+",
+    "macOS 10.0+",
+    "Mac Catalyst 13.1+",
+    "tvOS 9.0+",
+    "visionOS 1.0+",
+    "Beta"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:29:29.036967+08:00",
+  "LastVersion": 2
+}

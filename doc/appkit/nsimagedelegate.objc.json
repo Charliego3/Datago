@@ -1,0 +1,45 @@
+{
+  "Path": "/documentation/appkit/nsimagedelegate?language=objc",
+  "Title": "NSImageDelegate",
+  "Type": "Protocol",
+  "Description": "A set of optional methods that you can use to respond to drawing failures and manage incremental loads.",
+  "Declaration": "@protocol NSImageDelegate",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.6+"
+  ],
+  "Topics": [
+    {
+      "Section": "Responding to Drawing Failure",
+      "Name": "- imageDidNotDraw:inRect:",
+      "Path": "/documentation/appkit/nsimagedelegate/1519927-imagedidnotdraw?language=objc"
+    },
+    {
+      "Section": "Managing Incremental Loads",
+      "Name": "- image:didLoadPartOfRepresentation:withValidRows:",
+      "Path": "/documentation/appkit/nsimagedelegate/1519916-image?language=objc"
+    },
+    {
+      "Section": "Managing Incremental Loads",
+      "Name": "- image:didLoadRepresentation:withStatus:",
+      "Path": "/documentation/appkit/nsimagedelegate/1520028-image?language=objc"
+    },
+    {
+      "Section": "Managing Incremental Loads",
+      "Name": "- image:didLoadRepresentationHeader:",
+      "Path": "/documentation/appkit/nsimagedelegate/1519945-image?language=objc"
+    },
+    {
+      "Section": "Managing Incremental Loads",
+      "Name": "- image:willLoadRepresentation:",
+      "Path": "/documentation/appkit/nsimagedelegate/1519934-image?language=objc"
+    },
+    {
+      "Section": "Managing Incremental Loads",
+      "Name": "NSImageLoadStatus",
+      "Path": "/documentation/appkit/nsimageloadstatus?language=objc"
+    }
+  ],
+  "LastFetch": "2023-07-11T12:35:19.19849+08:00",
+  "LastVersion": 2
+}

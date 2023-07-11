@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nstext/1534203-underline?language=objc",
+  "Title": "underline:",
+  "Type": "Instance Method",
+  "Description": "Adds the underline attribute to the selected text attributes if absent; removes the attribute if present.",
+  "Declaration": "- (void)underline:(id)sender;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:28:18.053632+08:00",
+  "LastVersion": 2
+}

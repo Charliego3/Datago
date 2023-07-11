@@ -1,0 +1,20 @@
+{
+  "Path": "/documentation/uikit/nstextcontainer/1444555-linefragmentrectforproposedrect?language=objc",
+  "Title": "lineFragmentRectForProposedRect:atIndex:writingDirection:remainingRect:",
+  "Type": "Instance Method",
+  "Description": "Returns the bounds of a line fragment rectangle inside the text container for the proposed rectangle.",
+  "Declaration": "- (CGRect)lineFragmentRectForProposedRect:(CGRect)proposedRect \n                                  atIndex:(NSUInteger)characterIndex \n                         writingDirection:(NSWritingDirection)baseWritingDirection \n                            remainingRect:(CGRect *)remainingRect;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "iOS 7.0+",
+    "iPadOS 7.0+",
+    "macOS 10.11+",
+    "Mac Catalyst 13.1+",
+    "tvOS 9.0+",
+    "visionOS 1.0+",
+    "Beta"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:29:33.477296+08:00",
+  "LastVersion": 2
+}

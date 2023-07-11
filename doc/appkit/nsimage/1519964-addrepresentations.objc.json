@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519964-addrepresentations?language=objc",
+  "Title": "addRepresentations:",
+  "Type": "Instance Method",
+  "Description": "Adds an array of image representation objects to the image.",
+  "Declaration": "- (void)addRepresentations:(NSArray\u003cNSImageRep *\u003e *)imageReps;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:58:11.120934+08:00",
+  "LastVersion": 2
+}

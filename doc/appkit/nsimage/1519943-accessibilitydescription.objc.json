@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519943-accessibilitydescription?language=objc",
+  "Title": "accessibilityDescription",
+  "Type": "Instance Property",
+  "Description": "The image’s accessibility description.",
+  "Declaration": "@property(copy) NSString *accessibilityDescription;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.6+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T14:00:04.4914+08:00",
+  "LastVersion": 2
+}

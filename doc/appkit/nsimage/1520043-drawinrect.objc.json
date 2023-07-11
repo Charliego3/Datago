@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1520043-drawinrect?language=objc",
+  "Title": "drawInRect:fromRect:operation:fraction:respectFlipped:hints:",
+  "Type": "Instance Method",
+  "Description": "Draws all or part of the image in the specified rectangle respecting the hints and the orientation of the current coordinate system.",
+  "Declaration": "- (void)drawInRect:(NSRect)dstSpacePortionRect \n          fromRect:(NSRect)srcSpacePortionRect \n         operation:(NSCompositingOperation)op \n          fraction:(CGFloat)requestedAlpha \n    respectFlipped:(BOOL)respectContextIsFlipped \n             hints:(NSDictionary\u003cNSImageHintKey, id\u003e *)hints;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.6+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:58:39.40767+08:00",
+  "LastVersion": 2
+}

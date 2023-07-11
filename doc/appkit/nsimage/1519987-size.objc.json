@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519987-size?language=objc",
+  "Title": "size",
+  "Type": "Instance Property",
+  "Description": "The size of the image.",
+  "Declaration": "@property NSSize size;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T12:35:20.179809+08:00",
+  "LastVersion": 2
+}

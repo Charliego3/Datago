@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519949-tiffrepresentationusingcompressi?language=objc",
+  "Title": "TIFFRepresentationUsingCompression:factor:",
+  "Type": "Instance Method",
+  "Description": "Returns a data object that contains TIFF data with the specified compression settings for all of the image representations in the image.",
+  "Declaration": "- (NSData *)TIFFRepresentationUsingCompression:(NSTIFFCompression)comp \n                                        factor:(float)factor;\n",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.0+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:59:56.421373+08:00",
+  "LastVersion": 2
+}

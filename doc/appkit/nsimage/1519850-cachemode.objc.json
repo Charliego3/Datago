@@ -1,0 +1,14 @@
+{
+  "Path": "/documentation/appkit/nsimage/1519850-cachemode?language=objc",
+  "Title": "cacheMode",
+  "Type": "Instance Property",
+  "Description": "The image’s caching mode.",
+  "Declaration": "@property NSImageCacheMode cacheMode;",
+  "Frameworks": null,
+  "Platforms": [
+    "macOS 10.2+"
+  ],
+  "Topics": null,
+  "LastFetch": "2023-07-11T13:59:48.402951+08:00",
+  "LastVersion": 2
+}
