@@ -1,17 +1,23 @@
-build/
-node_modules
-frontend/dist
+### Go template
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
-.idea/
+# Test binary, built with `go test -c`
+*.test
 
-.DS_Store
-*/.DS_Store
-*/node_modules/
-*/build
-*/.svelte-kit
-*/package
-*/.env
-*/.env.*
-*/!.env.example
-*/vite.config.js.timestamp-*
-*/vite.config.ts.timestamp-*
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+
