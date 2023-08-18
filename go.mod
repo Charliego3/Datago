@@ -18,6 +18,7 @@ require (
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/pkg/browser v0.0.0-20210706143420-7d21f8c997e2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
+	github.com/progrium/macdriver v0.4.1-0.20230817085234-363adeff1ee6 // indirect
 	github.com/samber/lo v1.27.1 // indirect
 	github.com/tkrajina/go-reflector v0.5.5 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
@@ -26,7 +27,7 @@ require (
 	golang.org/x/crypto v0.1.0 // indirect
 	golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17 // indirect
 	golang.org/x/net v0.7.0 // indirect
-	golang.org/x/sys v0.5.0 // indirect
+	golang.org/x/sys v0.11.0 // indirect
 	golang.org/x/text v0.7.0 // indirect
 )
 
