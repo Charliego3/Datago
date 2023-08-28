@@ -27,12 +27,11 @@ func toolbarItemIdentifiers(appkit.Toolbar) []appkit.ToolbarItemIdentifier {
 func configureToolbar(toolbar appkit.Toolbar) {
 	for _, item := range toolbar.Items() {
 		if item.ItemIdentifier() == appkit.ToolbarToggleSidebarItemIdentifier {
+			item.View().SetFocusRingType(appkit.FocusRingTypeNone)
 			item.SetNavigational(false)
 			item.SetImage(item.Image().ImageWithSymbolConfiguration(
 				appkit.ImageSymbolConfiguration_ConfigurationWithScale(appkit.ImageSymbolScaleLarge),
 			))
-			item.View().SetFocusRingType(appkit.FocusRingTypeNone)
-			break
 		}
 	}
 }
