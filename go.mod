@@ -2,4 +2,4 @@ module changeme
 
 go 1.18
 
-require github.com/progrium/macdriver v0.4.1-0.20230817085234-363adeff1ee6
+require github.com/progrium/macdriver v0.5.0-preview.0.20230824002417-1b1925e79538
