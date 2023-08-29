@@ -8,50 +8,96 @@ import (
 )
 
 func getSidebar() appkit.IView {
+	const defaultWidth = 200
 	contentView := appkit.NewView()
-	contentView.SetFrameSize(foundation.Size{Width: 200, Height: minFrameSize.Height})
+	contentView.SetFrameSize(foundation.Size{Width: defaultWidth, Height: minFrameSize.Height})
 
-	topLine := appkit.NewBoxWithFrame(rectOf(0, 0, 200, 200))
+	topLine := getHorizontalLine(defaultWidth)
 	contentView.AddSubview(topLine)
-	//topLine.TopAnchor().ConstraintEqualToAnchorConstant(contentView.TopAnchor(), 38).SetActive(true)
-	//topLine.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()).SetActive(true)
-	//topLine.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()).SetActive(true)
-	//topLine.BottomAnchor().ConstraintEqualToAnchorConstant(contentView.BottomAnchor(), 200)
+	layoutActive(
+		topLine.TopAnchor().ConstraintEqualToAnchorConstant(contentView.TopAnchor(), 38),
+		topLine.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()),
+		topLine.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()),
+	)
 
+	segment := getSegmentControl()
+	contentView.AddSubview(segment)
+	layoutActive(
+		segment.TopAnchor().ConstraintEqualToAnchorConstant(topLine.TopAnchor(), 5.5),
+		segment.LeadingAnchor().ConstraintEqualToAnchorConstant(contentView.LeadingAnchor(), 20),
+		segment.TrailingAnchor().ConstraintEqualToAnchorConstant(contentView.TrailingAnchor(), -20),
+	)
+
+	bottomLine := getHorizontalLine(defaultWidth)
+	contentView.AddSubview(bottomLine)
+	layoutActive(
+		bottomLine.TopAnchor().ConstraintEqualToAnchorConstant(segment.BottomAnchor(), 4),
+		bottomLine.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()),
+		bottomLine.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()),
+	)
+
+	tabViewController := appkit.NewTabViewController()
+	tabViewController.SetTabViewItems([]appkit.ITabViewItem{
+		appkit.TabViewItem_TabViewItemWithViewController(getConnectionController()),
+	})
+
+	tabView := tabViewController.TabView()
+	tabView.SetTabViewBorderType(appkit.TabViewBorderTypeNone)
+	tabView.SetTabViewType(appkit.NoTabsNoBorder)
+	contentView.AddSubview(tabView)
+	tabView.SetTranslatesAutoresizingMaskIntoConstraints(false)
+	layoutActive(
+		tabView.TopAnchor().ConstraintEqualToAnchor(bottomLine.BottomAnchor()),
+		tabView.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()),
+		tabView.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()),
+	)
+
+	//outline := appkit.NewOutlineView()
+	//outline.SetFrameSize(foundation.Size{Width: defaultWidth, Height: minFrameSize.Height})
+	//setSidebarDataSource(outline)
+	//contentView.AddSubview(outline)
+	return contentView
+}
+
+func getConnectionController() appkit.ViewController {
+	textField := appkit.NewLabel("Connections")
+	textField.SetTranslatesAutoresizingMaskIntoConstraints(false)
+	view := appkit.NewView()
+	view.AddSubview(textField)
+	layout.PinEdgesToSuperView(textField, foundation.EdgeInsets{})
+
+	controller := appkit.NewViewController()
+	controller.SetView(view)
+	return controller
+}
+
+func getSegmentControl() appkit.SegmentedControl {
 	segment := appkit.NewSegmentedControl()
 	segment.SetFocusRingType(appkit.FocusRingTypeNone)
-	segment.SetFrameSize(foundation.Size{Width: contentView.Frame().Size.Width, Height: 20})
-	segment.SetHorizontalContentSizeConstraintActive(true)
 	segment.SetSegmentCount(2)
-	segment.SetImageForSegment(appkit.Image_ImageWithSystemSymbolNameAccessibilityDescription("square.and.arrow.up.on.square", ""), 0)
-	segment.SetImageForSegment(appkit.Image_ImageWithSystemSymbolNameAccessibilityDescription("eraser.line.dashed.fill", ""), 1)
-	segment.SetShowsMenuIndicatorForSegment(false, 0)
-	segment.SetShowsMenuIndicatorForSegment(false, 1)
+	segment.SetImageForSegment(symbolImage("square.and.arrow.up.on.square"), 0)
+	segment.SetImageForSegment(symbolImage("eraser.line.dashed.fill"), 1)
 	segment.SetAutoresizesSubviews(true)
 	segment.SetSegmentStyle(appkit.SegmentStyleRoundRect)
-	segment.SetSelectedSegmentBezelColor(appkit.Color_OrangeColor())
 	segment.SetSpringLoaded(true)
 	segment.SetSegmentDistribution(appkit.SegmentDistributionFillProportionally)
 	segment.SetAlignment(appkit.TextAlignmentCenter)
-	segment.DrawPageBorderWithSize(foundation.Size{})
-	segment.SetWantsLayer(true)
-	//segment.EnclosingScrollView().SetBorderType(appkit.NoBorder)
+	segment.SetSelectedSegment(0)
+	segment.SetSelectedSegmentBezelColor(appkit.Color_MagentaColor())
+	segment.SetUserInterfaceLayoutDirection(appkit.UserInterfaceLayoutDirectionLeftToRight)
+	segment.SetIgnoresMultiClick(true)
+	segment.SetUsesSingleLineMode(true)
 	segment.SetTranslatesAutoresizingMaskIntoConstraints(false)
-	contentView.AddSubview(segment)
-	layout.PinEdgesToSuperView(segment, foundation.EdgeInsets{
-		Top:    100,
-		Left:   20,
-		Bottom: minFrameSize.Height - 50,
-		Right:  20,
-	})
+	segment.SetWantsLayer(true)
+	return segment
+}
 
-	//layout.PinAnchorTo(segment.View.TopAnchor(), contentView.TopAnchor(), 50)
-
-	outline := appkit.NewOutlineView()
-	outline.SetFrameSize(foundation.Size{Width: 200, Height: minFrameSize.Height})
-	setSidebarDataSource(outline)
-	contentView.AddSubview(outline)
-	return contentView
+func getHorizontalLine(width float64) appkit.Box {
+	line := appkit.NewBoxWithFrame(rectOf(0, 0, width, 1))
+	line.SetTranslatesAutoresizingMaskIntoConstraints(false)
+	line.SetBoxType(appkit.BoxCustom)
+	line.SetBorderColor(appkit.Color_ColorWithSRGBRedGreenBlueAlpha(0, 0, 0, 0.1))
+	return line
 }
 
 func setSidebarDataSource(outline appkit.OutlineView) {

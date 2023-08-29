@@ -7,10 +7,6 @@ import (
 	"runtime"
 )
 
-func rectOf(x, y, width, height float64) foundation.Rect {
-	return foundation.Rect{Origin: foundation.Point{X: x, Y: y}, Size: foundation.Size{Width: width, Height: height}}
-}
-
 var minFrameSize = foundation.Size{Width: 700, Height: 600}
 
 func launched(app appkit.Application, delegate *appkit.ApplicationDelegate) {
