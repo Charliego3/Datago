@@ -93,7 +93,6 @@ func getSegmentControl() *SegmentControl {
 	segment.SetUsesSingleLineMode(true)
 	segment.SetTranslatesAutoresizingMaskIntoConstraints(false)
 	segment.SetTrackingMode(appkit.SegmentSwitchTrackingSelectOne)
-	segment.SetShowsMenuIndicatorForSegment(false, 0)
 	segment.SetSegmentCount(len(segment.symbols))
 	segment.SetSelectedSegment(segment.selected)
 	target, selector := segment.Clicked()
@@ -134,7 +133,7 @@ func getHorizontalLine(width float64) appkit.Box {
 	return line
 }
 
-func setSidebarDataSource(outline appkit.OutlineView) {
+func setConnectionsDataSource(outline appkit.OutlineView) {
 	var dataSource IOutlineDataSource = OutlineDataSource{}
 	po0 := objc.WrapAsProtocol("NSOutlineViewDataSource", dataSource)
 	objc.SetAssociatedObject(outline, objc.AssociationKey("setDataSource"), po0, objc.ASSOCIATION_RETAIN)
