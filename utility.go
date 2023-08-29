@@ -16,5 +16,5 @@ func layoutActive(constraints ...appkit.LayoutConstraint) {
 }
 
 func symbolImage(symbol string) appkit.Image {
-	return appkit.Image_ImageWithSystemSymbolNameAccessibilityDescription(symbol, "")
+	return appkit.Image_ImageWithSystemSymbolNameAccessibilityDescription(symbol, symbol)
 }

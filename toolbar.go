@@ -32,6 +32,7 @@ func configureToolbar(toolbar appkit.Toolbar) {
 			item.SetImage(item.Image().ImageWithSymbolConfiguration(
 				appkit.ImageSymbolConfiguration_ConfigurationWithScale(appkit.ImageSymbolScaleLarge),
 			))
+			break
 		}
 	}
 }

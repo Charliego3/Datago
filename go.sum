@@ -1,3 +1,5 @@
 github.com/go-test/deep v1.1.0 h1:WOcxcdHcvdgThNXjw0t76K42FXTU7HpNQWHpA2HHNlg=
 github.com/progrium/macdriver v0.5.0-preview.0.20230824002417-1b1925e79538 h1:8ucUVtBk2oOe1hZXp4AFmtUxyvb/2xsSf4+d2WNEUQQ=
 github.com/progrium/macdriver v0.5.0-preview.0.20230824002417-1b1925e79538/go.mod h1:eGZ1EqLpM/E39G7m1QwqPWwP8lu1eLYKuMaZGqt7P3w=
+github.com/progrium/macdriver v0.5.0-preview.0.20230826193222-015b4c968305 h1:e2lYagKBw7/BNLPK5WLWOZrnJwFMI6Ak2W9O14RTD3g=
+github.com/progrium/macdriver v0.5.0-preview.0.20230826193222-015b4c968305/go.mod h1:eGZ1EqLpM/E39G7m1QwqPWwP8lu1eLYKuMaZGqt7P3w=

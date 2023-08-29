@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/progrium/macdriver/helper/action"
 	"github.com/progrium/macdriver/helper/layout"
 	"github.com/progrium/macdriver/macos/appkit"
 	"github.com/progrium/macdriver/macos/foundation"
@@ -19,22 +20,34 @@ func getSidebar() appkit.IView {
 	bottomLine := getHorizontalLine(defaultWidth)
 	contentView.AddSubview(bottomLine)
 
-	tabViewController := appkit.NewTabViewController()
-	tabViewController.SetTabViewItems([]appkit.ITabViewItem{
-		appkit.TabViewItem_TabViewItemWithViewController(getConnectionController()),
+	// TODO: TabViewItems Start
+	textField := appkit.NewLabel("Label")
+	controller := appkit.NewViewController()
+	controller.SetView(textField)
+
+	label := appkit.NewLabel("Label1111")
+	controller1 := appkit.NewViewController()
+	controller1.SetView(label)
+	// TODO: TabViewItems Ended
+
+	tabView := appkit.NewTabView()
+	tabView.SetTabViewType(appkit.NoTabsNoBorder)
+	tabView.SetTabViewBorderType(appkit.TabViewBorderTypeNone)
+	tabView.SetUserInterfaceLayoutDirection(appkit.UserInterfaceLayoutDirectionLeftToRight)
+	tabView.SetTranslatesAutoresizingMaskIntoConstraints(false)
+	tabView.SetTabViewItems([]appkit.ITabViewItem{
+		appkit.TabViewItem_TabViewItemWithViewController(controller),
+		appkit.TabViewItem_TabViewItemWithViewController(controller1),
 	})
 
-	tabView := tabViewController.TabView()
-	tabView.SetTabViewBorderType(appkit.TabViewBorderTypeNone)
-	tabView.SetTabViewType(appkit.NoTabsNoBorder)
 	contentView.AddSubview(tabView)
-	tabView.SetTranslatesAutoresizingMaskIntoConstraints(false)
+	segment.trigger = tabView.SelectTabViewItemAtIndex
 
 	layoutActive(
 		topLine.TopAnchor().ConstraintEqualToAnchorConstant(contentView.TopAnchor(), 38),
 		topLine.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()),
 		topLine.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()),
-		segment.TopAnchor().ConstraintEqualToAnchorConstant(topLine.TopAnchor(), 5.5),
+		segment.TopAnchor().ConstraintEqualToAnchorConstant(topLine.TopAnchor(), 5.3),
 		segment.LeadingAnchor().ConstraintEqualToAnchorConstant(contentView.LeadingAnchor(), 20),
 		segment.TrailingAnchor().ConstraintEqualToAnchorConstant(contentView.TrailingAnchor(), -20),
 		bottomLine.TopAnchor().ConstraintEqualToAnchorConstant(segment.BottomAnchor(), 4),
@@ -43,46 +56,73 @@ func getSidebar() appkit.IView {
 		tabView.TopAnchor().ConstraintEqualToAnchor(bottomLine.BottomAnchor()),
 		tabView.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()),
 		tabView.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()),
+		tabView.BottomAnchor().ConstraintEqualToAnchor(contentView.BottomAnchor()),
 	)
-
-	//outline := appkit.NewOutlineView()
-	//outline.SetFrameSize(foundation.Size{Width: defaultWidth, Height: minFrameSize.Height})
-	//setSidebarDataSource(outline)
-	//contentView.AddSubview(outline)
 	return contentView
 }
 
-func getConnectionController() appkit.ViewController {
-	textField := appkit.NewLabel("Connections")
-	textField.SetTranslatesAutoresizingMaskIntoConstraints(false)
-	view := appkit.NewView()
-	view.AddSubview(textField)
-	layout.PinEdgesToSuperView(textField, foundation.EdgeInsets{})
-
-	controller := appkit.NewViewController()
-	controller.SetView(view)
-	return controller
+type SegmentControl struct {
+	appkit.SegmentedControl
+	symbols  []SFSymbol
+	selected int
+	trigger  func(idx int)
 }
 
-func getSegmentControl() appkit.SegmentedControl {
-	segment := appkit.NewSegmentedControl()
+type SFSymbol struct {
+	normal string
+	filled string
+}
+
+func getSegmentControl() *SegmentControl {
+	// TODO: Segment cell display borderless
+	segment := &SegmentControl{
+		SegmentedControl: appkit.NewSegmentedControl(),
+		symbols: []SFSymbol{
+			{"personalhotspot.circle", "personalhotspot.circle.fill"},
+			{"rectangle.stack", "rectangle.stack.fill"},
+		},
+	}
 	segment.SetFocusRingType(appkit.FocusRingTypeNone)
-	segment.SetSegmentCount(2)
-	segment.SetImageForSegment(symbolImage("square.and.arrow.up.on.square"), 0)
-	segment.SetImageForSegment(symbolImage("eraser.line.dashed.fill"), 1)
 	segment.SetAutoresizesSubviews(true)
-	segment.SetSegmentStyle(appkit.SegmentStyleRoundRect)
+	segment.SetSegmentStyle(appkit.SegmentStyleTexturedSquare)
 	segment.SetSpringLoaded(true)
 	segment.SetSegmentDistribution(appkit.SegmentDistributionFillProportionally)
 	segment.SetAlignment(appkit.TextAlignmentCenter)
-	segment.SetSelectedSegment(0)
-	segment.SetSelectedSegmentBezelColor(appkit.Color_MagentaColor())
 	segment.SetUserInterfaceLayoutDirection(appkit.UserInterfaceLayoutDirectionLeftToRight)
 	segment.SetIgnoresMultiClick(true)
 	segment.SetUsesSingleLineMode(true)
 	segment.SetTranslatesAutoresizingMaskIntoConstraints(false)
-	segment.SetWantsLayer(true)
+	segment.SetTrackingMode(appkit.SegmentSwitchTrackingSelectOne)
+	segment.SetShowsMenuIndicatorForSegment(false, 0)
+	segment.SetSegmentCount(len(segment.symbols))
+	segment.SetSelectedSegment(segment.selected)
+	target, selector := segment.Clicked()
+	segment.SetAction(selector)
+	segment.SetTarget(target)
+	for idx, item := range segment.symbols {
+		if idx == segment.selected {
+			segment.SetImageForSegment(symbolImage(item.filled), idx)
+			continue
+		}
+		segment.SetImageForSegment(symbolImage(item.normal), idx)
+	}
 	return segment
+}
+
+func (s *SegmentControl) Clicked() (target action.Target, selector objc.Selector) {
+	return action.Wrap(func(sender objc.Object) {
+		selected := s.SelectedSegment()
+		if selected == s.selected {
+			return
+		}
+
+		s.SetImageForSegment(symbolImage(s.symbols[selected].filled), selected)
+		s.SetImageForSegment(symbolImage(s.symbols[s.selected].normal), s.selected)
+		s.selected = s.SelectedSegment()
+		if s.trigger != nil {
+			s.trigger(s.selected)
+		}
+	})
 }
 
 func getHorizontalLine(width float64) appkit.Box {
@@ -90,6 +130,7 @@ func getHorizontalLine(width float64) appkit.Box {
 	line.SetTranslatesAutoresizingMaskIntoConstraints(false)
 	line.SetBoxType(appkit.BoxCustom)
 	line.SetBorderColor(appkit.Color_ColorWithSRGBRedGreenBlueAlpha(0, 0, 0, 0.1))
+	layout.SetMaxHeight(line, 1)
 	return line
 }
 
