@@ -14,27 +14,10 @@ func getSidebar() appkit.IView {
 
 	topLine := getHorizontalLine(defaultWidth)
 	contentView.AddSubview(topLine)
-	layoutActive(
-		topLine.TopAnchor().ConstraintEqualToAnchorConstant(contentView.TopAnchor(), 38),
-		topLine.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()),
-		topLine.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()),
-	)
-
 	segment := getSegmentControl()
 	contentView.AddSubview(segment)
-	layoutActive(
-		segment.TopAnchor().ConstraintEqualToAnchorConstant(topLine.TopAnchor(), 5.5),
-		segment.LeadingAnchor().ConstraintEqualToAnchorConstant(contentView.LeadingAnchor(), 20),
-		segment.TrailingAnchor().ConstraintEqualToAnchorConstant(contentView.TrailingAnchor(), -20),
-	)
-
 	bottomLine := getHorizontalLine(defaultWidth)
 	contentView.AddSubview(bottomLine)
-	layoutActive(
-		bottomLine.TopAnchor().ConstraintEqualToAnchorConstant(segment.BottomAnchor(), 4),
-		bottomLine.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()),
-		bottomLine.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()),
-	)
 
 	tabViewController := appkit.NewTabViewController()
 	tabViewController.SetTabViewItems([]appkit.ITabViewItem{
@@ -46,7 +29,17 @@ func getSidebar() appkit.IView {
 	tabView.SetTabViewType(appkit.NoTabsNoBorder)
 	contentView.AddSubview(tabView)
 	tabView.SetTranslatesAutoresizingMaskIntoConstraints(false)
+
 	layoutActive(
+		topLine.TopAnchor().ConstraintEqualToAnchorConstant(contentView.TopAnchor(), 38),
+		topLine.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()),
+		topLine.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()),
+		segment.TopAnchor().ConstraintEqualToAnchorConstant(topLine.TopAnchor(), 5.5),
+		segment.LeadingAnchor().ConstraintEqualToAnchorConstant(contentView.LeadingAnchor(), 20),
+		segment.TrailingAnchor().ConstraintEqualToAnchorConstant(contentView.TrailingAnchor(), -20),
+		bottomLine.TopAnchor().ConstraintEqualToAnchorConstant(segment.BottomAnchor(), 4),
+		bottomLine.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()),
+		bottomLine.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()),
 		tabView.TopAnchor().ConstraintEqualToAnchor(bottomLine.BottomAnchor()),
 		tabView.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()),
 		tabView.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()),
