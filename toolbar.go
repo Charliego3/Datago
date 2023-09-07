@@ -1,14 +1,16 @@
 package main
 
 import (
+	"github.com/progrium/macdriver/helper/action"
 	"github.com/progrium/macdriver/macos/appkit"
+	"github.com/progrium/macdriver/objc"
 )
 
-func getToolbar() appkit.IToolbar {
+func getToolbar(app appkit.Application) appkit.IToolbar {
 	toolbar := appkit.NewToolbar()
 	toolbar.SetDisplayMode(appkit.ToolbarDisplayModeIconOnly)
 	toolbar.SetShowsBaselineSeparator(true)
-	toolbar.SetDelegate(getToolbarDelegate())
+	toolbar.SetDelegate(getToolbarDelegate(app))
 	toolbar.SetAllowsExtensionItems(true)
 	return toolbar
 }
@@ -16,9 +18,12 @@ func getToolbar() appkit.IToolbar {
 var itemIdentifiers = []appkit.ToolbarItemIdentifier{
 	appkit.ToolbarToggleSidebarItemIdentifier,
 	appkit.ToolbarSidebarTrackingSeparatorItemIdentifier,
+	toggleThemeIdentifier,
 	appkit.ToolbarCloudSharingItemIdentifier,
 	appkit.ToolbarShowColorsItemIdentifier,
 }
+
+var toggleThemeIdentifier = appkit.ToolbarItemIdentifier("toggleTheme")
 
 func toolbarItemIdentifiers(appkit.Toolbar) []appkit.ToolbarItemIdentifier {
 	return itemIdentifiers
@@ -37,7 +42,7 @@ func configureToolbar(toolbar appkit.Toolbar) {
 	}
 }
 
-func getToolbarDelegate() *appkit.ToolbarDelegate {
+func getToolbarDelegate(app appkit.Application) *appkit.ToolbarDelegate {
 	toolbarDelegate := &appkit.ToolbarDelegate{}
 	toolbarDelegate.SetToolbarAllowedItemIdentifiers(toolbarItemIdentifiers)
 	toolbarDelegate.SetToolbarDefaultItemIdentifiers(toolbarItemIdentifiers)
@@ -46,6 +51,26 @@ func getToolbarDelegate() *appkit.ToolbarDelegate {
 		identifier appkit.ToolbarItemIdentifier,
 		flag bool,
 	) appkit.IToolbarItem {
+		if identifier == toggleThemeIdentifier {
+			btn := appkit.NewButton()
+			target, selector := action.Wrap(func(_ objc.Object) {
+				var theme appkit.IAppearance
+				if isDark(app.Appearance()) {
+					theme = appkit.Appearance_AppearanceNamed(appkit.AppearanceNameAqua)
+				} else {
+					theme = appkit.Appearance_AppearanceNamed(appkit.AppearanceNameDarkAqua)
+				}
+				app.SetAppearance(theme)
+			})
+			btn.SetButtonType(appkit.ToggleButton)
+			btn.SetAction(selector)
+			btn.SetTarget(target)
+			btn.SetTitle("Toggle Theme")
+			item := appkit.NewToolbarItemWithItemIdentifier(identifier)
+			item.SetView(btn)
+			item.SetNavigational(true)
+			return item
+		}
 		return nil
 	})
 	return toolbarDelegate

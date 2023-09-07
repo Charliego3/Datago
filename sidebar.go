@@ -153,11 +153,15 @@ func getSegmentControl() *SegmentControl {
 	segment.SetAction(selector)
 	segment.SetTarget(target)
 	for idx, item := range segment.symbols {
+		symbol := item.normal
+		var configuration []appkit.ImageSymbolConfiguration
 		if idx == segment.selected {
-			segment.SetImageForSegment(symbolImage(item.filled), idx)
-			continue
+			symbol = item.filled
+			configuration = []appkit.ImageSymbolConfiguration{
+				appkit.ImageSymbolConfiguration_ConfigurationPreferringMulticolor(),
+			}
 		}
-		segment.SetImageForSegment(symbolImage(item.normal), idx)
+		segment.SetImageForSegment(symbolImage(symbol, configuration...), idx)
 	}
 	return segment
 }
@@ -169,7 +173,8 @@ func (s *SegmentControl) Clicked() (target action.Target, selector objc.Selector
 			return
 		}
 
-		s.SetImageForSegment(symbolImage(s.symbols[selected].filled), selected)
+		configuration := appkit.ImageSymbolConfiguration_ConfigurationPreferringMulticolor()
+		s.SetImageForSegment(symbolImage(s.symbols[selected].filled, configuration), selected)
 		s.SetImageForSegment(symbolImage(s.symbols[s.selected].normal), s.selected)
 		s.selected = s.SelectedSegment()
 		if s.trigger != nil {
@@ -182,7 +187,7 @@ func getHorizontalLine(width float64) appkit.Box {
 	line := appkit.NewBoxWithFrame(rectOf(0, 0, width, 1))
 	line.SetTranslatesAutoresizingMaskIntoConstraints(false)
 	line.SetBoxType(appkit.BoxCustom)
-	line.SetBorderColor(appkit.Color_ColorWithSRGBRedGreenBlueAlpha(0, 0, 0, 0.1))
+	line.SetBorderColor(getDividerColor())
 	layout.SetMaxHeight(line, 1)
 	return line
 }

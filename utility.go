@@ -15,6 +15,25 @@ func layoutActive(constraints ...appkit.LayoutConstraint) {
 	}
 }
 
-func symbolImage(symbol string) appkit.Image {
-	return appkit.Image_ImageWithSystemSymbolNameAccessibilityDescription(symbol, symbol)
+func symbolImage(symbol string, configurations ...appkit.ImageSymbolConfiguration) appkit.Image {
+	image := appkit.Image_ImageWithSystemSymbolNameAccessibilityDescription(symbol, symbol)
+	for _, conf := range configurations {
+		image = image.ImageWithSymbolConfiguration(conf)
+	}
+	return image
+}
+
+func getDividerColor() appkit.Color {
+	if isDark(appkit.Appearance_CurrentDrawingAppearance()) {
+		return appkit.Color_ColorWithSRGBRedGreenBlueAlpha(1, 1, 1, 0.15)
+	}
+	return appkit.Color_ColorWithSRGBRedGreenBlueAlpha(0, 0, 0, 0.15)
+}
+
+func isDark(appearance appkit.IAppearance) bool {
+	name := appearance.Name()
+	return name == appkit.AppearanceNameDarkAqua ||
+		name == appkit.AppearanceNameVibrantDark ||
+		name == appkit.AppearanceNameAccessibilityHighContrastVibrantDark ||
+		name == appkit.AppearanceNameAccessibilityHighContrastDarkAqua
 }

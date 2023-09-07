@@ -31,7 +31,7 @@ func launched(app appkit.Application, delegate *appkit.ApplicationDelegate) {
 		appkit.BackingStoreBuffered, false)
 	objc.Retain(&w)
 
-	w.SetToolbar(getToolbar())
+	w.SetToolbar(getToolbar(app))
 	configureToolbar(w.Toolbar())
 	w.SetContentMinSize(minFrameSize)
 	w.SetContentMaxSize(screenFrame.Size)
@@ -41,6 +41,7 @@ func launched(app appkit.Application, delegate *appkit.ApplicationDelegate) {
 	w.Center()
 	w.MakeKeyAndOrderFront(w)
 
+	app.SetAppearance(appkit.Appearance_CurrentDrawingAppearance())
 	app.SetActivationPolicy(appkit.ApplicationActivationPolicyRegular)
 	app.ActivateIgnoringOtherApps(true)
 }
