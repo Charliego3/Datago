@@ -50,7 +50,7 @@ func getToolbarDelegate(app appkit.Application) *appkit.ToolbarDelegate {
 		toolbar appkit.Toolbar,
 		identifier appkit.ToolbarItemIdentifier,
 		flag bool,
-	) appkit.IToolbarItem {
+	) appkit.ToolbarItem {
 		if identifier == toggleThemeIdentifier {
 			btn := appkit.NewButton()
 			target, selector := action.Wrap(func(_ objc.Object) {
@@ -71,7 +71,7 @@ func getToolbarDelegate(app appkit.Application) *appkit.ToolbarDelegate {
 			item.SetNavigational(true)
 			return item
 		}
-		return nil
+		return appkit.ToolbarItem{}
 	})
 	return toolbarDelegate
 }

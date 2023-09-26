@@ -130,12 +130,27 @@ type SFSymbol struct {
 func getSegmentControl() *SegmentControl {
 	// TODO: Segment cell display borderless
 	segment := &SegmentControl{
-		SegmentedControl: appkit.NewSegmentedControl(),
 		symbols: []SFSymbol{
-			{"personalhotspot.circle", "personalhotspot.circle.fill"},
 			{"rectangle.stack", "rectangle.stack.fill"},
+			{"personalhotspot.circle", "personalhotspot.circle.fill"},
 		},
 	}
+
+	appkit.Color_ControlAccentColor()
+	target, selector := segment.Clicked()
+	control := appkit.SegmentedControl_SegmentedControlWithImagesTrackingModeTargetAction(
+		[]appkit.IImage{
+			symbolImage(
+				segment.symbols[0].filled,
+				appkit.ImageSymbolConfiguration_ConfigurationWithHierarchicalColor(appkit.Color_ControlAccentColor()),
+			),
+			symbolImage(segment.symbols[1].normal),
+		},
+		appkit.SegmentSwitchTrackingSelectOne,
+		target, selector,
+	)
+
+	segment.SegmentedControl = control
 	segment.SetFocusRingType(appkit.FocusRingTypeNone)
 	segment.SetAutoresizesSubviews(true)
 	segment.SetSegmentStyle(appkit.SegmentStyleTexturedSquare)
@@ -146,23 +161,7 @@ func getSegmentControl() *SegmentControl {
 	segment.SetIgnoresMultiClick(true)
 	segment.SetUsesSingleLineMode(true)
 	segment.SetTranslatesAutoresizingMaskIntoConstraints(false)
-	segment.SetTrackingMode(appkit.SegmentSwitchTrackingSelectOne)
-	segment.SetSegmentCount(len(segment.symbols))
 	segment.SetSelectedSegment(segment.selected)
-	target, selector := segment.Clicked()
-	segment.SetAction(selector)
-	segment.SetTarget(target)
-	for idx, item := range segment.symbols {
-		symbol := item.normal
-		var configuration []appkit.ImageSymbolConfiguration
-		if idx == segment.selected {
-			symbol = item.filled
-			configuration = []appkit.ImageSymbolConfiguration{
-				appkit.ImageSymbolConfiguration_ConfigurationPreferringMulticolor(),
-			}
-		}
-		segment.SetImageForSegment(symbolImage(symbol, configuration...), idx)
-	}
 	return segment
 }
 
@@ -173,7 +172,7 @@ func (s *SegmentControl) Clicked() (target action.Target, selector objc.Selector
 			return
 		}
 
-		configuration := appkit.ImageSymbolConfiguration_ConfigurationPreferringMulticolor()
+		configuration := appkit.ImageSymbolConfiguration_ConfigurationWithHierarchicalColor(appkit.Color_ControlAccentColor())
 		s.SetImageForSegment(symbolImage(s.symbols[selected].filled, configuration), selected)
 		s.SetImageForSegment(symbolImage(s.symbols[s.selected].normal), s.selected)
 		s.selected = s.SelectedSegment()
