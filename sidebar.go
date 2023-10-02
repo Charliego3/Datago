@@ -1,6 +1,8 @@
 package main
 
 import (
+	"github.com/charliego3/datago/components"
+
 	"github.com/progrium/macdriver/helper/action"
 	"github.com/progrium/macdriver/helper/layout"
 	"github.com/progrium/macdriver/macos/appkit"
@@ -31,7 +33,7 @@ func getSidebar() appkit.IView {
 	tabView.SetTabViewBorderType(appkit.TabViewBorderTypeNone)
 	tabView.SetUserInterfaceLayoutDirection(appkit.UserInterfaceLayoutDirectionLeftToRight)
 	tabView.SetTranslatesAutoresizingMaskIntoConstraints(false)
-	connectionsViewController := getConnectionsViewController()
+	connectionsViewController := components.NewConnectionsViewController()
 	tabView.SetTabViewItems([]appkit.ITabViewItem{
 		appkit.TabViewItem_TabViewItemWithViewController(connectionsViewController),
 		appkit.TabViewItem_TabViewItemWithViewController(controller1),
@@ -56,63 +58,6 @@ func getSidebar() appkit.IView {
 		tabView.BottomAnchor().ConstraintEqualToAnchor(contentView.BottomAnchor()),
 	)
 	return contentView
-}
-
-func getConnectionsViewController() appkit.ViewController {
-	scrollView := appkit.NewScrollView()
-	scrollView.SetBorderType(appkit.NoBorder)
-	scrollView.SetScrollerKnobStyle(appkit.ScrollerKnobStyleDefault)
-	scrollView.SetScrollerStyle(appkit.ScrollerStyleOverlay)
-	scrollView.SetFindBarPosition(appkit.ScrollViewFindBarPositionAboveContent)
-	scrollView.SetDrawsBackground(false)
-
-	clipView := appkit.NewClipView()
-	outlineView := appkit.NewOutlineView()
-	outlineView.SetFloatsGroupRows(true)
-	outlineView.SetAllowsColumnResizing(true)
-	outlineView.SetStyle(appkit.TableViewStyleSourceList)
-	outlineView.SetSelectionHighlightStyle(appkit.TableViewSelectionHighlightStyleSourceList)
-	outlineView.SetGridStyleMask(appkit.TableViewGridNone)
-	outlineView.SetUsesSingleLineMode(true)
-	outlineView.SetColumnAutoresizingStyle(appkit.TableViewLastColumnOnlyAutoresizingStyle)
-	outlineView.SetUsesAlternatingRowBackgroundColors(false)
-	outlineView.SetTranslatesAutoresizingMaskIntoConstraints(false)
-	outlineView.SetAllowsTypeSelect(true)
-	outlineView.SetAllowsEmptySelection(true)
-	outlineView.SetIndentationMarkerFollowsCell(true)
-	outlineView.SetIntercellSpacing(foundation.Size{Width: 3})
-
-	column := appkit.NewTableColumnWithIdentifier("ConnectionsColumn")
-	column.SetEditable(true)
-	column.SetHeaderToolTip("tool")
-
-	cellView := appkit.NewTableCellView()
-	imageView := appkit.NewImageView()
-	imageView.SetImage(appkit.Image_ImageWithSystemSymbolNameAccessibilityDescription("sidebar.leading", ""))
-	cellView.SetImageView(imageView)
-	cellView.SetTextField(appkit.NewTextField())
-
-	outlineView.ColumnForView(cellView)
-	outlineView.SetOutlineTableColumn(column)
-
-	clipView.SetContentInsets(foundation.EdgeInsets{Top: 10})
-	clipView.SetTranslatesAutoresizingMaskIntoConstraints(false)
-	scrollView.SetTranslatesAutoresizingMaskIntoConstraints(false)
-	scrollView.AddSubview(clipView)
-	controller := appkit.NewViewController()
-	controller.SetView(scrollView)
-	//layout.PinEdgesToSuperView(scrollView, foundation.EdgeInsets{})
-	//layoutActive(
-	//	clipView.TopAnchor().ConstraintEqualToAnchor(scrollView.TopAnchor()),
-	//	clipView.TrailingAnchor().ConstraintEqualToAnchor(scrollView.TrailingAnchor()),
-	//	clipView.BottomAnchor().ConstraintEqualToAnchor(scrollView.BottomAnchor()),
-	//	clipView.LeadingAnchor().ConstraintEqualToAnchor(scrollView.LeadingAnchor()),
-	//	outlineView.TopAnchor().ConstraintEqualToAnchor(clipView.TopAnchor()),
-	//	outlineView.TrailingAnchor().ConstraintEqualToAnchor(clipView.TrailingAnchor()),
-	//	outlineView.BottomAnchor().ConstraintEqualToAnchor(clipView.BottomAnchor()),
-	//	outlineView.LeadingAnchor().ConstraintEqualToAnchor(clipView.LeadingAnchor()),
-	//)
-	return controller
 }
 
 type SegmentControl struct {
@@ -189,29 +134,4 @@ func getHorizontalLine(width float64) appkit.Box {
 	line.SetBorderColor(getDividerColor())
 	layout.SetMaxHeight(line, 1)
 	return line
-}
-
-func setConnectionsDataSource(outline appkit.OutlineView) {
-	var dataSource IOutlineDataSource = OutlineDataSource{}
-	po0 := objc.WrapAsProtocol("NSOutlineViewDataSource", dataSource)
-	objc.SetAssociatedObject(outline, objc.AssociationKey("setDataSource"), po0, objc.ASSOCIATION_RETAIN)
-	objc.Call[objc.Void](outline, objc.Sel("setDataSource:"), po0)
-}
-
-type IOutlineDataSource interface {
-	HasOutlineViewNumberOfChildrenOfItem() bool
-	OutlineViewNumberOfChildrenOfItem(outlineView appkit.IOutlineView, item objc.Object) int
-}
-
-type OutlineDataSource struct {
-	objc.Object
-}
-
-func (d OutlineDataSource) HasOutlineViewNumberOfChildrenOfItem() bool {
-	return d.RespondsToSelector(objc.Sel("outlineView:numberOfChildrenOfItem:"))
-}
-
-func (d OutlineDataSource) OutlineViewNumberOfChildrenOfItem(outlineView appkit.IOutlineView, item objc.Object) int {
-	objc.Call[int](d, objc.Sel("outlineView:numberOfChildrenOfItem:"), objc.Ptr(outlineView), item)
-	return 10
 }

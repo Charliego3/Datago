@@ -1,4 +1,4 @@
-module changeme
+module github.com/charliego3/datago
 
 go 1.18
 

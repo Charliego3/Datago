@@ -1,10 +1,11 @@
 package main
 
 import (
+	"runtime"
+
 	"github.com/progrium/macdriver/macos/appkit"
 	"github.com/progrium/macdriver/macos/foundation"
 	"github.com/progrium/macdriver/objc"
-	"runtime"
 )
 
 var minFrameSize = foundation.Size{Width: 700, Height: 600}
