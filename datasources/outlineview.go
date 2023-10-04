@@ -8,7 +8,7 @@ import (
 
 type OutlineViewDatasource struct {
 	_OutlineViewSortDescriptorsDidChange                   func(outlineView appkit.OutlineView, oldDescriptors []foundation.SortDescriptor)
-	_OutlineViewChildOfItem                                func(outline appkit.OutlineView, index int, item objc.Object) objc.Object
+	_OutlineViewChildOfItem                                func(outlineView appkit.OutlineView, index int, item objc.Object) objc.Object
 	_OutlineViewPersistentObjectForItem                    func(outlineView appkit.OutlineView, item objc.Object) objc.Object
 	_OutlineViewValidateDropProposedItemProposedChildIndex func(outlineView appkit.OutlineView, info appkit.DraggingInfoObject, item objc.Object, index int) appkit.DragOperation
 	_OutlineViewDraggingSessionWillBeginAtPointForItems    func(outlineView appkit.OutlineView, session appkit.DraggingSession, screenPoint foundation.Point, draggedItems []objc.Object)
@@ -26,7 +26,7 @@ type OutlineViewDatasource struct {
 var _ appkit.POutlineViewDataSource = (*OutlineViewDatasource)(nil)
 
 func (ds *OutlineViewDatasource) Wrap() appkit.POutlineViewDataSource {
-	return appkit.POutlineViewDataSource(&OutlineViewDatasource{})
+	return appkit.POutlineViewDataSource(ds)
 }
 
 // optional
@@ -43,7 +43,7 @@ func (ds *OutlineViewDatasource) HasOutlineViewSortDescriptorsDidChange() bool {
 }
 
 // optional
-func (ds *OutlineViewDatasource) SetOutlineViewChildOfItem(f func(outline appkit.OutlineView, index int, item objc.Object) objc.Object) {
+func (ds *OutlineViewDatasource) SetOutlineViewChildOfItem(f func(outlineView appkit.OutlineView, index int, item objc.Object) objc.Object) {
 	ds._OutlineViewChildOfItem = f
 }
 

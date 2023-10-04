@@ -2,6 +2,7 @@ package components
 
 import (
 	"github.com/charliego3/datago/datasources"
+	"github.com/charliego3/datago/utils"
 
 	"github.com/progrium/macdriver/macos/appkit"
 	"github.com/progrium/macdriver/macos/foundation"
@@ -27,20 +28,30 @@ func (c ConnectionsViewController) setContentView() {
 	column.SetEditable(true)
 	column.SetHeaderToolTip("tool")
 
-	cellView := appkit.NewTableCellView()
-	imageView := appkit.NewImageView()
-	imageView.SetImage(appkit.Image_ImageWithSystemSymbolNameAccessibilityDescription("sidebar.leading", ""))
-	cellView.SetImageView(imageView)
-	cellView.SetTextField(appkit.NewTextField())
+	// cellView := appkit.NewTableCellView()
+	// imageView := appkit.NewImageView()
+	// imageView.SetImage(appkit.Image_ImageWithSystemSymbolNameAccessibilityDescription("sidebar.leading", ""))
+	// cellView.SetImageView(imageView)
+	// t := appkit.NewTextField()
+	// t.SetStringValue("text field")
+	// cellView.SetTextField(t)
 
-	outlineView.ColumnForView(cellView)
+	// outlineView.SetRowHeight(30)
+	// outlineView.ColumnForView(cellView)
 	outlineView.SetOutlineTableColumn(column)
+	// outlineView.AddTableColumn(column)
 
 	clipView.SetContentInsets(foundation.EdgeInsets{Top: 10})
-	// clipView.SetTranslatesAutoresizingMaskIntoConstraints(false)
+	clipView.SetTranslatesAutoresizingMaskIntoConstraints(false)
 	clipView.AddSubview(outlineView)
-	// scrollView.SetTranslatesAutoresizingMaskIntoConstraints(false)
-	scrollView.AddSubview(clipView)
+	scrollView.SetDocumentView(clipView)
+	utils.LayoutActive(
+		clipView.TopAnchor().ConstraintEqualToAnchor(scrollView.TopAnchor()),
+		clipView.LeadingAnchor().ConstraintEqualToAnchor(scrollView.LeadingAnchor()),
+		clipView.TrailingAnchor().ConstraintEqualToAnchor(scrollView.TrailingAnchor()),
+		clipView.BottomAnchor().ConstraintEqualToAnchor(scrollView.BottomAnchor()),
+	)
+	scrollView.SetAutoresizingMask(appkit.ViewWidthSizable | appkit.ViewHeightSizable)
 	c.SetView(scrollView)
 }
 
@@ -53,29 +64,32 @@ func (c ConnectionsViewController) getOutlineView() appkit.OutlineView {
 	outlineView.SetGridStyleMask(appkit.TableViewGridNone)
 	outlineView.SetUsesSingleLineMode(true)
 	outlineView.SetColumnAutoresizingStyle(appkit.TableViewLastColumnOnlyAutoresizingStyle)
-	outlineView.SetUsesAlternatingRowBackgroundColors(false)
+	outlineView.SetUsesAlternatingRowBackgroundColors(true)
 	outlineView.SetTranslatesAutoresizingMaskIntoConstraints(false)
 	outlineView.SetAllowsTypeSelect(true)
 	outlineView.SetAllowsEmptySelection(true)
 	outlineView.SetIndentationMarkerFollowsCell(true)
 	outlineView.SetIntercellSpacing(foundation.Size{Width: 3})
 	c.setDataSource(outlineView)
+	// dispatch.MainQueue().DispatchAsync(func() {
+	// 	outlineView.SetNeedsDisplay(true)
+	// })
 	return outlineView
 }
 
 func (c ConnectionsViewController) setDataSource(outlineView appkit.OutlineView) {
 	datasource := &datasources.OutlineViewDatasource{}
 	datasource.SetOutlineViewChildOfItem(func(outline appkit.OutlineView, index int, item objc.Object) objc.Object {
-		return objc.ObjectFrom(foundation.String_StringWithString("Hahahahahahah").Ptr())
+		return foundation.String_StringWithString("Hahahahahahah").Object
 	})
 	datasource.SetOutlineViewIsItemExpandable(func(outlineView appkit.OutlineView, item objc.Object) bool {
-		return false
+		return true
 	})
 	datasource.SetOutlineViewNumberOfChildrenOfItem(func(outlineView appkit.OutlineView, item objc.Object) int {
-		return 1
+		return 10
 	})
 	datasource.SetOutlineViewObjectValueForTableColumnByItem(func(outlineView appkit.OutlineView, tableColumn appkit.TableColumn, item objc.Object) objc.Object {
-		return objc.ObjectFrom(foundation.String_StringWithString("Hahahahahahah").Ptr())
+		return foundation.String_StringWithString("Hahahahahahah").Object
 	})
 	po0 := objc.WrapAsProtocol("NSOutlineViewDataSource", datasource.Wrap())
 	objc.SetAssociatedObject(outlineView, objc.AssociationKey("setDataSource"), po0, objc.ASSOCIATION_RETAIN)

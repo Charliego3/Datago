@@ -1,7 +1,7 @@
-package main
+package components
 
 import (
-	"github.com/charliego3/datago/components"
+	"github.com/charliego3/datago/utils"
 
 	"github.com/progrium/macdriver/helper/action"
 	"github.com/progrium/macdriver/helper/layout"
@@ -10,7 +10,7 @@ import (
 	"github.com/progrium/macdriver/objc"
 )
 
-func getSidebar() appkit.IView {
+func Sidebar(minFrameSize foundation.Size) appkit.IView {
 	const defaultWidth = 200
 	contentView := appkit.NewView()
 	contentView.SetFrameSize(foundation.Size{Width: defaultWidth, Height: minFrameSize.Height})
@@ -33,7 +33,7 @@ func getSidebar() appkit.IView {
 	tabView.SetTabViewBorderType(appkit.TabViewBorderTypeNone)
 	tabView.SetUserInterfaceLayoutDirection(appkit.UserInterfaceLayoutDirectionLeftToRight)
 	tabView.SetTranslatesAutoresizingMaskIntoConstraints(false)
-	connectionsViewController := components.NewConnectionsViewController()
+	connectionsViewController := NewConnectionsViewController()
 	tabView.SetTabViewItems([]appkit.ITabViewItem{
 		appkit.TabViewItem_TabViewItemWithViewController(connectionsViewController),
 		appkit.TabViewItem_TabViewItemWithViewController(controller1),
@@ -42,7 +42,7 @@ func getSidebar() appkit.IView {
 	contentView.AddSubview(tabView)
 	segment.trigger = tabView.SelectTabViewItemAtIndex
 
-	layoutActive(
+	utils.LayoutActive(
 		topLine.TopAnchor().ConstraintEqualToAnchorConstant(contentView.TopAnchor(), 38),
 		topLine.LeadingAnchor().ConstraintEqualToAnchor(contentView.LeadingAnchor()),
 		topLine.TrailingAnchor().ConstraintEqualToAnchor(contentView.TrailingAnchor()),
@@ -85,11 +85,11 @@ func getSegmentControl() *SegmentControl {
 	target, selector := segment.Clicked()
 	control := appkit.SegmentedControl_SegmentedControlWithImagesTrackingModeTargetAction(
 		[]appkit.IImage{
-			symbolImage(
+			utils.SymbolImage(
 				segment.symbols[0].filled,
 				appkit.ImageSymbolConfiguration_ConfigurationWithHierarchicalColor(appkit.Color_ControlAccentColor()),
 			),
-			symbolImage(segment.symbols[1].normal),
+			utils.SymbolImage(segment.symbols[1].normal),
 		},
 		appkit.SegmentSwitchTrackingSelectOne,
 		target, selector,
@@ -118,8 +118,8 @@ func (s *SegmentControl) Clicked() (target action.Target, selector objc.Selector
 		}
 
 		configuration := appkit.ImageSymbolConfiguration_ConfigurationWithHierarchicalColor(appkit.Color_ControlAccentColor())
-		s.SetImageForSegment(symbolImage(s.symbols[selected].filled, configuration), selected)
-		s.SetImageForSegment(symbolImage(s.symbols[s.selected].normal), s.selected)
+		s.SetImageForSegment(utils.SymbolImage(s.symbols[selected].filled, configuration), selected)
+		s.SetImageForSegment(utils.SymbolImage(s.symbols[s.selected].normal), s.selected)
 		s.selected = s.SelectedSegment()
 		if s.trigger != nil {
 			s.trigger(s.selected)
@@ -128,10 +128,10 @@ func (s *SegmentControl) Clicked() (target action.Target, selector objc.Selector
 }
 
 func getHorizontalLine(width float64) appkit.Box {
-	line := appkit.NewBoxWithFrame(rectOf(0, 0, width, 1))
+	line := appkit.NewBoxWithFrame(utils.RectOf(0, 0, width, 1))
 	line.SetTranslatesAutoresizingMaskIntoConstraints(false)
 	line.SetBoxType(appkit.BoxCustom)
-	line.SetBorderColor(getDividerColor())
+	line.SetBorderColor(utils.DividerColor())
 	layout.SetMaxHeight(line, 1)
 	return line
 }

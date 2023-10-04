@@ -3,6 +3,7 @@ package main
 import (
 	"runtime"
 
+	"github.com/charliego3/datago/components"
 	"github.com/progrium/macdriver/macos/appkit"
 	"github.com/progrium/macdriver/macos/foundation"
 	"github.com/progrium/macdriver/objc"
@@ -13,7 +14,7 @@ var minFrameSize = foundation.Size{Width: 700, Height: 600}
 func launched(app appkit.Application, delegate *appkit.ApplicationDelegate) {
 	frame := foundation.Rect{Size: minFrameSize}
 	sidebarViewController := appkit.NewViewController()
-	sidebarViewController.SetView(getSidebar())
+	sidebarViewController.SetView(components.Sidebar(minFrameSize))
 	contentViewController := appkit.NewViewController()
 	contentViewController.SetView(appkit.NewView())
 	splitViewController := appkit.NewSplitViewController()
@@ -32,8 +33,8 @@ func launched(app appkit.Application, delegate *appkit.ApplicationDelegate) {
 		appkit.BackingStoreBuffered, false)
 	objc.Retain(&w)
 
-	w.SetToolbar(getToolbar(app))
-	configureToolbar(w.Toolbar())
+	w.SetToolbar(components.Toolbar(app))
+	components.ConfigureToolbar(w.Toolbar())
 	w.SetContentMinSize(minFrameSize)
 	w.SetContentMaxSize(screenFrame.Size)
 	w.SetToolbarStyle(appkit.WindowToolbarStyleUnifiedCompact)
@@ -42,7 +43,6 @@ func launched(app appkit.Application, delegate *appkit.ApplicationDelegate) {
 	w.Center()
 	w.MakeKeyAndOrderFront(w)
 
-	app.SetAppearance(appkit.Appearance_CurrentDrawingAppearance())
 	app.SetActivationPolicy(appkit.ApplicationActivationPolicyRegular)
 	app.ActivateIgnoringOtherApps(true)
 }

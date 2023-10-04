@@ -1,12 +1,13 @@
-package main
+package components
 
 import (
+	"github.com/charliego3/datago/utils"
 	"github.com/progrium/macdriver/helper/action"
 	"github.com/progrium/macdriver/macos/appkit"
 	"github.com/progrium/macdriver/objc"
 )
 
-func getToolbar(app appkit.Application) appkit.IToolbar {
+func Toolbar(app appkit.Application) appkit.IToolbar {
 	toolbar := appkit.NewToolbar()
 	toolbar.SetDisplayMode(appkit.ToolbarDisplayModeIconOnly)
 	toolbar.SetShowsBaselineSeparator(true)
@@ -29,7 +30,7 @@ func toolbarItemIdentifiers(appkit.Toolbar) []appkit.ToolbarItemIdentifier {
 	return itemIdentifiers
 }
 
-func configureToolbar(toolbar appkit.Toolbar) {
+func ConfigureToolbar(toolbar appkit.Toolbar) {
 	for _, item := range toolbar.Items() {
 		if item.ItemIdentifier() == appkit.ToolbarToggleSidebarItemIdentifier {
 			item.View().SetFocusRingType(appkit.FocusRingTypeNone)
@@ -55,7 +56,7 @@ func getToolbarDelegate(app appkit.Application) *appkit.ToolbarDelegate {
 			btn := appkit.NewButton()
 			target, selector := action.Wrap(func(_ objc.Object) {
 				var theme appkit.IAppearance
-				if isDark(app.Appearance()) {
+				if utils.IsDark(app.Appearance()) {
 					theme = appkit.Appearance_AppearanceNamed(appkit.AppearanceNameAqua)
 				} else {
 					theme = appkit.Appearance_AppearanceNamed(appkit.AppearanceNameDarkAqua)

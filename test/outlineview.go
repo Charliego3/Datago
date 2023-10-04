@@ -69,12 +69,12 @@ func (t *TableViewDataSource) Wait() {
 	t.wg.Wait()
 }
 
-func (t *TableViewDataSource) Start(ctx context.Context, tableView appkit.TableView) {
+func (t *TableViewDataSource) Start(ctx context.Context, tableView appkit.OutlineView) {
 	t.wg.Add(1)
 	go valueGenerator(ctx, t.wg, t.values, tableView, t.maxRows, t.overflowValue)
 }
 
-func valueGenerator(ctx context.Context, wg *sync.WaitGroup, values chan<- [][2]objc.Object, tableView appkit.TableView, maxRows int, overflowValue int) {
+func valueGenerator(ctx context.Context, wg *sync.WaitGroup, values chan<- [][2]objc.Object, tableView appkit.OutlineView, maxRows int, overflowValue int) {
 	defer wg.Done()
 	currentValues := make([][2]int, maxRows)
 	sendToUI := func() {
@@ -156,8 +156,8 @@ func NewTableViewDataSource(ctx context.Context, maxRows int, overflowValue int)
 		switch tableColumn.Identifier() {
 		case "Column1":
 			return model.data[row][0]
-		case "Column2":
-			return model.data[row][1]
+			// case "Column2":
+			// 	return model.data[row][1]
 		}
 		panic("unknown column")
 	})
@@ -192,26 +192,27 @@ func (a *App) mainWindow() {
 
 	w.SetTitle("Test table view")
 
-	tableView := appkit.NewTableView()
+	tableView := appkit.NewOutlineView()
 	go dataSource.Start(ctx, tableView)
 	tableView.SetRowHeight(RowHeight)
 	tableView.SetTranslatesAutoresizingMaskIntoConstraints(false)
-	tableView.SetHeaderView(appkit.NewTableHeaderViewWithFrame(rectOf(0, 0, 0, RowHeight)))
-	tableView.SetGridStyleMask(appkit.TableViewSolidVerticalGridLineMask | appkit.TableViewSolidHorizontalGridLineMask)
-	tableView.SetStyle(appkit.TableViewStylePlain)
+	tableView.SetHeaderView(appkit.NewTableHeaderViewWithFrame(rectOf(0, 0, 0, 0)))
+	// tableView.SetGridStyleMask(appkit.TableViewSolidVerticalGridLineMask | appkit.TableViewSolidHorizontalGridLineMask)
 	tableView.SetRowSizeStyle(appkit.TableViewRowSizeStyleDefault)
-	tableView.SetColumnAutoresizingStyle(appkit.TableViewUniformColumnAutoresizingStyle)
+	tableView.SetColumnAutoresizingStyle(appkit.TableViewLastColumnOnlyAutoresizingStyle)
 	tableView.SetUsesAlternatingRowBackgroundColors(true)
-	tableView.SetStyle(appkit.TableViewStyleFullWidth)
-	tableView.SetTranslatesAutoresizingMaskIntoConstraints(false)
+	tableView.SetStyle(appkit.TableViewStyleSourceList)
+	tableView.SetSelectionHighlightStyle(appkit.TableViewSelectionHighlightStyleSourceList)
+	tableView.SetGridStyleMask(appkit.TableViewGridNone)
+	tableView.SetUsesSingleLineMode(true)
 	tableColumn1 := appkit.NewTableColumn().InitWithIdentifier("Column1")
 	tableColumn1.SetTitle("Test 1")
 	tableColumn1.SetWidth(100)
 	tableView.AddTableColumn(tableColumn1)
-	tableColumn2 := appkit.NewTableColumn().InitWithIdentifier("Column2")
-	tableColumn2.SetTitle("Test 2")
-	tableColumn2.SetWidth(100)
-	tableView.AddTableColumn(tableColumn2)
+	// tableColumn2 := appkit.NewTableColumn().InitWithIdentifier("Column2")
+	// tableColumn2.SetTitle("Test 2")
+	// tableColumn2.SetWidth(100)
+	// tableView.AddTableColumn(tableColumn2)
 	tableView.SetDataSource(dataSource.delegate)
 	tableView.SetAllowsColumnSelection(true)
 	tableView.SetAutoresizingMask(appkit.ViewWidthSizable | appkit.ViewHeightSizable)
